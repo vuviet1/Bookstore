@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MRG2ODkl5P5x9bXimbimxFnCDI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp1/htdocs/Bookstore/admin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\admin" />
+      <recent name="C:\xampp1\htdocs\giaodien-1\assets\img\favicon" />
+      <recent name="C:\xampp1\htdocs\giaodien-1\model\admin" />
+      <recent name="C:\xampp1\htdocs\giaodien-1\assets\img\avatars" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\admin\view" />
+      <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
+      <recent name="C:\xampp1\htdocs\Bookstore\admin\model" />
+      <recent name="C:\xampp1\htdocs\giaodien-1" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="" />
+      <created>1677722773467</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677722773467</updated>
+      <workItem from="1677722774681" duration="1553000" />
+      <workItem from="1678162662946" duration="112000" />
+      <workItem from="1678890187727" duration="298000" />
+      <workItem from="1678933323571" duration="5820000" />
+      <workItem from="1679057579013" duration="3617000" />
+      <workItem from="1679144217978" duration="5199000" />
+      <workItem from="1679190454205" duration="1955000" />
+      <workItem from="1679307534862" duration="4435000" />
+      <workItem from="1679317265206" duration="6687000" />
+      <workItem from="1679324095264" duration="602000" />
+      <workItem from="1679363409895" duration="1010000" />
+      <workItem from="1679365214540" duration="6613000" />
+      <workItem from="1679467366906" duration="4754000" />
+      <workItem from="1679640123733" duration="11605000" />
+      <workItem from="1679664294714" duration="371000" />
+      <workItem from="1679664676745" duration="1229000" />
+      <workItem from="1679671068545" duration="1605000" />
+      <workItem from="1679750959084" duration="603000" />
+      <workItem from="1679965899397" duration="6847000" />
+      <workItem from="1679974304730" duration="814000" />
+      <workItem from="1679975191272" duration="635000" />
+      <workItem from="1679976204498" duration="1636000" />
+    </task>
+    <task id="LOCAL-00001" summary="demo">
+      <created>1679970489212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679970489212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
