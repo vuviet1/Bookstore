@@ -35,7 +35,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nxb&action=edit">Sửa</a></button>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nxb&action=edit&id=<?= $nxb['id_publishing_company'] ?>">Sửa</a></button>
                                     <button type="button" class="btn btn-danger">Xóa</button>
                                 </td>
                             </tr>

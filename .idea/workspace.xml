@@ -4,7 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo" />
+    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
+      <change afterPath="$PROJECT_DIR$/customer/view/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/nxb-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/nxb-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/ptvc-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/ptvc-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/nxb-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/nxb-model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/ptvc-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/ptvc-model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/hoadon-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/kh-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/nv-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/nxb-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/pttt-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/ptvc-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/sp-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/admin/tl-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/customer/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/hoadon-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/kh-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/nv-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/nxb-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/pttt-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/ptvc-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/sp-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/admin/tl-model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/customer/shop-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/model/shop-cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/customer/shop-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/model/shop-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/model/customer/shop-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/model/shop-grid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/acc-set.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/hoadon/hoadon-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/hoadon/hoadon-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/hoadon/hoadon-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/hoadon/hoadonchitiet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/kh/kh-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/kh/kh-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/kh/kh-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/navbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nv/nv-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nv/nv-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nv/nv-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nxb/nxb-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nxb/nxb-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/nxb/nxb-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/pttt/pttt-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/pttt/pttt-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/pttt/pttt-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/ptvc/ptvc-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/ptvc/ptvc-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/ptvc/ptvc-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/sp/sp-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/sp/sp-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/sp/sp-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/theloai/tl-add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/theloai/tl-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/admin/theloai/tl-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/check_out/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/check_out/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/contact/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/contact/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/layout/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/shop_details/shop-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_details/shop-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/shop_grid/shop-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/customer/shopping_cart/shoping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shopping_cart/shoping-cart.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +95,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,22 +111,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp1/htdocs/Bookstore/admin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore/admin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\Bookstore\admin" />
@@ -56,10 +135,11 @@
       <recent name="C:\xampp1\htdocs\giaodien-1\assets\img\avatars" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\customer\view" />
+      <recent name="C:\xampp1\htdocs\Bookstore\customer\model" />
+      <recent name="C:\xampp1\htdocs\Bookstore\customer\controller" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
-      <recent name="C:\xampp1\htdocs\Bookstore\admin\model" />
-      <recent name="C:\xampp1\htdocs\giaodien-1" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,6 +172,12 @@
       <workItem from="1679974304730" duration="814000" />
       <workItem from="1679975191272" duration="635000" />
       <workItem from="1679976204498" duration="1636000" />
+      <workItem from="1679977994408" duration="943000" />
+      <workItem from="1679995179694" duration="612000" />
+      <workItem from="1680009775209" duration="598000" />
+      <workItem from="1680073420337" duration="4058000" />
+      <workItem from="1680078895215" duration="351000" />
+      <workItem from="1680079355533" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -105,6 +191,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

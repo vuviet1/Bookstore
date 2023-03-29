@@ -11,6 +11,7 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/ptvc-model.php';
         include_once 'view/ptvc/ptvc-show.php';
         break;
     case 'add':
@@ -18,13 +19,22 @@ switch ($action) {
         include_once 'view/ptvc/ptvc-add.php';
         break;
     case 'edit':
-        //Hiển thị danh sách các
+        include_once 'model/ptvc-model.php';
         include_once 'view/ptvc/ptvc-edit.php';
+        break;
+    case 'update':
+        include_once 'model/ptvc-model.php';
+        header('Location:index.php?controller=ptvc');
         break;
     case 'create':
         include_once 'model/ptvc-model.php';
         break;
+    case 'destroy':
+        include_once 'model/ptvc-model.php';
+        header('location: index.php?controller=ptvc');
+        break;
     case 'store':
-//        include_once 'model/admin/tl-model.php';
+        include_once 'model/ptvc-model.php';
+        header('location: index.php?controller=ptvc');
         break;
 }
