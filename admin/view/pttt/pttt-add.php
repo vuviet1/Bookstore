@@ -12,7 +12,7 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="formAccountSettings" method="POST" action="index.php?controller=pttt&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="firstName" class="form-label">Tên phương thức thanh toán</label>

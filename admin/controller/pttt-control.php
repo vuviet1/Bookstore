@@ -11,6 +11,7 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/pttt-model.php';
         include_once 'view/pttt/pttt-show.php';
         break;
     case 'add':
@@ -24,7 +25,12 @@ switch ($action) {
     case 'create':
         include_once 'model/pttt-model.php';
         break;
+    case 'destroy':
+        include_once 'model/pttt-model.php';
+        header('Location:index.php?controller=pttt');
+        break;
     case 'store':
-//        include_once 'model/admin/tl-model.php';
+        include_once 'model/pttt-model.php';
+        header('Location:index.php?controller=pttt');
         break;
 }
