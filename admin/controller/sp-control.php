@@ -11,6 +11,7 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/sp-model.php';
         include_once 'view/sp/sp-show.php';
         break;
     case 'add':
@@ -20,6 +21,9 @@ switch ($action) {
     case 'edit':
         //Hiển thị danh sách các
         include_once 'view/sp/sp-edit.php';
+        break;
+    case 'update':
+        include_once 'model/sp-model.php';
         break;
     case 'create':
         include_once 'model/sp-model.php';

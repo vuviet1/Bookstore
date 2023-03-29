@@ -31,26 +31,48 @@
                                 <th>Giá</th>
                                 <th>Ảnh</th>
                                 <th>Kích cỡ</th>
-                                <th>Ngày sản xuất</th>
+                                <th>Ngày phát hành</th>
                                 <th>Mô tả</th>
                                 <th>Hành động</th>
                             </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
+                            <?php
+                                foreach ($array['infor'] as $product){
+                            ?>
+                                <tr>
+                                    <td>
+                                        <?= $product['id_product'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['product_name'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['number_of_pages'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['price'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['image'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['size'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['publication_date'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['describes'] ?>
+                                    </td>
+                                    <td>
                                     <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger">Xóa</button>
-                                </td>
-                            </tr>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy">Xóa</a></button>
+                                    </td>
+                                </tr>
+                            <?php
+                                }
+                            ?>
                             </tbody>
                         </table>
                     </div>
