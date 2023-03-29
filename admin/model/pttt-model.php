@@ -17,7 +17,7 @@ function edit(){
 }
 function update(){
     $id = $_POST['id'];
-    $name = $_POST['name'];
+    $name = $_POST['firstName'];
     include_once 'connect/openConnect.php';
     $sql = "UPDATE payment SET name_payment = '$name' WHERE id_payment = '$id'";
     mysqli_query($connect, $sql);

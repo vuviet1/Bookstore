@@ -19,18 +19,22 @@ switch ($action) {
         include_once 'view/pttt/pttt-add.php';
         break;
     case 'edit':
-        //Hiển thị danh sách các
+        include_once 'model/pttt-model.php';
         include_once 'view/pttt/pttt-edit.php';
+        break;
+    case 'update':
+        include_once 'model/pttt-model.php';
+        header('Location:index.php?controller=pttt');
         break;
     case 'create':
         include_once 'model/pttt-model.php';
         break;
     case 'destroy':
         include_once 'model/pttt-model.php';
-        header('Location:index.php?controller=pttt');
+        header('location: index.php?controller=pttt');
         break;
     case 'store':
         include_once 'model/pttt-model.php';
-        header('Location:index.php?controller=pttt');
+        header('location: index.php?controller=pttt');
         break;
 }

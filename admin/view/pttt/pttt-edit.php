@@ -12,16 +12,20 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" action="index.php?controller=pttt&action=edit">
+                        <?php
+                            foreach($PTTT as $pttt){
+                        ?>
+                        <form id="formAccountSettings" method="POST" action="index.php?controller=pttt&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
+                                <input type="hidden" name="id" value="<?= $pttt['id_payment'] ?>">
                                     <label for="firstName" class="form-label">Tên phương thức thanh toán</label>
                                     <input
                                         class="form-control"
                                         type="text"
                                         id="firstName"
                                         name="firstName"
-                                        value=""
+                                        value="<?= $pttt['name_payment'] ?>"
                                         autofocus
                                     />
                                 </div>
@@ -30,6 +34,9 @@
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=pttt">Hủy bỏ</a></button>
                                 </div>
                         </form>
+                        <?php
+                            }
+                        ?>
                     </div>
                     <!-- /Account -->
                 </div>
