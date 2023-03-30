@@ -127,6 +127,7 @@ function editProduct()
     $array1['products'] = $products;
     return $array1;
 }
+
 function updateProduct()
 {
     $id = $_POST['id'];
@@ -143,7 +144,7 @@ function updateProduct()
     include_once 'connect/openConnect.php';
     $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
-    if (mysqli_num_rows($query_check) > 0) {
+    if (mysqli_num_rows($query_check) > 1) {
         // Product already exists
         return 1;
     } else {
