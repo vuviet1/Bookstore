@@ -17,7 +17,7 @@ function edit(){
 }
 function update(){
     $id = $_POST['id'];
-    $name = $_POST['firstName'];
+    $name = $_POST['pttt'];
     include_once 'connect/openConnect.php';
     $sql = "UPDATE payment SET name_payment = '$name' WHERE id_payment = '$id'";
     mysqli_query($connect, $sql);
@@ -25,7 +25,7 @@ function update(){
 }
 //function lưu dữ liệu lên db
 function store(){
-    $name = $_POST['firstName'];
+    $name = $_POST['pttt'];
     include_once 'connect/openConnect.php';
     $sql = "INSERT INTO payment(name_payment) VALUES ('$name')";
     mysqli_query($connect, $sql);

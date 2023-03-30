@@ -12,15 +12,15 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="nxb" method="POST" action="index.php?controller=nxb&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Tên nhà xuất bản</label>
+                                    <label for="nxb" class="form-label">Tên nhà xuất bản</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="nxb"
+                                        name="nxb"
                                         value=""
                                         autofocus
                                     />

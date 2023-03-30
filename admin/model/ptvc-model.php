@@ -17,7 +17,7 @@ function edit(){
 }
 function update(){
     $id = $_POST['id'];
-    $name = $_POST['firstName'];
+    $name = $_POST['shipping'];
     include_once 'connect/openConnect.php';
     $sql = "UPDATE shipping SET name_shipping = '$name' WHERE id_shipping = '$id'";
     mysqli_query($connect, $sql);
@@ -25,7 +25,7 @@ function update(){
 }
 //function lưu dữ liệu lên db
 function store(){
-    $name = $_POST['firstName'];
+    $name = $_POST['shipping'];
     include_once 'connect/openConnect.php';
     $sql = "INSERT INTO shipping(name_shipping) VALUES ('$name')";
     mysqli_query($connect, $sql);

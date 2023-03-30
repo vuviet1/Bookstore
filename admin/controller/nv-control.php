@@ -11,6 +11,7 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/nv-model.php';
         include_once 'view/nv/nv-show.php';
         break;
     case 'add':
@@ -18,13 +19,28 @@ switch ($action) {
         include_once 'view/nv/nv-add.php';
         break;
     case 'edit':
-        //Hiển thị danh sách các
+        include_once 'model/nv-model.php';
         include_once 'view/nv/nv-edit.php';
+        break;
+    case 'update':
+        include_once 'model/nv-model.php';
+        echo '<script>
+                    location.href = "index.php?controller=nv";
+                </script>';
         break;
     case 'create':
         include_once 'model/nv-model.php';
         break;
+    case 'destroy':
+        include_once 'model/nv-model.php';
+        echo '<script>  
+                    location.href = "index.php?controller=nv";
+                </script>';
+        break;
     case 'store':
-//        include_once 'model/admin/tl-model.php';
+        include_once 'model/nv-model.php';
+        echo '<script>   
+                    location.href = "index.php?controller=nv";
+                </script>';
         break;
 }

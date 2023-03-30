@@ -24,17 +24,23 @@ switch ($action) {
         break;
     case 'update':
         include_once 'model/ptvc-model.php';
-        header('Location:index.php?controller=ptvc');
+        echo '<script>
+                    location.href = "index.php?controller=ptvc";
+                </script>';
         break;
     case 'create':
         include_once 'model/ptvc-model.php';
         break;
     case 'destroy':
         include_once 'model/ptvc-model.php';
-        header('location: index.php?controller=ptvc');
+        echo '<script>
+                    location.href = "index.php?controller=ptvc";
+                </script>';
         break;
     case 'store':
         include_once 'model/ptvc-model.php';
-        header('location: index.php?controller=ptvc');
+        echo '<script>
+                    location.href = "index.php?controller=ptvc";
+                </script>';
         break;
 }

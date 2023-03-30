@@ -12,16 +12,20 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <?php
+                        foreach($PTVC as $ptvc){
+                        ?>
+                        <form id="shipping" method="POST" action="index.php?controller=ptvc&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Tên phương thức vận chuyển</label>
+                                    <input type="hidden" name="id" value="<?= $ptvc['id_shipping'] ?>">
+                                    <label for="shipping" class="form-label">Tên phương thức vận chuyển</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        value=""
+                                        id="shipping"
+                                        name="shipping"
+                                        value="<?= $ptvc['name_shipping'] ?>"
                                         autofocus
                                     />
                                 </div>
@@ -30,8 +34,10 @@
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=ptvc">Hủy bỏ</a></button>
                                 </div>
                         </form>
+                            <?php
+                        }
+                        ?>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

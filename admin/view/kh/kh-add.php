@@ -12,50 +12,71 @@
                     <h5 class="card-header">Chi tiết hồ sơ</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="kh" method="POST" action="index.php?controller=kh&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Họ và tên</label>
+                                    <label for="name_kh" class="form-label">Họ và tên</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="name_kh"
+                                        name="name_kh"
                                         value=""
                                         autofocus
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">E-mail</label>
+                                    <label for="email_kh" class="form-label">E-mail</label>
                                     <input
                                         class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
+                                        type="email"
+                                        id="email_kh"
+                                        name="email_kh"
                                         value=""
                                         placeholder="a@gmail.com"
                                     />
                                 </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="user_kh" class="form-label">Username</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="user_kh"
+                                            name="user_kh"
+                                            value=""
+                                            placeholder="Nguyen Van A"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="pass_kh" class="form-label">Password</label>
+                                    <input
+                                            class="form-control"
+                                            type="password"
+                                            id="pass_kh"
+                                            name="pass_kh"
+                                            value=""
+                                    />
+                                </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">số điện thoại</label>
+                                    <label class="form-label" for="phone_kh">Số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="phone_kh"
+                                            name="phone_kh"
                                             class="form-control"
-                                            placeholder="202 555 0111"
+                                            placeholder="000 000 0000"
                                         />
                                     </div>
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">Địa chỉ</label>
+                                    <label class="form-label" for="address">Địa chỉ</label>
                                     <div class="input-group input-group-merge">
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="address"
+                                            name="address"
                                             class="form-control"
                                         />
                                     </div>
@@ -66,7 +87,6 @@
                                 </div>
                         </form>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

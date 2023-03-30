@@ -15,16 +15,16 @@
                         <?php
                             foreach($PTTT as $pttt){
                         ?>
-                        <form id="formAccountSettings" method="POST" action="index.php?controller=pttt&action=update">
+                        <form id="pttt" method="POST" action="index.php?controller=pttt&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                 <input type="hidden" name="id" value="<?= $pttt['id_payment'] ?>">
-                                    <label for="firstName" class="form-label">Tên phương thức thanh toán</label>
+                                    <label for="pttt" class="form-label">Tên phương thức thanh toán</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="pttt"
+                                        name="pttt"
                                         value="<?= $pttt['name_payment'] ?>"
                                         autofocus
                                     />
@@ -38,7 +38,6 @@
                             }
                         ?>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

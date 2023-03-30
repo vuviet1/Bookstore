@@ -12,40 +12,63 @@
                     <h5 class="card-header">Chi tiết hồ sơ</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <?php
+                        foreach($NV as $nv){
+                        ?>
+                        <form id="nv" method="POST" action="index.php?controller=nv&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Họ và tên</label>
+                                    <input type="hidden" name="id" value="<?= $nv['id_employee'] ?>">
+                                    <label for="name_nv" class="form-label">Họ và tên</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        value=""
+                                        id="name_nv"
+                                        name="name_nv"
+                                        value="<?= $nv['name_employee'] ?>"
                                         autofocus
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">E-mail</label>
+                                    <label for="user_nv" class="form-label">Username</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="user_nv"
+                                            name="user_nv"
+                                            value="<?= $nv['username'] ?>"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="pass_nv" class="form-label">Password</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="pass_nv"
+                                            name="pass_nv"
+                                            value="<?= $nv['password'] ?>"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="email_nv" class="form-label">Email</label>
                                     <input
                                         class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                        placeholder="a@gmail.com"
+                                        type="email"
+                                        id="email_nv"
+                                        name="email_nv"
+                                        value="<?= $nv['email'] ?>"
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">số điện thoại</label>
+                                    <label class="form-label" for="phone_nv">Số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="phone_nv"
+                                            name="phone_nv"
                                             class="form-control"
-                                            placeholder="202 555 0111"
+                                            value="<?= $nv['phone_number'] ?>"
                                         />
                                     </div>
                                 </div>
@@ -54,8 +77,10 @@
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=nv">Hủy bỏ</a></button>
                                 </div>
                         </form>
+                            <?php
+                        }
+                        ?>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

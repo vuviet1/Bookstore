@@ -12,15 +12,15 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" action="index.php?controller=pttt&action=store">
+                        <form id="pttt" method="POST" action="index.php?controller=pttt&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Tên phương thức thanh toán</label>
+                                    <label for="pttt" class="form-label">Tên phương thức thanh toán</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="pttt"
+                                        name="pttt"
                                         value=""
                                         autofocus
                                     />
@@ -31,7 +31,6 @@
                                 </div>
                         </form>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

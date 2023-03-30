@@ -12,40 +12,61 @@
                     <h5 class="card-header">Chi tiết hồ sơ</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="nv" method="POST" action="index.php?controller=nv&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Họ và tên</label>
+                                    <label for="name_nv" class="form-label">Họ và tên</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="name_nv"
+                                        name="name_nv"
                                         value=""
                                         autofocus
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">E-mail</label>
+                                    <label for="email_nv" class="form-label">E-mail</label>
+                                    <input
+                                            class="form-control"
+                                            type="email"
+                                            id="email_nv"
+                                            name="email_nv"
+                                            value=""
+                                            placeholder="a@gmail.com"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="user_nv" class="form-label">Username</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="user_nv"
+                                            name="user_nv"
+                                            value=""
+                                            placeholder="Nguyen Van A"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="pass_nv" class="form-label">Password</label>
                                     <input
                                         class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
+                                        type="password"
+                                        id="pass_nv"
+                                        name="pass_nv"
                                         value=""
-                                        placeholder="a@gmail.com"
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">số điện thoại</label>
+                                    <label class="form-label" for="phone_nv">Số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="phone_nv"
+                                            name="phone_nv"
                                             class="form-control"
-                                            placeholder="202 555 0111"
+                                            placeholder="000 000 0000"
                                         />
                                     </div>
                                 </div>
@@ -55,7 +76,6 @@
                             </div>
                         </form>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

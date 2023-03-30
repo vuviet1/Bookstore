@@ -1,15 +1,17 @@
 <?php
 
+
 //Lấy hành động đang thực hiện
 $action = '';
-if (isset($_GET['action'])){
-    $action= $_GET['action'];
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
 }
 
 //Kiểm tra hành động đang thực hiện
-switch ($action){
+switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/tl-model.php';
         include_once 'view/theloai/tl-show.php';
         break;
     case 'add':
@@ -17,13 +19,28 @@ switch ($action){
         include_once 'view/theloai/tl-add.php';
         break;
     case 'edit':
-        //Hiển thị danh sách các
+        include_once 'model/tl-model.php';
         include_once 'view/theloai/tl-edit.php';
         break;
-    case 'model':
+    case 'update':
+        include_once 'model/tl-model.php';
+        echo '<script>
+                    location.href = "index.php?controller=theloai";
+                </script>';
+        break;
+    case 'create':
         include_once 'model/tl-model.php';
         break;
+    case 'destroy':
+        include_once 'model/tl-model.php';
+        echo '<script>  
+                    location.href = "index.php?controller=theloai";
+                </script>';
+        break;
     case 'store':
-//        include_once 'model/admin/tl-model.php';
+        include_once 'model/tl-model.php';
+        echo '<script>   
+                    location.href = "index.php?controller=theloai";
+                </script>';
         break;
 }

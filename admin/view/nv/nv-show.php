@@ -33,16 +33,30 @@
                               </tr>
                               </thead>
                               <tbody class="table-border-bottom-0">
+                              <?php
+                              foreach ($array as $nv){
+                              ?>
                               <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
                                   <td>
-                                      <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nv&action=edit">Sửa</a></button>
-                                      <button type="button" class="btn btn-danger">Xóa</button>
+                                      <?= $nv['id_employee'] ?>
+                                  </td>
+                                  <td>
+                                      <?= $nv['name_employee'] ?>
+                                  </td>
+                                  <td>
+                                      <?= $nv['phone_number'] ?>
+                                  </td>
+                                  <td>
+                                      <?= $nv['email'] ?>
+                                  </td>
+                                  <td>
+                                      <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nv&action=edit&id=<?= $nv['id_employee'] ?>">Sửa</a></button>
+                                      <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=nv&action=destroy&id=<?= $nv['id_employee'] ?>">Xóa</a></button>
                                   </td>
                               </tr>
+                                  <?php
+                              }
+                              ?>
                               </tbody>
                           </table>
                       </div>

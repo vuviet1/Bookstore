@@ -29,7 +29,7 @@ switch ($controller){
         include_once "view/shop_details/shop-details.html";
         break;
     default:
-//        include_once "view/main.html";
+        include_once "view/main.html";
         break;
 }
 

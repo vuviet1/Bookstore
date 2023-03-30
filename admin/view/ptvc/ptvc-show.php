@@ -31,14 +31,24 @@
                             </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
+                            <?php
+                            foreach ($array as $shipping){
+                            ?>
                             <tr>
-                                <td></td>
-                                <td></td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=ptvc&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger">Xóa</button>
+                                    <?= $shipping['id_shipping'] ?>
+                                </td>
+                                <td>
+                                    <?= $shipping['name_shipping'] ?>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=ptvc&action=edit&id=<?= $shipping['id_shipping'] ?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=ptvc&action=destroy&id=<?= $shipping['id_shipping'] ?>">Xóa</a></button>
                                 </td>
                             </tr>
+                                <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>

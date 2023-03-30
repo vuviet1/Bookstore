@@ -12,51 +12,76 @@
                     <h5 class="card-header">Chi tiết hồ sơ</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <?php
+                        foreach($KH as $kh){
+                        ?>
+                        <form id="kh" method="POST" action="index.php?controller=kh&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Họ và tên</label>
+                                    <input type="hidden" name="id" value="<?= $kh['id_customer'] ?>">
+                                    <label for="name_kh" class="form-label">Họ và tên</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        value=""
+                                        id="name_kh"
+                                        name="name_kh"
+                                        value="<?= $kh['name_customer'] ?>"
                                         autofocus
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">E-mail</label>
+                                    <label for="email_kh" class="form-label">E-mail</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                        placeholder="a@gmail.com"
+                                        id="email_kh"
+                                        name="email_kh"
+                                        value="<?= $kh['email'] ?>"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="user_kh" class="form-label">Username</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="user_kh"
+                                            name="user_kh"
+                                            value="<?= $kh['username'] ?>"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="pass_kh" class="form-label">Password</label>
+                                    <input
+                                            class="form-control"
+                                            type="text"
+                                            id="pass_kh"
+                                            name="pass_kh"
+                                            value="<?= $kh['password'] ?>"
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">số điện thoại</label>
+                                    <label class="form-label" for="phone_kh">số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="phone_kh"
+                                            name="phone_kh"
                                             class="form-control"
-                                            placeholder="202 555 0111"
+                                            value="<?= $kh['phone_number'] ?>"
+
                                         />
                                     </div>
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label" for="phoneNumber">Địa chỉ</label>
+                                    <label class="form-label" for="address">Địa chỉ</label>
                                     <div class="input-group input-group-merge">
                                         <input
                                             type="text"
-                                            id="phoneNumber"
-                                            name="phoneNumber"
+                                            id="address"
+                                            name="address"
                                             class="form-control"
+                                            value="<?= $kh['address'] ?>"
                                         />
                                     </div>
                                 </div>
@@ -65,8 +90,10 @@
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=kh">Hủy bỏ</a></button>
                                 </div>
                         </form>
+                            <?php
+                        }
+                        ?>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

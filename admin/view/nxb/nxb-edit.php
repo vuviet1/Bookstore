@@ -12,16 +12,20 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <?php
+                        foreach($NXB as $nxb){
+                        ?>
+                        <form id="nxb" method="POST" action="index.php?controller=nxb&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Tên nhà xuất bản</label>
+                                    <input type="hidden" name="id" value="<?= $nxb['id_publishing_company'] ?>">
+                                    <label for="nxb" class="form-label">Tên nhà xuất bản</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        value=""
+                                        id="nxb"
+                                        name="nxb"
+                                        value="<?= $nxb['publishing_company_name'] ?>"
                                         autofocus
                                     />
                                 </div>
@@ -30,8 +34,10 @@
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=nxb">Hủy bỏ</a></button>
                                 </div>
                         </form>
+                            <?php
+                        }
+                        ?>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

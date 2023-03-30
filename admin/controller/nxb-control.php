@@ -24,17 +24,23 @@ switch ($action) {
         break;
     case 'update':
         include_once 'model/nxb-model.php';
-        header('Location:index.php?controller=nxb');
+        echo '<script>
+                    location.href = "index.php?controller=nxb";
+                </script>';
         break;
     case 'create':
         include_once 'model/nxb-model.php';
         break;
     case 'destroy':
         include_once 'model/nxb-model.php';
-        header('location: index.php?controller=nxb');
+        echo '<script> 
+                    location.href = "index.php?controller=nxb";
+                </script>';
         break;
     case 'store':
         include_once 'model/nxb-model.php';
-        header('location: index.php?controller=nxb');
+        echo '<script>  
+                    location.href = "index.php?controller=nxb";
+                </script>';
         break;
 }

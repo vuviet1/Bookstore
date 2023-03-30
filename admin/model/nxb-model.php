@@ -17,7 +17,7 @@ function edit(){
 }
 function update(){
     $id = $_POST['id'];
-    $name = $_POST['firstName'];
+    $name = $_POST['nxb'];
     include_once 'connect/openConnect.php';
     $sql = "UPDATE publishing_company SET publishing_company_name = '$name' WHERE id_publishing_company = '$id'";
     mysqli_query($connect, $sql);
@@ -25,7 +25,7 @@ function update(){
 }
 //function lưu dữ liệu lên db
 function store(){
-    $name = $_POST['firstName'];
+    $name = $_POST['nxb'];
     include_once 'connect/openConnect.php';
     $sql = "INSERT INTO publishing_company(publishing_company_name) VALUES ('$name')";
     mysqli_query($connect, $sql);

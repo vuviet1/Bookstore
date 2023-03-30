@@ -17,7 +17,6 @@
                     </li>
                 </ul>
 
-
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
                     <h5 class="card-header">Danh sách khách hàng</h5>
@@ -34,17 +33,33 @@
                             </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
+                            <?php
+                            foreach ($array as $kh){
+                            ?>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=kh&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger">Xóa</button>
+                                    <?= $kh['id_customer'] ?>
+                                </td>
+                                <td>
+                                    <?= $kh['name_customer'] ?>
+                                </td>
+                                <td>
+                                    <?= $kh['phone_number'] ?>
+                                </td>
+                                <td>
+                                    <?= $kh['email'] ?>
+                                </td>
+                                <td>
+                                    <?= $kh['address'] ?>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=kh&action=edit&id=<?= $kh['id_customer'] ?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=kh&action=destroy&id=<?= $kh['id_customer'] ?>">Xóa</a></button>
                                 </td>
                             </tr>
+                                <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>

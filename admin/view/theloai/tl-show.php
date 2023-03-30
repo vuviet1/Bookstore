@@ -17,7 +17,6 @@
                     </li>
                 </ul>
 
-
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
                     <h5 class="card-header">Danh sách thể loại</h5>
@@ -31,14 +30,24 @@
                             </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
+                            <?php
+                            foreach ($array as $tl){
+                            ?>
                             <tr>
-                                <td></td>
-                                <td></td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=theloai&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger">Xóa</button>
+                                    <?= $tl['ID_category'] ?>
+                                </td>
+                                <td>
+                                    <?= $tl['name_category'] ?>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=theloai&action=edit&id=<?= $tl['ID_category'] ?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=theloai&action=destroy&id=<?= $tl['ID_category'] ?>">Xóa</a></button>
                                 </td>
                             </tr>
+                                <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>

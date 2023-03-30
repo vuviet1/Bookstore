@@ -12,15 +12,15 @@
                     <h5 class="card-header">Chi tiết</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="formAccountSettings" method="POST" action="index.php?controller=ptvc&action=store">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="firstName" class="form-label">Tên phương thức vận chuyển</label>
+                                    <label for="shipping" class="form-label">Tên phương thức vận chuyển</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="shipping"
+                                        name="shipping"
                                         value=""
                                         autofocus
                                     />
@@ -31,7 +31,6 @@
                                 </div>
                         </form>
                     </div>
-                    <!-- /Account -->
                 </div>
             </div>
         </div>

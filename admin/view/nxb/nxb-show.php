@@ -31,19 +31,27 @@
                             </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
+                            <?php
+                            foreach ($array as $nxb){
+                            ?>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    <?= $nxb['id_publishing_company'] ?>
+                                </td>
+                                <td>
+                                    <?= $nxb['publishing_company_name'] ?>
+                                </td>
                                 <td>
                                     <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nxb&action=edit&id=<?= $nxb['id_publishing_company'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger">Xóa</button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=nxb&action=destroy&id=<?= $nxb['id_publishing_company'] ?>">Xóa</a></button>
                                 </td>
                             </tr>
+                                <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->
             </div>
-
-
