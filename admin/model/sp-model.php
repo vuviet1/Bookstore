@@ -21,11 +21,11 @@ function index()
     $start = ($page - 1) * $recordOnePage;
     $end = 3;
     $sql = "SELECT product.*, publishing_company.publishing_company_name, author.name_author, category.name_category FROM product INNER JOIN publishing_company ON product.id_publishing_company = publishing_company.id_publishing_company INNER JOIN author ON product.id_author = author.id_author INNER JOIN category ON product.id_category = category.id_category WHERE product_name LIKE '%$search%' LIMIT $start, $end";
-    $brands = mysqli_query($connect, $sql);
+    $product = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
     $array = array();
     $array['search'] = $search;
-    $array['infor'] = $brands;
+    $array['infor'] = $product;
     $array['page'] = $countPage;
     return $array;
 }

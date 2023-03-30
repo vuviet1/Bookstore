@@ -34,7 +34,6 @@ switch ($action) {
             echo '<script>
                     location.href = "index.php?controller=sp&action=edit";
                 </script>';
-            
         }
         break;
     case 'create':
@@ -50,7 +49,6 @@ switch ($action) {
             echo '<script>
                     location.href = "index.php?controller=sp&action=add";
                 </script>';
-            
         }
         break;
     case 'destroy':
