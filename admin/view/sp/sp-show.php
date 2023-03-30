@@ -27,15 +27,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Tên sản phẩm</th>
-                                <th>Số trang</th>
-                                <th>Giá</th>
                                 <th>Ảnh</th>
-                                <th>Kích cỡ</th>
-                                <th>Tác giả</th>
-                                <th>Thể loại</th>
-                                <th>Nhà phát hành</th>
-                                <th>Ngày phát hành</th>
-                                <th>Mô tả</th>
                                 <th>Hành động</th>
                             </tr>
                             </thead>
@@ -51,36 +43,12 @@
                                         <?= $product['product_name'] ?>
                                     </td>
                                     <td>
-                                        <?= $product['number_of_pages'] ?>
+                                        <img style="width: 150px" src="../../img/<?= $product['image'] ?>" alt="" >
                                     </td>
                                     <td>
-                                        <?= $product['price'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['image'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['size'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['name_author'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['name_category'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['publishing_company_name'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['publication_date'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['describes'] ?>
-                                    </td>
-                                    <td>
-                                    <button type="button" class="btn btn-success"><a href="index.php?controller=sp&action=chitiet&id=<?=$product['id_product']?>"></a>Chi tiết</button>
+                                    <button type="button" class="btn btn-success"><a style="color: white" href="index.php?controller=sp&action=detail&id=<?=$product['id_product']?>">Chi tiết</a></button>
                                     <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Xóa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>">Xóa</a></button>
                                     </td>
                                 </tr>
                             <?php

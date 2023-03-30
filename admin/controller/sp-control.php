@@ -57,4 +57,9 @@ switch ($action) {
         location.href = "index.php?controller=sp";
             </script>';
         break;
+    case 'detail':
+        include_once 'model/sp-model.php';
+        include_once 'view/sp/sp-detail.php';
+        break;
+        
 }

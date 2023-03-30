@@ -116,4 +116,5 @@ switch ($action){
         //xóa dữ liệu trên db
         destroy();
         break;
+    
 }

@@ -9,15 +9,7 @@
 
         <div class="row">
             <!-- Basic Buttons -->
-
             <div class="col-12">
-                <ul class="nav nav-pills flex-column flex-md-row mb-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.php?controller=sp&action=add"><i class="bx bx-plus"></i>Thêm sản phẩm</a>
-                    </li>
-                </ul>
-
-
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
                     <h5 class="card-header">Chi tiết sản phẩm</h5>
@@ -41,7 +33,7 @@
                             </thead>
                             <tbody class="table-border-bottom-0">
                             <?php
-                                foreach ($array['infor'] as $product){
+                                foreach ($product as $product){
                             ?>
                                 <tr>
                                     <td>
@@ -57,7 +49,7 @@
                                         <?= $product['price'] ?>
                                     </td>
                                     <td>
-                                        <?= $product['image'] ?>
+                                        <img style="width: 150px" src="../../img/<?= $product['image'] ?>" alt="" >
                                     </td>
                                     <td>
                                         <?= $product['size'] ?>
@@ -69,14 +61,18 @@
                                         <?= $product['name_category'] ?>
                                     </td>
                                     <td>
+                                        <?= $product['publishing_company_name'] ?>
+                                    </td>
+                                    <td>
                                         <?= $product['publication_date'] ?>
                                     </td>
                                     <td>
                                         <?= $product['describes'] ?>
                                     </td>
                                     <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy">Xóa</a></button>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?=$product['id_product']?>">Xóa</a></button>
+                                    <button type="button" class="btn btn-secondary"><a style="color: white" href="index.php?controller=sp&action=">Trở lại</a></button>
                                     </td>
                                 </tr>
                             <?php

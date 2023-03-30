@@ -163,6 +163,14 @@ function destroyProduct(){
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
 }
+function detailProduct(){
+    $id = $_GET['id'];
+    include_once 'connect/openConnect.php';
+    $sql = "SELECT product.*, publishing_company.publishing_company_name, author.name_author, category.name_category FROM product INNER JOIN publishing_company ON product.id_publishing_company = publishing_company.id_publishing_company INNER JOIN author ON product.id_author = author.id_author INNER JOIN category ON product.id_category = category.id_category WHERE id_product = '$id'";
+    $product = mysqli_query($connect, $sql);
+    include_once 'connect/closeConnect.php';
+    return $product;
+}
 //Lấy hành động đang thực hiện
 $action = '';
 if (isset($_GET['action'])) {
@@ -189,5 +197,8 @@ switch ($action) {
         break;
     case 'destroy':
         destroyProduct();
+        break;
+    case 'detail':
+        $product = detailProduct();
         break;
 }
