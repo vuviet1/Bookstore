@@ -32,18 +32,18 @@
                             </thead>
                             <tbody class="table-border-bottom-0">
                             <?php
-                            foreach ($array as $shipping){
+                            foreach ($array['infor'] as $ptvc){
                             ?>
                             <tr>
                                 <td>
-                                    <?= $shipping['id_shipping'] ?>
+                                    <?= $ptvc['id_shipping'] ?>
                                 </td>
                                 <td>
-                                    <?= $shipping['name_shipping'] ?>
+                                    <?= $ptvc['name_shipping'] ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=ptvc&action=edit&id=<?= $shipping['id_shipping'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=ptvc&action=destroy&id=<?= $shipping['id_shipping'] ?>">Xóa</a></button>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=ptvc&action=edit&id=<?= $ptvc['id_shipping'] ?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=ptvc&action=destroy&id=<?= $ptvc['id_shipping'] ?>">Xóa</a></button>
                                 </td>
                             </tr>
                                 <?php
@@ -51,6 +51,29 @@
                             ?>
                             </tbody>
                         </table>
+
+                        <!--                        Chia số trang-->
+                        <div class="" style="display: flex ;justify-content: center ; margin-top: 50px">
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-lg">
+                                    <?php
+                                    for ($i = 1; $i <= $array['page']; $i++) {
+                                        ?>
+                                        <li class="page-item">
+                                            <form method="post" action="index.php?controller=ptvc&page=<?= $i ?>">
+                                                <input type="hidden" name="search" value="<?= $array['search'] ?>">
+                                                <input type="hidden" name="page" value="<?= $i ?>">
+                                                <button class="page-link"><?= $i ?></button>
+                                            </form>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--                        Chia số trang-->
+
                     </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->

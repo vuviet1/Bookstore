@@ -1,10 +1,31 @@
 <?php
 //function lấy dữ liệu từ db
 function index(){
+    $search = '';
+    if (isset($_POST['search'])) {
+        $search = $_POST['search'];
+    }
+    $page = 1;
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    }
     include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM category";
-    $array = mysqli_query($connect, $sql);
+    $sqlCount = "SELECT COUNT(*) AS count_record FROM category WHERE name_category LIKE '%$search%'";
+    $counts = mysqli_query($connect, $sqlCount);
+    foreach ($counts as $each) {
+        $countRecord = $each['count_record'];
+    }
+    $recordOnePage = 5;
+    $countPage = ceil($countRecord / $recordOnePage);
+    $start = ($page - 1) * $recordOnePage;
+    $end = 5;
+    $sql = "SELECT * FROM category WHERE name_category LIKE '%$search%' LIMIT $start, $end";
+    $category = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
+    $array = array();
+    $array['search'] = $search;
+    $array['infor'] = $category;
+    $array['page'] = $countPage;
     return $array;
 }
 function edit(){

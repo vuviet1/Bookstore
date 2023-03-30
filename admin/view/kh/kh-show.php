@@ -34,7 +34,7 @@
                             </thead>
                             <tbody class="table-border-bottom-0">
                             <?php
-                            foreach ($array as $kh){
+                            foreach ($array['infor'] as $kh){
                             ?>
                             <tr>
                                 <td>
@@ -62,6 +62,29 @@
                             ?>
                             </tbody>
                         </table>
+
+                        <!--                        Chia số trang-->
+                        <div class="" style="display: flex ;justify-content: center ; margin-top: 50px">
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-lg">
+                                    <?php
+                                    for ($i = 1; $i <= $array['page']; $i++) {
+                                        ?>
+                                        <li class="page-item">
+                                            <form method="post" action="index.php?controller=kh&page=<?= $i ?>">
+                                                <input type="hidden" name="search" value="<?= $array['search'] ?>">
+                                                <input type="hidden" name="page" value="<?= $i ?>">
+                                                <button class="page-link"><?= $i ?></button>
+                                            </form>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--                        Chia số trang-->
+
                     </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->
