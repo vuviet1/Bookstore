@@ -44,27 +44,24 @@
                                     <label for="describes" class="form-label">Mô tả</label>
                                     <input class="form-control" type="text" id="describes" name="describes" value="" />
                                 </div>
-
-                                <div class="input-group">
-                                    <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
-                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" />
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Thể loại</label>
+                                        <select class="form-control" type="text" id="price" name="category_id">
+                                            <option value=""> - Choose - </option>
+                                            <?php
+                                            foreach ($arr['category'] as $category) {
+                                                ?>
+                                                <option value="<?= $category['id_category'] ?>">
+                                                    <?= $category['name_category'] ?>
+                                                </option>
+                                                <?php
+                                            }
+                                            ?>
+                                        </select>
                                 </div>
-                                <div>
-                                    <select name="category_id">
-                                        <option value=""> - Choose - </option>
-                                        <?php
-                                        foreach ($arr['category'] as $category) {
-                                        ?>
-                                            <option value="<?= $category['id_category'] ?>">
-                                                <?= $category['name_category'] ?>
-                                            </option>
-                                        <?php
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select name="author_id">
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Tác giả</label>
+                                    <select class="form-control" type="text" id="price" name="author_id">
                                         <option value=""> - Choose - </option>
                                         <?php
                                         foreach ($arr['author'] as $author) {
@@ -77,8 +74,9 @@
                                         ?>
                                     </select>
                                 </div>
-                                <div>
-                                    <select name="publis_id">
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Nhà xuất bản</label>
+                                    <select class="form-control" type="text" id="price" name="publis_id">
                                         <option value=""> - Choose - </option>
                                         <?php
                                         foreach ($arr['publis'] as $publis) {
@@ -91,6 +89,11 @@
                                         ?>
                                     </select>
                                 </div>
+                                <div class="input-group">
+                                    <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
+                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" />
+                                </div>
+                                <div><br></div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Thêm sản phẩm</button>
                                     <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=sp">Hủy bỏ</a></button>

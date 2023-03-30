@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
-      <change afterPath="$PROJECT_DIR$/admin/controller/tg-control.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/model/tg-model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/tacgia/tg-add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/tacgia/tg-edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/tacgia/tg-show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/tl-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/tl-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/theloai/tl-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/theloai/tl-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/sp-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/sp-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/sp-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/sp-model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +113,7 @@
       <workItem from="1680079355533" duration="345000" />
       <workItem from="1680079710955" duration="5747000" />
       <workItem from="1680098165193" duration="5050000" />
-      <workItem from="1680139251504" duration="2019000" />
+      <workItem from="1680139251504" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -142,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680139430445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="demo">
+      <created>1680141446089</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680141446089</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

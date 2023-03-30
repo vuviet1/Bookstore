@@ -51,8 +51,9 @@
                                     <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
                                     <input type="file" class="form-control" name="img" id="inputGroupFile01" />
                                 </div>
-                                <div>
-                                    <select name="category_id">
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Thể loại</label>
+                                    <select class="form-control" type="text" id="price" name="category_id">
                                         <option value=""> - Choose - </option>
                                         <?php
                                         foreach ($array1['category'] as $category) {
@@ -70,8 +71,9 @@
                                         ?>
                                     </select>
                                 </div>
-                                <div>
-                                    <select name="author_id">
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Tác giả</label>
+                                    <select class="form-control" type="text" id="price" name="author_id">
                                         <option value=""> - Choose - </option>
                                         <?php
                                         foreach ($array1['author'] as $author) {
@@ -89,8 +91,9 @@
                                         ?>
                                     </select>
                                 </div>
-                                <div>
-                                    <select name="publis_id">
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="price" class="form-label">Nhà xuất bản</label>
+                                    <select class="form-control" type="text" id="price" name="publis_id">
                                         <option value=""> - Choose - </option>
                                         <?php
                                         foreach ($array1['publis'] as $publis) {
