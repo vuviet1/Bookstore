@@ -1,7 +1,7 @@
 <?php
 //function lấy dữ liệu từ db
 function index(){
-
+    
 }
 
 

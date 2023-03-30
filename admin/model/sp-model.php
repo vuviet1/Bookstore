@@ -1,52 +1,163 @@
 <?php
 //function lấy dữ liệu từ db
-function index(){
+function index()
+{
     $search = '';
-        if(isset($_POST['search'])){
-            $search = $_POST['search'];
-        }
-        $page = 1;
-        if(isset($_GET['page'])){
-            $page = $_GET['page'];
-        }
-        include_once 'connect/openConnect.php';
-        $sqlCount = "SELECT COUNT(*) AS count_record FROM product WHERE product_name LIKE '%$search%'";
-        $counts = mysqli_query($connect, $sqlCount);
-        foreach ($counts as $each){
-            $countRecord = $each['count_record'];
-        }
-        $recordOnePage = 3;
-        $countPage = ceil($countRecord / $recordOnePage);
-        $start = ($page - 1) * $recordOnePage;
-        $end = 3;
-        $sql = "SELECT * FROM product WHERE product_name LIKE '%$search%' LIMIT $start, $end";
-        $brands = mysqli_query($connect, $sql);
-        include_once 'connect/closeConnect.php';
-        $array = array();
-        $array['search'] = $search;
-        $array['infor'] = $brands;
-        $array['page'] = $countPage;
-        return $array;
+    if (isset($_POST['search'])) {
+        $search = $_POST['search'];
+    }
+    $page = 1;
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    }
+    include_once 'connect/openConnect.php';
+    $sqlCount = "SELECT COUNT(*) AS count_record FROM product WHERE product_name LIKE '%$search%'";
+    $counts = mysqli_query($connect, $sqlCount);
+    foreach ($counts as $each) {
+        $countRecord = $each['count_record'];
+    }
+    $recordOnePage = 5;
+    $countPage = ceil($countRecord / $recordOnePage);
+    $start = ($page - 1) * $recordOnePage;
+    $end = 3;
+    $sql = "SELECT product.*, publishing_company.publishing_company_name, author.name_author, category.name_category FROM product INNER JOIN publishing_company ON product.id_publishing_company = publishing_company.id_publishing_company INNER JOIN author ON product.id_author = author.id_author INNER JOIN category ON product.id_category = category.id_category WHERE product_name LIKE '%$search%' LIMIT $start, $end";
+    $brands = mysqli_query($connect, $sql);
+    include_once 'connect/closeConnect.php';
+    $array = array();
+    $array['search'] = $search;
+    $array['infor'] = $brands;
+    $array['page'] = $countPage;
+    return $array;
 }
-
+function addProduct()
+{
+    include_once 'connect/openConnect.php';
+    $sql = "SELECT * FROM category";
+    $category = mysqli_query($connect, $sql);
+    $sqlauthor = "SELECT * FROM author";
+    $author = mysqli_query($connect, $sqlauthor);
+    $sqlpublis = "SELECT * FROM publishing_company";
+    $publis = mysqli_query($connect, $sqlpublis);
+    include_once 'connect/closeConnect.php';
+    $arr = array();
+    $arr['category'] = $category;
+    $arr['author'] = $author;
+    $arr['publis'] = $publis;
+    return $arr;
+}
 
 //function lưu dữ liệu lên db
-function store(){
-
+function store()
+{
+    $name = $_POST['name'];
+    $page = $_POST['page'];
+    $price = $_POST['price'];
+    $size = $_POST['size'];
+    $date = $_POST['date'];
+    $describes = $_POST['describes'];
+    $img = $_POST['img'];
+    $file = $_FILES['img']['name'];
+    $tmp_file = $_FILES['img']['tmp_name'];
+    $category = $_POST['category_id'];
+    $author = $_POST['author_id'];
+    $publis = $_POST['publis_id'];
+    include_once 'connect/openConnect.php';
+    $sql_check = 'SELECT id_product FROM product';
+    $query_check = mysqli_query($connect, $sql_check);
+    foreach ($query_check as $product) {
+        if ($name == $product['product_name']) {
+            return 1;
+        } else {
+            $sql = " INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
+        VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
+            mysqli_query($connect, $sql);
+            move_uploaded_file($tmp_file, '../img/');
+            return 0;
+        }
+    }
+    include_once 'connect/closeConnect.php';
 }
-
+function editProduct()
+{
+    //        Lấy id
+    $id = $_GET['id'];
+    include_once 'connect/openConnect.php';
+    $sqlAuthor = "SELECT * FROM author";
+    $author = mysqli_query($connect, $sqlAuthor);
+    $sqlCategory = "SELECT * FROM category";
+    $category = mysqli_query($connect, $sqlCategory);
+    $sqlPublis = "SELECT * FROM publishing_company";
+    $publis = mysqli_query($connect, $sqlPublis);
+    $sql = "SELECT * FROM product WHERE id_product = '$id'";
+    $products = mysqli_query($connect, $sql);
+    include_once 'connect/closeConnect.php';
+    $array1 = array();
+    $array1['category'] = $category;
+    $array1['author'] = $author;
+    $array1['publis'] = $publis;
+    $array1['products'] = $products;
+    return $array1;
+}
+function updateProduct()
+{
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $img = $_POST['img'];
+    $page = $_POST['page'];
+    $size = $_POST['size'];
+    $date = $_POST['date'];
+    $describes = $_POST['describes'];
+    $price = $_POST['price'];
+    $category_id = $_POST['category_id'];
+    $author_id = $_POST['author_id'];
+    $publis_id = $_POST['publis_id'];
+    include_once 'connect/openConnect.php';
+    $sql = "SELECT * FROM product WHERE id_product = $id";
+    $query_check = mysqli_query($connect, $sql_check);
+    foreach($query_check as $check){
+        if ($name == $check['product_name']) {
+            return 1;
+        } else {
+            $sql = "UPDATE product SET product_name = '$name', image = '$img', publication_date = '$date', number_of_pages = '$page', size = '$size', price = '$price', describes = '$describes', id_publishing_company = '$publis_id', id_category = '$category_id', id_author = '$author_id' WHERE id_product = '$id'";
+            mysqli_query($connect, $sql);
+            return 0;
+        }
+    }
+    
+    include_once 'connect/closeConnect.php';
+}
+function destroyProduct(){
+    $id = $_GET['id'];
+    include_once 'connect/openConnect.php';
+    $sql = "DELETE FROM product WHERE id_product = '$id'";
+    mysqli_query($connect, $sql);
+    include_once 'connect/closeConnect.php';
+}
 //Lấy hành động đang thực hiện
 $action = '';
-if (isset($_GET['action'])){
-    $action= $_GET['action'];
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
 }
 
-switch ($action){
+switch ($action) {
     case '':
         //lấy dữ liệu từ db
         $array = index();
         break;
+    case 'add':
+        $arr = addProduct();
+        break;
     case 'store':
         //lưu dữ liệu lên db
+        $test = store();
+        break;
+    case 'edit':
+        $array1 = editProduct();
+        break;
+    case 'update':
+        $check = updateProduct();
+        break;
+    case 'destroy':
+        destroyProduct();
         break;
 }

@@ -31,6 +31,9 @@
                                 <th>Giá</th>
                                 <th>Ảnh</th>
                                 <th>Kích cỡ</th>
+                                <th>Tác giả</th>
+                                <th>Thể loại</th>
+                                <th>Nhà phát hành</th>
                                 <th>Ngày phát hành</th>
                                 <th>Mô tả</th>
                                 <th>Hành động</th>
@@ -58,6 +61,12 @@
                                     </td>
                                     <td>
                                         <?= $product['size'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['name_author'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['name_category'] ?>
                                     </td>
                                     <td>
                                         <?= $product['publication_date'] ?>
