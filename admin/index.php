@@ -17,6 +17,9 @@ switch ($controller){
     case 'tk':
         include_once "view/acc-set.php";
         break;
+    case 'tacgia':
+        include_once "controller/tg-control.php";
+        break;
     case 'theloai':
         include_once "controller/tl-control.php";
         break;

@@ -4,7 +4,7 @@
     <!-- Content -->
 
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Thể loại /</span> Sửa thể loại</h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tác giả /</span> Sửa tác giả</h4>
 
         <div class="row">
             <div class="col-md-12">
@@ -13,25 +13,25 @@
                     <hr class="my-0" />
                     <div class="card-body">
                         <?php
-                        foreach($TL as $tl){
+                        foreach($TG as $tg){
                         ?>
-                        <form id="tl" method="POST" action="index.php?controller=theloai&action=update">
+                        <form id="tg" method="POST" action="index.php?controller=tacgia&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <input type="hidden" name="id" value="<?= $tl['id_category'] ?>">
-                                    <label for="tl" class="form-label">Tên thể loại</label>
+                                    <input type="hidden" name="id" value="<?= $tg['id_author'] ?>">
+                                    <label for="tg" class="form-label">Tên tác giả</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="tl"
-                                        name="tl"
-                                        value="<?= $tl['name_category'] ?>"
+                                        id="tg"
+                                        name="tg"
+                                        value="<?= $tg['name_author'] ?>"
                                         autofocus
                                     />
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Sửa</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=theloai">Hủy bỏ</a></button>
+                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=tacgia">Hủy bỏ</a></button>
                                 </div>
                         </form>
                             <?php

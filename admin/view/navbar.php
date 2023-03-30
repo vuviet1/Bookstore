@@ -50,7 +50,7 @@
 
     <li class="menu-item">
         <a href="index.php?controller=nxb" class="menu-link">
-            <i class="menu-icon tf-icons bx bx-pen"></i>
+            <i class="menu-icon tf-icons bx bx-store"></i>
             <div data-i18n="Account Settings">Nhà xuất bản</div>
         </a>
     </li>
@@ -59,7 +59,14 @@
             <i class="menu-icon tf-icons bx bx-library"></i>
             <div data-i18n="Account Settings">Thể loại</div>
         </a>
-    </li><li class="menu-item">
+    </li>
+    <li class="menu-item">
+        <a href="index.php?controller=tacgia" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-pen"></i>
+            <div data-i18n="Account Settings">Tác giả</div>
+        </a>
+    </li>
+    <li class="menu-item">
         <a href="index.php?controller=pttt" class="menu-link">
             <i class="menu-icon tf-icons bx bx-credit-card"></i>
             <div data-i18n="Account Settings">Phương thức thanh toán</div>

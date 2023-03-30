@@ -2,7 +2,7 @@
 //function lấy dữ liệu từ db
 function index(){
     include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM category";
+    $sql = "SELECT * FROM author";
     $array = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
     return $array;
@@ -10,31 +10,31 @@ function index(){
 function edit(){
     $id = $_GET['id'];
     include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM category WHERE id_category = '$id'";
-    $TL = mysqli_query($connect, $sql);
+    $sql = "SELECT * FROM author WHERE id_author = '$id'";
+    $TG = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
-    return $TL;
+    return $TG;
 }
 function update(){
     $id = $_POST['id'];
-    $name = $_POST['tl'];
+    $name = $_POST['tg'];
     include_once 'connect/openConnect.php';
-    $sql = "UPDATE category SET name_category = '$name' WHERE id_category = '$id'";
+    $sql = "UPDATE author SET name_author = '$name' WHERE id_author = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
 }
 //function lưu dữ liệu lên db
 function store(){
-    $name = $_POST['tl'];
+    $name = $_POST['tg'];
     include_once 'connect/openConnect.php';
-    $sql = "INSERT INTO category(name_category) VALUES ('$name')";
+    $sql = "INSERT INTO author(name_author) VALUES ('$name')";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
 }
 function destroy(){
     $id = $_GET['id'];
     include_once 'connect/openConnect.php';
-    $sql = "DELETE FROM category WHERE id_category = '$id'";
+    $sql = "DELETE FROM author WHERE id_author = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
 }
@@ -56,7 +56,7 @@ switch ($action){
         break;
     case 'edit':
         //Lấy dữ liệu từ DB về dựa trên id
-        $TL = edit();
+        $TG = edit();
         break;
     case 'update':
         //chỉnh sửa dữ liệu lên db
