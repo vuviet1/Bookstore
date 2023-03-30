@@ -41,8 +41,8 @@
                                     <input class="form-control" type="date" id="date" name="date" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="description" class="form-label">Mô tả</label>
-                                    <input class="form-control" type="text" id="description" name="description" value="" />
+                                    <label for="describes" class="form-label">Mô tả</label>
+                                    <input class="form-control" type="text" id="describes" name="describes" value="" />
                                 </div>
 
                                 <div class="input-group">

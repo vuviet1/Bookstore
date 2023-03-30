@@ -24,6 +24,9 @@ switch ($action) {
     case 'create':
         include_once 'model/hoadon-model.php';
         break;
+    case 'chitiet':
+        include_once 'view/hoadon/hoadonchitiet.php';
+        break;
     case 'store':
 //        include_once 'model/admin/tl-model.php';
         break;

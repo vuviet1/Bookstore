@@ -41,7 +41,7 @@ switch ($action) {
         include_once 'model/sp-model.php';
         break;
     case 'store':
-        include_once 'model/admin/sp-model.php';
+        include_once 'model/sp-model.php';
         if($test == 0){
             echo '<script>
                     location.href = "index.php?controller=sp";

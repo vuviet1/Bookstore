@@ -57,8 +57,8 @@
                                         <?= $product['price'] ?>
                                     </td>
                                     <td>
-                                        <?= $product['image'] ?>
-                                    </td>
+                                        <img style="width: 150px;" src="../admin/img/<?= $product['image'] ?>" alt="">
+                                    </td>   
                                     <td>
                                         <?= $product['size'] ?>
                                     </td>
@@ -69,14 +69,17 @@
                                         <?= $product['name_category'] ?>
                                     </td>
                                     <td>
+                                        <?= $product['publishing_company_name'] ?>
+                                    </td>
+                                    <td>
                                         <?= $product['publication_date'] ?>
                                     </td>
                                     <td>
                                         <?= $product['describes'] ?>
                                     </td>
                                     <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy">Xóa</a></button>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?=$product['id_product']?>">Xóa</a></button>
                                     </td>
                                 </tr>
                             <?php

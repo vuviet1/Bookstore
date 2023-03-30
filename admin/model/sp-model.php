@@ -47,6 +47,36 @@ function addProduct()
 }
 
 //function lưu dữ liệu lên db
+// function store()
+// {
+//     $name = $_POST['name'];
+//     $page = $_POST['page'];
+//     $price = $_POST['price'];
+//     $size = $_POST['size'];
+//     $date = $_POST['date'];
+//     $describes = $_POST['describes'];
+//     $img = $_POST['img'];
+//     $file = $_FILES['img']['name'];
+//     $tmp_file = $_FILES['img']['tmp_name'];
+//     $category = $_POST['category_id'];
+//     $author = $_POST['author_id'];
+//     $publis = $_POST['publis_id'];
+//     include_once 'connect/openConnect.php';
+//     $sql_check = 'SELECT id_product FROM product';
+//     $query_check = mysqli_query($connect, $sql_check);
+//     foreach ($query_check as $product) {
+//         if ($name == $product['product_name']) {
+//             return 1;
+//         } else {
+//             $sql = " INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
+//         VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
+//             mysqli_query($connect, $sql);
+//             move_uploaded_file($tmp_file, '../img/');
+//             return 0;
+//         }
+//     }
+//     include_once 'connect/closeConnect.php';
+// }
 function store()
 {
     $name = $_POST['name'];
@@ -56,27 +86,26 @@ function store()
     $date = $_POST['date'];
     $describes = $_POST['describes'];
     $img = $_POST['img'];
-    $file = $_FILES['img']['name'];
-    $tmp_file = $_FILES['img']['tmp_name'];
     $category = $_POST['category_id'];
     $author = $_POST['author_id'];
     $publis = $_POST['publis_id'];
     include_once 'connect/openConnect.php';
-    $sql_check = 'SELECT id_product FROM product';
+    $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
-    foreach ($query_check as $product) {
-        if ($name == $product['product_name']) {
-            return 1;
-        } else {
-            $sql = " INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
-        VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
-            mysqli_query($connect, $sql);
-            move_uploaded_file($tmp_file, '../img/');
-            return 0;
-        }
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        return 1;
+    } else {
+        // Insert new product
+        $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
+                VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
+        mysqli_query($connect, $sql);
+        return 0;
     }
     include_once 'connect/closeConnect.php';
 }
+
+
 function editProduct()
 {
     //        Lấy id
@@ -112,18 +141,18 @@ function updateProduct()
     $author_id = $_POST['author_id'];
     $publis_id = $_POST['publis_id'];
     include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM product WHERE id_product = $id";
+    $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
-    foreach($query_check as $check){
-        if ($name == $check['product_name']) {
-            return 1;
-        } else {
-            $sql = "UPDATE product SET product_name = '$name', image = '$img', publication_date = '$date', number_of_pages = '$page', size = '$size', price = '$price', describes = '$describes', id_publishing_company = '$publis_id', id_category = '$category_id', id_author = '$author_id' WHERE id_product = '$id'";
-            mysqli_query($connect, $sql);
-            return 0;
-        }
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        return 1;
+    } else {
+        // Insert new product
+        $sql = "UPDATE product SET product_name = '$name', image = '$img', publication_date = '$date', number_of_pages = '$page', size = '$size', price = '$price', describes = '$describes', id_publishing_company = '$publis_id', id_category = '$category_id', id_author = '$author_id' WHERE id_product = '$id'";
+        mysqli_query($connect, $sql);
+        return 0;
     }
-    
+
     include_once 'connect/closeConnect.php';
 }
 function destroyProduct(){

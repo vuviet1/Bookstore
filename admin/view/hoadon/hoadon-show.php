@@ -37,6 +37,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
+                                    <button type="button" class="btn btn-success"><a href="index?controller=hoadon&action=chitiet">Xem chi tiết</a></button>
                                     <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=hoadon&action=edit">Sửa</a></button>
                                     <button type="button" class="btn btn-danger">Xóa</button>
                                 </td>
