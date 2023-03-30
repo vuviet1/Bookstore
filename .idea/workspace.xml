@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
+      <change afterPath="$PROJECT_DIR$/admin/view/sp/sp-detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/sp-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/sp-control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/sp-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/sp-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-show.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp1/htdocs/Bookstore/admin/controller",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore/admin/view/sp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\admin\view\sp" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\model" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view\tacgia" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin" />
-      <recent name="C:\xampp1\htdocs\giaodien-1\assets\img\favicon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\Bookstore\customer\view" />
@@ -113,7 +111,7 @@
       <workItem from="1680079355533" duration="345000" />
       <workItem from="1680079710955" duration="5747000" />
       <workItem from="1680098165193" duration="5050000" />
-      <workItem from="1680139251504" duration="3780000" />
+      <workItem from="1680139251504" duration="9484000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -143,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680141446089</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="demo">
+      <created>1680143075133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680143075133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

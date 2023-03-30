@@ -20,7 +20,7 @@
 
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
-                    <h5 class="card-header">Danh sách sản phẩm</h5>
+                    <h5 class="card-header">Chi tiết sản phẩm</h5>
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>
@@ -69,18 +69,14 @@
                                         <?= $product['name_category'] ?>
                                     </td>
                                     <td>
-                                        <?= $product['publishing_company_name'] ?>
-                                    </td>
-                                    <td>
                                         <?= $product['publication_date'] ?>
                                     </td>
                                     <td>
                                         <?= $product['describes'] ?>
                                     </td>
                                     <td>
-                                    <button type="button" class="btn btn-success"><a href="index.php?controller=sp&action=chitiet&id=<?=$product['id_product']?>"></a>Chi tiết</button>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Xóa</a></button>
+                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit">Sửa</a></button>
+                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy">Xóa</a></button>
                                     </td>
                                 </tr>
                             <?php
