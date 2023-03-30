@@ -23,35 +23,46 @@
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Tên phương thức thanh toán</th>
-                                <th>Hành động</th>
-                            </tr>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên phương thức thanh toán</th>
+                                    <th>Hành động</th>
+                                </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
-                            <?php
-                                foreach ($array as $pttt){
-                            ?>
-                                <tr>
-                                    <td>
-                                        <?= $pttt['id_payment'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $pttt['name_payment'] ?>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=pttt&action=edit&id=<?= $pttt['id_payment'] ?>">Sửa</a></button>
-                                        <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=pttt&action=destroy&id=<?= $pttt['id_payment'] ?>">Xóa</a></button>
-                                    </td>
-                                </tr>
-                            <?php
+                                <?php
+                                foreach ($array['infor'] as $pttt) {
+                                ?>
+                                    <tr>
+                                        <td>
+                                            <?= $pttt['id_payment'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $pttt['name_payment'] ?>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=pttt&action=edit&id=<?= $pttt['id_payment'] ?>">Sửa</a></button>
+                                            <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=pttt&action=destroy&id=<?= $pttt['id_payment'] ?>">Xóa</a></button>
+                                        </td>
+                                    </tr>
+                                <?php
                                 }
-                            ?>
+                                ?>
                             </tbody>
                         </table>
+                        <p>Trang: </p>
+                        <?php
+                        for ($i = 1; $i <= $array['page']; $i++) {
+                        ?>
+                            <form method="post" action="index.php?controller=pttt&page=<?= $i ?>">
+                                <input type="hidden" name="search" value="<?= $array['search'] ?>">
+                                <input type="hidden" name="page" value="<?= $i ?>">
+                                <button><?= $i ?></button>
+                            </form>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->
             </div>
-

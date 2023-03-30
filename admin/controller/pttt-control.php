@@ -24,9 +24,15 @@ switch ($action) {
         break;
     case 'update':
         include_once 'model/pttt-model.php';
-        echo '<script>
+        if($check == 0){
+            echo '<script>   
                     location.href = "index.php?controller=pttt";
                 </script>';
+        }elseif($check == 1){
+            echo '<script>
+                    location.href = "index.php?controller=pttt&action=edit";
+                </script>';
+        }
         break;
     case 'create':
         include_once 'model/pttt-model.php';
@@ -39,8 +45,15 @@ switch ($action) {
         break;
     case 'store':
         include_once 'model/pttt-model.php';
-        echo '<script>   
+        if($check == 0){
+            echo '<script>   
                     location.href = "index.php?controller=pttt";
                 </script>';
+        }elseif($check == 1){
+            echo '<script>
+                    location.href = "index.php?controller=pttt&action=add";
+                </script>';
+        }
         break;
+        
 }
