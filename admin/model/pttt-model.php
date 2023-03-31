@@ -72,6 +72,7 @@ function store(){
     } else {
         // Insert new product
         $sql = "INSERT INTO payment(name_payment) VALUES ('$name')";
+        
         mysqli_query($connect, $sql);
         $message = "Thêm phương thức thành công";
         echo "<script>alert('$message');</script>";
