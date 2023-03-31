@@ -42,7 +42,7 @@ function update(){
     include_once 'connect/openConnect.php';
     $sql_check = "SELECT id_category FROM category WHERE name_category = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
-    if (mysqli_num_rows($query_check) > 1) {
+    if (mysqli_num_rows($query_check) >= 1) {
         // Payment already exists
         $message = "Thể loại đã tồn tại, Vui lòng sửa lại!";
         echo "<script>alert('$message');</script>";
