@@ -1,4 +1,3 @@
-
 <!-- Content wrapper -->
 <div class="content-wrapper">
     <!-- Content -->
@@ -12,88 +11,39 @@
                     <h5 class="card-header">Hóa đơn</h5>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <form id="formAccountSettings" method="POST">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="firstName" class="form-label">Tên sản phẩm</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        value=""
-                                        autofocus
-                                    />
+                                    <input class="form-control" type="text" id="firstName" name="firstName" value="" autofocus />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Ngày mua</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Trạng thái</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="status"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="status" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Số trang</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Giá</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Kích cỡ</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Ngày sản xuất</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Mô tả</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                    />
+                                    <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
 
                                 <div class="input-group">
@@ -126,4 +76,3 @@
 <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
-

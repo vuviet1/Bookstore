@@ -11,9 +11,10 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         //Hiển thị danh sách các
+        include_once 'model/hoadon-model.php';
         include_once 'view/hoadon/hoadon-show.php';
         break;
-    case 'add':
+    case 'addbill':
         //Hiển thị danh sách các
         include_once 'view/hoadon/hoadon-add.php';
         break;
@@ -28,6 +29,5 @@ switch ($action) {
         include_once 'view/hoadon/hoadonchitiet.php';
         break;
     case 'store':
-//        include_once 'model/admin/tl-model.php';
         break;
 }
