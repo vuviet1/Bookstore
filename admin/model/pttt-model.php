@@ -42,7 +42,7 @@ function update(){
     include_once 'connect/openConnect.php';
     $sql_check = "SELECT id_payment FROM payment WHERE name_payment = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
-    if (mysqli_num_rows($query_check) > 1) {
+    if (mysqli_num_rows($query_check) >= 1) {
         // Payment already exists
         $message = "Phương thức đã tồn tại, Vui lòng sửa lại!";
         echo "<script>alert('$message');</script>";

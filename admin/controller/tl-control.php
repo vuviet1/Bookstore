@@ -30,7 +30,7 @@ switch ($action) {
                 </script>';
         }elseif($check == 1){
             echo '<script>
-                    location.href = "index.php?controller=theloai&action=edit";
+                    location.href = "index.php?controller=theloai";
                 </script>';
         }
         break;
