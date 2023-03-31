@@ -44,10 +44,24 @@ function update(){
     $email = $_POST['email_nv'];
     $phone = $_POST['phone_nv'];
     include_once 'connect/openConnect.php';
-    $sql = "UPDATE employee SET name_employee = '$name',username = '$username',password = '$password',email = '$email',phone_number = '$phone' WHERE id_employee = '$id'";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_employee FROM employee WHERE email = '$email'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 1) {
+        // Nhân viên đã tồn tại
+        $message = "Tài khoản đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // thêm 1 nhân viên
+        $sql = "UPDATE employee SET name_employee = '$name',username = '$username',password = '$password',email = '$email',phone_number = '$phone' WHERE id_employee = '$id'";
+        mysqli_query($connect, $sql);
+        $message = "Sửa tài khoản thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+    }
     include_once 'connect/closeConnect.php';
 }
+
 //function lưu dữ liệu lên db
 function store(){
     $name = $_POST['name_nv'];
@@ -56,16 +70,32 @@ function store(){
     $email = $_POST['email_nv'];
     $phone = $_POST['phone_nv'];
     include_once 'connect/openConnect.php';
-    $sql = "INSERT INTO employee(name_employee,username,password,email,phone_number) VALUES ('$name','$username','$password','$email','$phone')";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_employee FROM employee WHERE email = '$email'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        $message = "Tài khoản đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // thêm 1 nhân viên
+        $sql = "INSERT INTO employee(name_employee,username,password,email,phone_number) VALUES ('$name','$username','$password','$email','$phone')";
+        mysqli_query($connect, $sql);
+        $message = "Thêm tài khoản thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+        echo "<script>alert('$message');</script>";
+    }
     include_once 'connect/closeConnect.php';
 }
+
 function destroy(){
     $id = $_GET['id'];
     include_once 'connect/openConnect.php';
     $sql = "DELETE FROM employee WHERE id_employee = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
+    echo 'Xóa thành công phương thức';
 }
 
 //Lấy hành động đang thực hiện
@@ -81,7 +111,7 @@ switch ($action){
         break;
     case 'store':
         //lưu dữ liệu lên db
-        store();
+        $check = store();
         break;
     case 'edit':
         //Lấy dữ liệu từ DB về dựa trên id
@@ -89,7 +119,7 @@ switch ($action){
         break;
     case 'update':
         //chỉnh sửa dữ liệu lên db
-        update();
+        $check = update();
         break;
     case 'destroy':
         //xóa dữ liệu trên db

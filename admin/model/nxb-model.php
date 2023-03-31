@@ -40,24 +40,53 @@ function update(){
     $id = $_POST['id'];
     $name = $_POST['nxb'];
     include_once 'connect/openConnect.php';
-    $sql = "UPDATE publishing_company SET publishing_company_name = '$name' WHERE id_publishing_company = '$id'";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_publishing_company FROM publishing_company WHERE publishing_company_name = '$name'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 1) {
+        // Payment already exists
+        $message = "Nhà xuất bản đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // Insert new payment
+        $sql = "UPDATE publishing_company SET publishing_company_name = '$name' WHERE id_publishing_company = '$id'";
+        mysqli_query($connect, $sql);
+        $message = "Sửa nhà xuất bản thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+    }
     include_once 'connect/closeConnect.php';
 }
 //function lưu dữ liệu lên db
 function store(){
     $name = $_POST['nxb'];
     include_once 'connect/openConnect.php';
-    $sql = "INSERT INTO publishing_company(publishing_company_name) VALUES ('$name')";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_publishing_company FROM publishing_company WHERE publishing_company_name = '$name'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        $message = "Nhà xuất bản đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // Insert new product
+        $sql = "INSERT INTO publishing_company(publishing_company_name) VALUES ('$name')";
+
+        mysqli_query($connect, $sql);
+        $message = "Thêm nhà xuất bản thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+        echo "<script>alert('$message');</script>";
+    }
     include_once 'connect/closeConnect.php';
 }
 function destroy(){
     $id = $_GET['id'];
     include_once 'connect/openConnect.php';
-    $sql = "DELETE FROM publishing_company WHERE id_publishing_company = '$id'";
+    $sql = "DELETE FROM publishing_company WHERE id_publishing_company  = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
+    echo 'Xóa thành công nhà xuất bản';
 }
 
 //Lấy hành động đang thực hiện
@@ -73,7 +102,7 @@ switch ($action){
         break;
     case 'store':
         //lưu dữ liệu lên db
-        store();
+        $check = store();
         break;
     case 'edit':
         //Lấy dữ liệu từ DB về dựa trên id
@@ -81,10 +110,11 @@ switch ($action){
         break;
     case 'update':
         //chỉnh sửa dữ liệu lên db
-        update();
+        $check = update();
         break;
     case 'destroy':
         //xóa dữ liệu trên db
         destroy();
         break;
+
 }

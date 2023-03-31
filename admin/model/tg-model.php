@@ -40,16 +40,44 @@ function update(){
     $id = $_POST['id'];
     $name = $_POST['tg'];
     include_once 'connect/openConnect.php';
-    $sql = "UPDATE author SET name_author = '$name' WHERE id_author = '$id'";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_author FROM author WHERE name_author = '$name'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 1) {
+        // Payment already exists
+        $message = "Tác giả đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // Insert new payment
+        $sql = "UPDATE author SET name_author = '$name' WHERE id_author = '$id'";
+        mysqli_query($connect, $sql);
+        $message = "Sửa tác giả thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+    }
     include_once 'connect/closeConnect.php';
 }
 //function lưu dữ liệu lên db
 function store(){
     $name = $_POST['tg'];
     include_once 'connect/openConnect.php';
-    $sql = "INSERT INTO author(name_author) VALUES ('$name')";
-    mysqli_query($connect, $sql);
+    $sql_check = "SELECT id_author FROM author WHERE name_author = '$name'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        $message = "Tác giả đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // Insert new product
+        $sql = "INSERT INTO author(name_author) VALUES ('$name')";
+
+        mysqli_query($connect, $sql);
+        $message = "Thêm tác giả thành công";
+        echo "<script>alert('$message');</script>";
+        return 0;
+        echo "<script>alert('$message');</script>";
+    }
     include_once 'connect/closeConnect.php';
 }
 function destroy(){
@@ -58,6 +86,7 @@ function destroy(){
     $sql = "DELETE FROM author WHERE id_author = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
+    echo 'Xóa thành công tác giả';
 }
 
 //Lấy hành động đang thực hiện
@@ -73,7 +102,7 @@ switch ($action){
         break;
     case 'store':
         //lưu dữ liệu lên db
-        store();
+        $check = store();
         break;
     case 'edit':
         //Lấy dữ liệu từ DB về dựa trên id
@@ -81,7 +110,7 @@ switch ($action){
         break;
     case 'update':
         //chỉnh sửa dữ liệu lên db
-        update();
+        $check = update();
         break;
     case 'destroy':
         //xóa dữ liệu trên db

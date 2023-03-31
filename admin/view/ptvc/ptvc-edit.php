@@ -15,16 +15,16 @@
                         <?php
                         foreach($PTVC as $ptvc){
                         ?>
-                        <form id="shipping" method="POST" action="index.php?controller=ptvc&action=update">
+                        <form id="ptvc" method="POST" action="index.php?controller=ptvc&action=update">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <input type="hidden" name="id" value="<?= $ptvc['id_shipping'] ?>">
-                                    <label for="shipping" class="form-label">Tên phương thức vận chuyển</label>
+                                    <label for="ptvc" class="form-label">Tên phương thức vận chuyển</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="shipping"
-                                        name="shipping"
+                                        id="ptvc"
+                                        name="ptvc"
                                         value="<?= $ptvc['name_shipping'] ?>"
                                         autofocus
                                     />

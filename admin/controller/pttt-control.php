@@ -55,5 +55,4 @@ switch ($action) {
                 </script>';
         }
         break;
-        
 }

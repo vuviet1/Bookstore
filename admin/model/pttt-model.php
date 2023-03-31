@@ -43,15 +43,15 @@ function update(){
     $sql_check = "SELECT id_payment FROM payment WHERE name_payment = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
     if (mysqli_num_rows($query_check) > 1) {
-        // Product already exists
+        // Payment already exists
         $message = "Phương thức đã tồn tại, Vui lòng sửa lại!";
         echo "<script>alert('$message');</script>";
         return 1;
     } else {
-        // Insert new product
+        // Insert new payment
         $sql = "UPDATE payment SET name_payment = '$name' WHERE id_payment = '$id'";
         mysqli_query($connect, $sql);
-        $message = "Thêm phương thức thành công";
+        $message = "Sửa phương thức thành công";
         echo "<script>alert('$message');</script>";
         return 0;
     }

@@ -24,9 +24,15 @@ switch ($action) {
         break;
     case 'update':
         include_once 'model/kh-model.php';
-        echo '<script>
+        if($check == 0){
+            echo '<script>   
                     location.href = "index.php?controller=kh";
                 </script>';
+        }elseif($check == 1){
+            echo '<script>
+                    location.href = "index.php?controller=kh&action=edit";
+                </script>';
+        }
         break;
     case 'create':
         include_once 'model/kh-model.php';
@@ -39,8 +45,14 @@ switch ($action) {
         break;
     case 'store':
         include_once 'model/kh-model.php';
-        echo '<script>    
+        if($check == 0){
+            echo '<script>   
                     location.href = "index.php?controller=kh";
                 </script>';
+        }elseif($check == 1){
+            echo '<script>
+                    location.href = "index.php?controller=kh&action=add";
+                </script>';
+        }
         break;
 }

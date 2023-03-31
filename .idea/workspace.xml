@@ -6,19 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/kh-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/kh-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/nv-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/nv-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/nxb-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/nxb-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/pttt-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/pttt-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/ptvc-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/ptvc-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/tg-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/tg-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/tl-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/tl-control.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/kh-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/kh-model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/nv-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/nv-model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/nxb-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/nxb-model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/pttt-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/pttt-model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/ptvc-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/ptvc-model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/tg-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/tg-model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/tl-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/tl-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/kh/kh-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/kh/kh-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/nv/nv-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/nv/nv-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/pttt/pttt-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/pttt/pttt-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/ptvc/ptvc-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/ptvc/ptvc-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/tacgia/tg-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/tacgia/tg-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/ptvc/ptvc-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/ptvc/ptvc-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/ptvc/ptvc-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/ptvc/ptvc-edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +127,8 @@
       <workItem from="1680098165193" duration="5050000" />
       <workItem from="1680139251504" duration="11130000" />
       <workItem from="1680171847402" duration="602000" />
-      <workItem from="1680185047957" duration="4324000" />
+      <workItem from="1680185047957" duration="5149000" />
+      <workItem from="1680244948000" duration="3983000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -168,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680150055796</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="demo">
+      <created>1680191479406</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680191479406</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
