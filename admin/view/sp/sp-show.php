@@ -43,7 +43,7 @@
                                         <?= $product['product_name'] ?>
                                     </td>
                                     <td>
-                                        <img style="width: 150px" src="../../img/<?= $product['image'] ?>" alt="" >
+                                        <img src="img/<?= $product['image'] ?>" alt="" width="150px" height = "150px">
                                     </td>
                                     <td>
                                     <button type="button" class="btn btn-success"><a style="color: white" href="index.php?controller=sp&action=detail&id=<?=$product['id_product']?>">Chi tiết</a></button>
@@ -64,7 +64,7 @@
                                     for ($i = 1; $i <= $array['page']; $i++) {
                                         ?>
                                         <li class="page-item">
-                                            <form method="post" action="index.php?controller=pttt&page=<?= $i ?>">
+                                            <form method="post" action="index.php?controller=sp&page=<?= $i ?>">
                                                 <input type="hidden" name="search" value="<?= $array['search'] ?>">
                                                 <input type="hidden" name="page" value="<?= $i ?>">
                                                 <button class="page-link"><?= $i ?></button>

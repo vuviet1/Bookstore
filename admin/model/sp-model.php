@@ -19,7 +19,7 @@ function index()
     $recordOnePage = 5;
     $countPage = ceil($countRecord / $recordOnePage);
     $start = ($page - 1) * $recordOnePage;
-    $end = 3;
+    $end = 5;
     $sql = "SELECT product.*, publishing_company.publishing_company_name, author.name_author, category.name_category FROM product INNER JOIN publishing_company ON product.id_publishing_company = publishing_company.id_publishing_company INNER JOIN author ON product.id_author = author.id_author INNER JOIN category ON product.id_category = category.id_category WHERE product_name LIKE '%$search%' LIMIT $start, $end";
     $product = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
@@ -86,6 +86,8 @@ function store()
     $date = $_POST['date'];
     $describes = $_POST['describes'];
     $img = $_POST['img'];
+    $file = $_FILES['img']['name'];
+    $tmp_file = $_FILES['img']['tmp_name'];
     $category = $_POST['category_id'];
     $author = $_POST['author_id'];
     $publis = $_POST['publis_id'];
@@ -100,6 +102,7 @@ function store()
         $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
                 VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
         mysqli_query($connect, $sql);
+        move_uploaded_file($tmp_file, '../img/');
         return 0;
     }
     include_once 'connect/closeConnect.php';

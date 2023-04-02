@@ -22,13 +22,12 @@
                         <div class="sidebar__item">
                             <h4>Danh mục sản phẩm</h4>
                             <ul>
-                                <li><a href="#">Sách Bán Chạy</a></li>
-                                <li><a href="#">Sách Thiếu Nhi</a></li>
-                                <li><a href="#">Sách Văn Học</a></li>
-                                <li><a href="#">Sách Kỹ Năng Sống</a></li>
-                                <li><a href="#">Quản Lý Kinh Doanh</a></li>
-                                <li><a href="#">Sách Giáo Khoa - Tham Khảo</a></li>
-                                <li><a href="#">Sách Ngoại Ngữ</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=5">Sách Quản Lý Kinh Doanh</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=6">Sách Giáo Khoa - Tham Khảo</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=7">Sách Ngoại Ngữ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -55,63 +54,48 @@
 <!--                    </div>-->
 
                     <div class="row">
+                                <?php
+                                    foreach($array['infor'] as $product){
+                                ?>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
 <!--                                DANH MỤC SẢN PHẨM -Start-->
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/<?=$product['image']?>">
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                         <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
+                                    <h6><a href="#"><?=$product['product_name']?></a></h6>
+                                    <h5><?=$product['price']?> VND</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
-                                    <h6><a href="#">Crab Pool Security</a></h6>
-                                    <h5>$30.00</h5>
-                                </div>
-                            </div>
-                        </div>
+                                <?php
+                                    }
+                                ?>
 <!--                                DANH MỤC SẢN PHẨM - END -->
-
                     </div>
-
 <!--                    CHIA SỐ TRANG-->
                     <div style="display: flex; justify-content: center">
                         <div class="product__pagination">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
+                        <?php
+                                    for ($i = 1; $i <= $array['page']; $i++) {
+                                        ?>
+                                        <li class="page-item">
+                                            <form method="post" action="index.php?controller=shop-grid&page=<?= $i ?>">
+                                                <input type="hidden" name="search" value="<?= $array['search'] ?>">
+                                                <input type="hidden" name="page" value="<?= $i ?>">
+                                                <button class="page-link"><?= $i ?></button>
+                                            </form>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
                         </div>
                     </div>
 <!--                    CHIA SỐ TRANG-->
-
                 </div>
             </div>
         </div>
