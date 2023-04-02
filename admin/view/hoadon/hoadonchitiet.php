@@ -4,18 +4,13 @@
 
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Khách hàng /</span>Hiển thị
+            <span class="text-muted fw-light">Hóa đơn chi tiết /</span>Hiển thị
         </h4>
 
         <div class="row">
             <!-- Basic Buttons -->
 
             <div class="col-12">
-                <ul class="nav nav-pills flex-column flex-md-row mb-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-plus"></i>Thêm khách hàng</a>
-                    </li>
-                </ul>
 
 
                 <!-- Basic Bootstrap Table -->

@@ -24,13 +24,60 @@
                     <div style="display: flex ;justify-content: right; margin-top: 15px; margin-right: 20px">
                         <ul class="nav nav-pills flex-column flex-md-row mb-3">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.php?controller=hoadon&action=add"><i
+                                <a class="nav-link active" href="index.php?controller=hoadon&action=hdct"><i
                                             class="bx bx-plus"></i>Thêm sản phẩm</a>
                             </li>
                         </ul>
                     </div>
 
                     <hr class="my-0" />
+
+<!--                 Danh sách sản phẩm   -->
+
+                    <div class="card">
+                        <h5 class="card-header">Danh sách sản phẩm</h5>
+                        <div class="table-responsive text-nowrap">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Ảnh</th>
+                                    <th>Số lượng</th>
+                                    <th>Hành động</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-border-bottom-0">
+                                <?php
+                                foreach ($array['infor'] as $product){
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?= $product['id_product'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $product['product_name'] ?>
+                                        </td>
+                                        <td>
+                                            <img style="width: 150px" src="../../img/<?= $product['image'] ?>" alt="" >
+                                        </td>
+                                        <td>
+                                            <?= $product['amount'] ?>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>">Xóa</a></button>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+<!--                Danh sách sản phẩm    -->
+
                     <div class="card-body">
                         <form id="formAccountSettings" method="POST" action="index.php?controller=hoadon&action=store">
                             <div class="row">
@@ -86,7 +133,7 @@
                                     </select>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="price" class="form-label">Nhà xuất bản</label>
+                                    <label for="price" class="form-label">Phương thức thanh toán</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
                                         <option value=""> - Choose - </option>
                                         <?php
@@ -101,7 +148,7 @@
                                     </select>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="price" class="form-label">Nhà xuất bản</label>
+                                    <label for="price" class="form-label">Phương thức vận chuyển</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
                                         <option value=""> - Choose - </option>
                                         <?php

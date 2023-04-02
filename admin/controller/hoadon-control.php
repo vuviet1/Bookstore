@@ -14,6 +14,12 @@ switch ($action) {
         include_once 'model/hoadon-model.php';
         include_once 'view/hoadon/hoadon-show.php';
         break;
+
+    case 'hdct':
+        //Hiển thị danh sách các
+        include_once 'view/hoadon/hoadonchitet-add.php';
+        break;
+
     case 'addbill':
         //Hiển thị danh sách các
         include_once 'view/hoadon/hoadon-add.php';
