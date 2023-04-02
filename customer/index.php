@@ -13,9 +13,6 @@ switch ($controller){
     case '':
         include_once "view/main.html";
         break;
-    case 'contact':
-        include_once "view/contact/contact.php";
-        break;
     case 'shop-grid':
         include_once "view/shop_grid/shop-grid.html";
         break;
@@ -23,7 +20,7 @@ switch ($controller){
         include_once "view/check_out/checkout.html";
         break;
     case 'shop-cart':
-        include_once "view/shopping_cart/shoping-cart.html";
+        include_once "view/shopping_cart/shopping-cart.html";
         break;
     case 'shop-details':
         include_once "view/shop_details/shop-details.html";

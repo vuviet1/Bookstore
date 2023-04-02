@@ -71,7 +71,7 @@
                             <div class="dropdown-divider"></div>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="login.html">
+                            <a class="dropdown-item" href="view/login.html">
                                 <i class="bx bx-power-off me-2"></i>
                                 <span class="align-middle">Đăng xuất</span>
                             </a>

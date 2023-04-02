@@ -5,12 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
+      <change afterPath="$PROJECT_DIR$/customer/img/logo1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/hoadon-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/hoadon-control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/banner/banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/banner/banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/blog-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/details/details-author.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/details/details-hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/details/details-pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/sidebar/sr-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/sidebar/sr-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/blog/sidebar/sr-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/hero/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/language.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/check_out/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/check_out/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/contact/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/shop_details/shop-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_details/shop-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/shopping_cart/shoping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +74,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore/customer/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,11 +86,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\customer\img" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view\sp" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\model" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view\tacgia" />
-      <recent name="C:\xampp1\htdocs\Bookstore\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\Bookstore\customer\view" />
@@ -121,7 +145,8 @@
       <workItem from="1680256946019" duration="946000" />
       <workItem from="1680272887544" duration="26000" />
       <workItem from="1680273354977" duration="2242000" />
-      <workItem from="1680403026689" duration="902000" />
+      <workItem from="1680403026689" duration="5445000" />
+      <workItem from="1680419296554" duration="5456000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -200,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680257890435</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="demo">
+      <created>1680404048207</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680404048207</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

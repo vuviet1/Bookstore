@@ -52,7 +52,7 @@
                             <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="../login.html"><i class="fa fa-user"></i>Đăng nhập</a>
+                            <a href="view/login.html"><i class="fa fa-user"></i></a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="../../index.php?controller="><img src="img/logo1.png" alt=""></a>
+                    <a href="index.php?controller="><img src="img/logo1.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -78,15 +78,13 @@
                                 <li><a href="index.php?controller=check-out">Kiểm tra</a></li>
                             </ul>
                         </li>
-                        <li ><a href="index.php?controller=contact">Liên hệ</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>
-                        <li><a href="#"><i class="fa fa-heart"></i> <span>#</span></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>#</span></a></li>
+                        <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-bag"></i> <span>#</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -109,13 +107,13 @@
                         <span>Danh mục sản phẩm</span>
                     </div>
                     <ul>
-                        <li><a href="#">Sách Bán Chạy</a></li>
-                        <li><a href="#">Sách Thiếu Nhi</a></li>
-                        <li><a href="#">Sách Văn Học</a></li>
-                        <li><a href="#">Sách Kỹ Năng Sống</a></li>
-                        <li><a href="#">Quản Lý Kinh Doanh</a></li>
-                        <li><a href="#">Sách Giáo Khoa - Tham Khảo</a></li>
-                        <li><a href="#">Sách Ngoại Ngữ</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Bán Chạy</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Thiếu Nhi</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Văn Học</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Kỹ Năng Sống</a></li>
+                        <li><a href="index.php?controller=shop-grid">Quản Lý Kinh Doanh</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Giáo Khoa - Tham Khảo</a></li>
+                        <li><a href="index.php?controller=shop-grid">Sách Ngoại Ngữ</a></li>
                     </ul>
                 </div>
             </div>
