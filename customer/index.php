@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once "view/layout/header.php";
 
 //lấy controller đang làm việc
@@ -20,10 +20,10 @@ switch ($controller){
         include_once "view/check_out/checkout.php";
         break;
     case 'shop-cart':
-        include_once "view/shopping_cart/shopping-cart.php";
+        include_once "controller/shop-cart-controller.php";
         break;
     case 'shop-details':
-        include_once "view/shop_details/shop-details.php";
+        include_once "controller/shop-detail-controller.php";
         break;
     default:
         include_once "view/main.php";

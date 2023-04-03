@@ -17,6 +17,7 @@ switch ($action) {
     case 'findtl':
         include_once 'model/shop-grid.php';
         include_once 'view/shop_grid/shop-grid.php';
+    
     default:
         include_once 'view/main.php';
         break;

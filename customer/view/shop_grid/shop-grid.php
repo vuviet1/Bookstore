@@ -21,14 +21,16 @@
                     <div class="sidebar">
                         <div class="sidebar__item">
                             <h4>Danh mục sản phẩm</h4>
+                            <form action="in" method="POST">
                             <ul>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></li>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=5">Sách Quản Lý Kinh Doanh</a></li>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=6">Sách Giáo Khoa - Tham Khảo</a></li>
-                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=7">Sách Ngoại Ngữ</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Thiếu Nhi</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Văn Học</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Kỹ Năng Sống</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Quản Lý Kinh Doanh</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Giáo Khoa - Tham Khảo</a></li>
+                                <li><a href="index.php?controller=shop-grid">Sách Ngoại Ngữ</a></li>
                             </ul>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#"><?=$product['product_name']?></a></h6>
+                                    <h6><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><?=$product['product_name']?></a></h6>
                                     <h5><?=$product['price']?> VND</h5>
                                 </div>
                             </div>

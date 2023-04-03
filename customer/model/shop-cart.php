@@ -1,1 +1,80 @@
 <?php
+function add_to_cart()
+{
+    //        Lấy được id của sản phẩm vừa được thêm vào
+    $product_id = $_GET['id'];
+    //        Lưu lên session id sản phầm và số lượng mặc định là 1
+    //        Kiểm tra xem giỏ hàng đã tồn tại hay chưa
+    if (isset($_SESSION['cart'])) {
+        if (isset($_SESSION['cart'][$product_id])) {
+            $_SESSION['cart'][$product_id]++;
+        } else {
+            $_SESSION['cart'][$product_id] = 1;
+        }
+    } else {
+        $_SESSION['cart'] = array();
+        $_SESSION['cart'][$product_id] = 1;
+    }
+}
+function view_cart()
+{
+    include_once 'connect/openConnect.php';
+    $sqlCustomer = "SELECT * FROM customer";
+    $customers = mysqli_query($connect, $sqlCustomer);
+    $cart = array();
+    $infor = array();
+    if (isset($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $product_id => $amount) {
+            //                Lấy tên sp và giá theo product_id
+            $sql = "SELECT * FROM product WHERE id_product = '$product_id'";
+            $products = mysqli_query($connect, $sql);
+            foreach ($products as $product) {
+                $cart[$product_id]['image'] = $product['image'];
+                $cart[$product_id]['product_name'] = $product['product_name'];
+                $cart[$product_id]['price'] = $product['price'];
+                $cart[$product_id]['amount'] = $amount;
+            }
+        }
+    }
+    include_once 'connect/closeConnect.php';
+    $infor['customer'] = $customers;
+    $infor['cart'] = $cart;
+    return $infor;
+}
+function update()
+{
+    //Lấy product_id và amount
+    $infor = $_POST['amount'];
+    foreach ($infor as $product_id => $value) {
+        $_SESSION['cart'][$product_id] = $value;
+    }
+}
+function delete_product_in_order()
+{
+    $product_id = $_GET['id'];
+    unset($_SESSION['cart'][$product_id]);
+}
+function delete_cart(){
+    unset($_SESSION['cart']);
+}
+$action = '';
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
+}
+switch ($action) {
+    case 'add':
+        add_to_cart();
+        break;
+    case '':
+        $infor = view_cart();
+        break;
+    case 'update':
+        update();
+        break;
+    case 'delete-product-in-cart':
+        delete_product_in_order();
+        break;
+    case 'delete_cart':
+        delete_cart();
+        break;
+}

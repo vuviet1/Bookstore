@@ -11,7 +11,9 @@
         </div>
     </section>
     <!-- Breadcrumb Section End -->
-
+    <?php
+        foreach($product as $pro){
+    ?>
     <!-- Product Details Section Begin -->
     <section class="product-details spad">
         <div class="container">
@@ -20,36 +22,32 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                 src="img/product/details/product-details-1.jpg" alt="">
+                                 src="img/<?=$pro['image']?>" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__text">
-
                         <!--                        dùng php để hiện thị thông tin sản phẩm-->
-                        <h3>TỪ ĐIỂN TIẾNG VIỆT</h3>
-                        <h4 class="text-danger">100.000 đ</h4>
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
-                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
-                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
-
+                        <h3><?=$pro['product_name']?></h3>
+                        <h4 class="text-danger"><?=$pro['price']?> VND</h4>
+                        <h6><?=$pro['describes']?></h6>
                         <div class="product__details__quantity">
                             <div class="quantity">
                                 <div class="pro-qty">
-                                    <input type="text" value="1">
+                                    <input type="text" value="1" name="quantity[<?=$pro['id_product']?>]">
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <a href="index.php?controller=shop-cart" class="primary-btn">Thêm vào giỏ hàng</a>
+                            <a href="index.php?controller=shop-cart&action=add&id=<?=$pro['id_product']?>" class="primary-btn">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </div>
     </section>
+    <?php
+        }
+    ?>
     <!-- Product Details Section End -->
