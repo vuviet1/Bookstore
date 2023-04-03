@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="icon" href="img/logo1.jpg" type="image/x-icon">
+
 </head>
 
 
@@ -52,7 +55,7 @@
                             <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="view/login.html"><i class="fa fa-user"></i></a>
+                            <a href="view/login.php"><i class="fa fa-user"></i></a>
                         </div>
                     </div>
                 </div>

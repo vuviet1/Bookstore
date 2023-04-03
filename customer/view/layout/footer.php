@@ -37,7 +37,7 @@
                     <p>Điền thông tin để nhân ưu đãi mới nất từ chúng tôi.</p>
                     <form action="#">
                         <input type="text" placeholder="Điền địa chỉ email của bạn">
-                        <button type="submit" class="site-btn">Subscribe</button>
+                        <button type="submit" class="site-btn">Đăng ký</button>
                     </form>
                     <div class="footer__widget__social">
                         <a href="#"><i class="fa fa-facebook"></i></a>

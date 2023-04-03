@@ -32,7 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+      <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,7 +98,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Mật khẩu</label>
-                    <a href="forgot-password.html">
+                    <a href="forgot-password.php">
                       <small>Quên mật khẩu?</small>
                     </a>
                   </div>
@@ -123,7 +123,7 @@
 
               <p class="text-center">
                 <span>Bạn chưa có tài khoản?</span>
-                <a href="register.html">
+                <a href="register.php">
                   <span>Tạo tài khoản mới</span>
                 </a>
               </p>

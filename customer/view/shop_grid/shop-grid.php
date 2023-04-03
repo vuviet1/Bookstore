@@ -1,6 +1,6 @@
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg"  style="background-color: #7fad39">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -64,7 +64,7 @@
 <!--                                DANH MỤC SẢN PHẨM -Start-->
                                 <div class="product__item__pic set-bg" data-setbg="img/<?=$product['image']?>">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-info"></i></a></li>
                                         <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>

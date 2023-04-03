@@ -32,7 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+      <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,7 +98,7 @@
                 <button class="btn btn-primary d-grid w-100">GỬI LIÊN KẾT ĐẶT LẠI</button>
               </form>
               <div class="text-center">
-                <a href="login.html" class="d-flex align-items-center justify-content-center">
+                <a href="login.php" class="d-flex align-items-center justify-content-center">
                   <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i>
                   Trở lại trang đăng nhập
                 </a>

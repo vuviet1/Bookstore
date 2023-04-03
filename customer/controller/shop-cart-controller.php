@@ -36,7 +36,7 @@ switch ($action) {
         </script>';
         break;
     case 'delete_cart':
-        include_once 'models/productModel.php';
+        include_once 'model/productModel.php';
         header('Location:index.php?controller=product&action=view_cart');
         break;
 }
