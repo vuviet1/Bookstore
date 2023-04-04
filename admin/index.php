@@ -13,11 +13,11 @@ if (isset($_GET['controller'])){
 //Kiểm tra đó là controller nào
 switch ($controller){
     case '':
-        if(isset($_SESSION['username'])){
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
             include_once "view/index.html";
         }else{
             echo '<script>   
-            location.href = "index.php?controller=login";
+            location.href = "index.php?controller=login&action=login";
             </script>';
         }
         break;
@@ -28,31 +28,85 @@ switch ($controller){
         include_once "view/acc-set.php";
         break;
     case 'tacgia':
-        include_once "controller/tg-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/tg-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'theloai':
-        include_once "controller/tl-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/tl-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'nv':
-        include_once "controller/nv-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/nv-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'kh':
-        include_once "controller/kh-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/kh-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'hoadon':
-        include_once "controller/hoadon-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/hoadon-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'nxb':
-        include_once "controller/nxb-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/nxb-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'pttt':
-        include_once "controller/pttt-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/pttt-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'ptvc':
-        include_once "controller/ptvc-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/ptvc-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     case 'sp':
-        include_once "controller/sp-control.php";
+        if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+            include_once "controller/sp-control.php";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login&action=login";
+            </script>';
+        }
         break;
     default:
         include_once "view/hoadon/hoadon-show.php";
