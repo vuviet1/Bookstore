@@ -1,6 +1,11 @@
 <?php
 session_start();
-include_once "view/layout/header1.php";
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+    include_once "view/layout/header2.php";
+}else{
+    include_once "view/layout/header1.php";
+}
+
 
 //lấy controller đang làm việc
 $controller = '';
