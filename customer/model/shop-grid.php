@@ -9,6 +9,7 @@ function index()
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
     }
+    
     include_once 'connect/openConnect.php';
     $sqlCount = "SELECT COUNT(*) AS count_record FROM product WHERE product_name LIKE '%$search%'";
     $counts = mysqli_query($connect, $sqlCount);

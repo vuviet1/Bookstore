@@ -83,7 +83,7 @@
               <!-- /Logo -->
               <h4 class="mb-2">ĐĂNG NHẬP</h4>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="../index.php?controller=login&action=loginAccess" method="POST">
                 <div class="mb-3">
                   <label for="username" class="form-label">Email/Tên người dùng</label>
                   <input
@@ -123,7 +123,7 @@
 
               <p class="text-center">
                 <span>Bạn chưa có tài khoản?</span>
-                <a href="register.php">
+                <a href="../index.php?controller=login&action=register">
                   <span>Tạo tài khoản mới</span>
                 </a>
               </p>

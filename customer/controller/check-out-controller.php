@@ -15,7 +15,4 @@ switch ($action) {
         include_once 'model/check-out-model';
         include_once 'view/check_out/checkout.php';
         break;
-    default:
-        include_once 'view/check_out/checkout.php';
-        break;
 }

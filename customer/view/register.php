@@ -70,7 +70,7 @@
               <!-- /Logo -->
               <h4 class="mb-2">ĐĂNG KÝ TẠI ĐÂY 🚀</h4>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="../index.php?controller=login&action=registerAccess" method="POST">
                 <div class="mb-3">
                   <label for="username" class="form-label">Tên người dùng</label>
                   <input
@@ -104,7 +104,7 @@
                       type="password"
                       id="password"
                       class="form-control"
-                      name="re-password"
+                      name="re_password"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password"
                     />
@@ -140,7 +140,7 @@
               </form>
 
               <div class="text-center">
-                <a href="login.php" class="d-flex align-items-center justify-content-center">
+                <a href="../index.php?controller=login&action=login" class="d-flex align-items-center justify-content-center">
                   <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i>
                   Trở lại trang đăng nhập
                 </a>
