@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
 <html
   lang="en"
   class="light-style customizer-hide"
@@ -14,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Đăng ký</title>
+    <title>Đăng nhập</title>
 
     <meta name="description" content="" />
 
@@ -57,7 +70,7 @@
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">
-          <!-- Register Card -->
+          <!-- Register -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
@@ -68,26 +81,27 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">ĐĂNG KÝ TẠI ĐÂY 🚀</h4>
+              <h4 class="mb-2">ĐĂNG NHẬP</h4>
 
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
-                  <label for="username" class="form-label">Tên người dùng</label>
+                  <label for="username" class="form-label">Email/Tên người dùng</label>
                   <input
                     type="text"
                     class="form-control"
                     id="username"
                     name="username"
-                    placeholder="Nhập tên người dùng"
+                    placeholder="Nhập email hoặc tên người dùng"
                     autofocus
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Nhập email" />
-                </div>
                 <div class="mb-3 form-password-toggle">
-                  <label class="form-label" for="password">Mật khẩu</label>
+                  <div class="d-flex justify-content-between">
+                    <label class="form-label" for="password">Mật khẩu</label>
+                    <a href="forgot-password.html">
+                      <small>Quên mật khẩu?</small>
+                    </a>
+                  </div>
                   <div class="input-group input-group-merge">
                     <input
                       type="password"
@@ -100,32 +114,19 @@
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
-
                 <div class="mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
-                    <label class="form-check-label" for="terms-conditions">
-                      Tôi đồng ý với
-                      <a href="javascript:void(0);">Điều khoản dịch vụ & Chính sách bảo mật</a>
-                    </label>
-                  </div>
                 </div>
-                <button class="btn btn-primary d-grid w-100">ĐĂNG KÝ</button>
+                <div class="mb-3">
+                  <button class="btn btn-primary d-grid w-100" type="submit">ĐĂNG NHẬP</button>
+                </div>
               </form>
-
-              <div class="text-center">
-                <a href="login.html" class="d-flex align-items-center justify-content-center">
-                  <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i>
-                  Trở lại trang đăng nhập
-                </a>
-              </div>
-
             </div>
           </div>
-          <!-- Register Card -->
+          <!-- /Register -->
         </div>
       </div>
     </div>
+
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

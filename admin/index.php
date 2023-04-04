@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "view/header.php";
 include_once "view/navbar.php";
 include_once "view/search.php";
@@ -12,7 +13,16 @@ if (isset($_GET['controller'])){
 //Kiểm tra đó là controller nào
 switch ($controller){
     case '':
-        include_once "view/index.html";
+        if(isset($_SESSION['username'])){
+            include_once "view/index.html";
+        }else{
+            echo '<script>   
+            location.href = "index.php?controller=login";
+            </script>';
+        }
+        break;
+    case 'login':
+        include_once 'controller/login-controller.php';
         break;
     case 'tk':
         include_once "view/acc-set.php";

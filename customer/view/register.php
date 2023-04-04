@@ -19,7 +19,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-      <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
+    <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,24 +72,17 @@
 
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Tên người dùng</label>
+                  <label for="username" class="form-label">Tên người dùng</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="name"
-                    name="name"
+                    id="username"
+                    name="username"
                     placeholder="Nhập tên người dùng"
                     autofocus
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Nhập email..." />
-                </div>
-                <div class="mb-3">
-                  <label for="username" class="form-label">Username</label>
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Nhập username..." />
-                </div>
+                
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Mật khẩu</label>
                   <div class="input-group input-group-merge">
@@ -108,32 +101,32 @@
                   <label class="form-label" for="password">Nhập lại mật khẩu</label>
                   <div class="input-group input-group-merge">
                     <input
-                            type="password"
-                            id="password"
-                            class="form-control"
-                            name="password"
-                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                            aria-describedby="password"
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="re-password"
+                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                      aria-describedby="password"
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
-
                 <div class="mb-3">
-                  <label for="phone" class="form-label">Số điện thoại</label>
-                  <div class="input-group input-group-merge">
-                  <span class="input-group-text">VN (+84)</span>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="000 000 0000" />
+                  <label for="name" class="form-label">Họ và tên</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nhập họ và tên" />
                 </div>
-                </div>
-
-
                 <div class="mb-3">
-                  <label for="address" class="form-label">Địa chỉ</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Nhập địa chỉ..." />
-
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Nhập email" />
                 </div>
-
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone number</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" />
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" name="address" placeholder="Nhập địa chỉ" />
+                </div>
                 <div class="mb-3">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
@@ -143,7 +136,7 @@
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary d-grid w-100">ĐĂNG KÝ</button>
+                <button class="btn btn-primary d-grid w-100">ĐĂNG KÝ</button>
               </form>
 
               <div class="text-center">

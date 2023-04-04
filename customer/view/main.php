@@ -92,4 +92,36 @@
     <section class="latest-product spad">
     </section>
     <!-- Latest Product Section End -->
+    <script>
+        // Lọc sản phẩm khi click vào nút danh mục
+        const categoryButtons = document.querySelectorAll('.category-button');
+        const productCards = document.querySelectorAll('.product-card');
+        const allProductsButton = document.querySelector('.all-products-button');
 
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // Lấy tên danh mục được lưu trữ trong data attribute của nút
+                const category = button.dataset.category;
+
+                // Hiển thị các sản phẩm của danh mục tương ứng và ẩn các sản phẩm khác
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        allProductsButton.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            // Hiển thị tất cả sản phẩm
+            productCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        });
+    </script>

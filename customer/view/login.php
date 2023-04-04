@@ -32,7 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-      <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
+    <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,12 +85,12 @@
 
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email/Tên người dùng</label>
+                  <label for="username" class="form-label">Email/Tên người dùng</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="email"
-                    name="email-username"
+                    id="username"
+                    name="username"
                     placeholder="Nhập email hoặc tên người dùng"
                     autofocus
                   />
@@ -98,7 +98,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Mật khẩu</label>
-                    <a href="forgot-password.php">
+                    <a href="forgot-password.html">
                       <small>Quên mật khẩu?</small>
                     </a>
                   </div>

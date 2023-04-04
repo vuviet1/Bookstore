@@ -32,13 +32,13 @@
                         <h3><?=$pro['product_name']?></h3>
                         <h4 class="text-danger"><?=$pro['price']?> VND</h4>
                         <h6><?=$pro['describes']?></h6>
-                        <div class="product__details__quantity">
+                        <!-- <div class="product__details__quantity">
                             <div class="quantity">
                                 <div class="pro-qty">
-                                    <input type="text" value="1" name="quantity[<?=$pro['id_product']?>]">
+                                    <input type="text" value="1" name="amount[<?=$pro['id_product']?>]">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div>
                             <a href="index.php?controller=shop-cart&action=add&id=<?=$pro['id_product']?>" class="primary-btn">Thêm vào giỏ hàng</a>
                         </div>

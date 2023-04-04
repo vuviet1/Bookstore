@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        </form>
+        
 
         <div class="row">
             <div class="col-lg-12">
@@ -78,13 +78,13 @@
                         <span class="fa fa-shopping-cart"></span>
                         TIẾP TỤC MUA SẮM
                     </a>
-                    <button type="reset" style="border: none" class="primary-btn cart-btn cart-btn-right">
+                    <button type="submit" style="border: none" class="primary-btn cart-btn cart-btn-right">
                         <span class="icon_loading"></span>
                         CẬP NHẬT GIỎ HÀNG
                     </button>
                 </div>
             </div>
-
+        </form>
             <div class="col-lg-6">
             </div>
             <div class="col-lg-6">
