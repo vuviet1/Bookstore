@@ -58,12 +58,13 @@
                                                     class="icon_close"></span></a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <button><a href="index.php?controller=shop-cart&action=delete_cart">DELETE CART</a></button>
-                                </tr>
+                                
                                 <?php
                             }
                             ?>
+                            <tr>
+                                    <button><a href="index.php?controller=shop-cart&action=delete_cart">DELETE CART</a></button>
+                                </tr>
                         </tbody>
                     </table>
                 </div>
@@ -92,7 +93,7 @@
                     <div class="shoping__checkout">
                         <h5>Tổng giỏ hàng</h5>
                         <ul>
-                            <li>Tổng tiền <span>$454.98</span></li>
+                            <li>Tổng tiền <span><?=$infor['total']?></span></li>
                         </ul>
                         <div style="display: flex;justify-content: center">
                         <button  style="border: none" class="primary-btn ">Tiến hành kiểm tra</button>

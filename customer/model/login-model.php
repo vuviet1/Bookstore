@@ -9,6 +9,7 @@ function loginAdmin()
     include_once 'connect/closeConnect.php';
     foreach ($users as $user) {
         if ($_POST['username'] == $user['username'] && $_POST['password'] == $user['password']) {
+            $_SESSION['id_customer'] = $user['id_customer'];
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['password'] = $_POST['password'];
             return 1;
@@ -21,7 +22,7 @@ function register()
 {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $re_password = $_POST['re_password'];
+    $re_password = $_POST['re-password'];
     $email = $_POST['email'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
@@ -30,20 +31,20 @@ function register()
     $sqlcus = "SELECT * FROM customer";
     $users = mysqli_query($connect, $sqlcus);
     foreach ($users as $user) {
-        if ($user['username'] == $username) {
+        if ($username == $user['username']) {
             $message = "username đã tồn tại, vui lòng sửa lại!";
             echo "<script>alert('$message');</script>";
             return 1;
-        } elseif ($email = $user['email']) {
+        } elseif ($email == $user['email']) {
             $message = "Email đã tồn tại, Vui lòng sửa lại!";
             echo "<script>alert('$message');</script>";
             return 2;
-        } elseif ($password == $re_password) {
+        } elseif ($password != $re_password) {
             $message = "Không đúng mật khẩu, Vui lòng sửa lại!";
             echo "<script>alert('$message');</script>";
             return 3;
         } else {
-            $sql = "INSERT INTO customer(name_customer,username,password,email,phone_number,address) VALUES ('$name','$username','$password','$email','$phone','$address')";
+            $sql = "INSERT INTO customer (name_customer,username,password,email,phone_number,address) VALUES ('$name','$username','$password','$email','$phone','$address')";
             mysqli_query($connect, $sql);
             $message = "Tạo tài khoản thành công!";
             echo "<script>alert('$message');</script>";
@@ -54,7 +55,7 @@ function register()
 }
 switch ($action) {
     case 'registerAccess':
-        $test = register();
+        $check = register();
         break;
     case 'loginAccess':
         $test = loginAdmin();

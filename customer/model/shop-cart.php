@@ -19,10 +19,9 @@ function add_to_cart()
 function view_cart()
 {
     include_once 'connect/openConnect.php';
-    $sqlCustomer = "SELECT * FROM customer";
-    $customers = mysqli_query($connect, $sqlCustomer);
     $cart = array();
     $infor = array();
+    $total = 0;
     if (isset($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $product_id => $amount) {
             //                Lấy tên sp và giá theo product_id
@@ -33,12 +32,13 @@ function view_cart()
                 $cart[$product_id]['product_name'] = $product['product_name'];
                 $cart[$product_id]['price'] = $product['price'];
                 $cart[$product_id]['amount'] = $amount;
+                $total += $product['price'] * $amount;
             }
         }
     }
     include_once 'connect/closeConnect.php';
-    $infor['customer'] = $customers;
     $infor['cart'] = $cart;
+    $infor['total'] = $total;
     return $infor;
 }
 function update()

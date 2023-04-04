@@ -30,7 +30,7 @@ switch ($action) {
                 </script>';
         } elseif ($test == 1) {
             echo '<script>   
-                    location.href = "index.php?controller=hoadon";
+                    location.href = "index.php?controller=";
                 </script>';
         }
         break;
@@ -49,22 +49,24 @@ switch ($action) {
         break;
     case 'registerAccess':
         include_once 'model/login-model.php';
-        if($test = 0){
-            echo '<script>   
-                    location.href = "index.php?controller=";
-                </script>';
-        }elseif($test = 1){
-            echo '<script>   
-                    location.href = "view/register.php";
-                </script>';
-        }elseif($test = 2){
-            echo '<script>   
-                    location.href = "view/register.php";
-                </script>';
-        }elseif($test = 3){
-            echo '<script>   
-                    location.href = "view/register.php";
-                </script>';
-        }
+        echo $check;
+        // if($check = 0){
+        //     echo '<script>   
+        //             location.href = "index.php?controller=";
+        //         </script>';
+        // }elseif($check = 1){
+        //     echo $check;
+        //     echo '<script>   
+        //             location.href = "view/register.php";
+        //         </script>';
+        // }elseif($check = 2){
+        //     echo '<script>   
+        //             location.href = "view/register.php";
+        //         </script>';
+        // }elseif($check = 3){
+        //     echo '<script>   
+        //             location.href = "view/register.php";
+        //         </script>';
+        // }
         break;
 }
