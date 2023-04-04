@@ -37,7 +37,7 @@
                                     <input class="form-control" type="text" id="size" name="size" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="date" class="form-label">Ngày sản xuất</label>
+                                    <label for="date" class="form-label">Ngày xuất bản</label>
                                     <input class="form-control" type="date" id="date" name="date" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
@@ -119,3 +119,4 @@
 <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
+

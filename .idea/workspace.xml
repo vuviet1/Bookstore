@@ -5,37 +5,155 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
-      <change afterPath="$PROJECT_DIR$/admin/img/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/kns1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/kns2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/kns3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/kns4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/nn1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/nn2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/nn3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/nn4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/qlkd1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/qlkd2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/qlkd3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/qlkd4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/sgk1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/sgk2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/sgk3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/sgk4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/thieunhi1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/thieunhi2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/thieunhi3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/thieunhi4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/vanhoc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/vanhoc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/vanhoc3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/img/vanhoc4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/kns1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/kns2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/kns3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/kns4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/nn1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/nn2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/nn3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/nn4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/qlkd1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/qlkd2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/qlkd3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/qlkd4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/sgk1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/sgk2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/sgk3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/sgk4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/thieunhi1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/thieunhi2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/thieunhi3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/thieunhi4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/vanhoc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/vanhoc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/vanhoc3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/img/vanhoc4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/banner/banner-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/banner/banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/blog-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/details/details-author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/details/details-hero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/details/details-pic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/sidebar/sr-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/sidebar/sr-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/blog/sidebar/sr-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/hero/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/language.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/forgot-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/controller/shop-cart-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/shop-cart-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/cart/cart-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/cart/cart-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/cart/cart-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/categories/cat-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/categories/cat-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/categories/cat-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/categories/cat-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/categories/cat-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/featured/feature-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/latest-product/lp-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/latest-product/lp-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/latest-product/lp-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/product-details-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/product-details-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/product-details-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/product-details-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/product-details-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/thumb-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/thumb-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/thumb-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/details/thumb-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/discount/pd-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/img/product/product-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/cart/cart-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/cart/cart-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/cart/cart-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/categories/cat-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/categories/cat-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/categories/cat-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/categories/cat-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/categories/cat-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/featured/feature-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/latest-product/lp-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/latest-product/lp-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/latest-product/lp-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/product-details-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/product-details-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/product-details-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/product-details-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/product-details-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/thumb-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/thumb-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/thumb-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/details/thumb-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/discount/pd-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/img/product/product-9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/check_out/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/check_out/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/forgot-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/forgot-password.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/shop_details/shop-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_details/shop-details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" afterDir="false" />
     </list>
@@ -77,7 +195,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore/admin/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Bookstore/customer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,11 +207,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\customer" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\img" />
       <recent name="C:\xampp1\htdocs\Bookstore\customer\img" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view\sp" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
-      <recent name="C:\xampp1\htdocs\Bookstore\admin\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp1\htdocs\Bookstore\customer\view" />
@@ -154,7 +272,9 @@
       <workItem from="1680444748527" duration="4000" />
       <workItem from="1680452371631" duration="837000" />
       <workItem from="1680508694434" duration="5666000" />
-      <workItem from="1680525783825" duration="3527000" />
+      <workItem from="1680525783825" duration="4665000" />
+      <workItem from="1680570997274" duration="10553000" />
+      <workItem from="1680599507487" duration="3243000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -247,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680426312008</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="demo">
+      <created>1680530611162</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680530611162</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

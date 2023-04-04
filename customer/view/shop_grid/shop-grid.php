@@ -64,8 +64,8 @@
 <!--                                DANH MỤC SẢN PHẨM -Start-->
                                 <div class="product__item__pic set-bg" data-setbg="img/<?=$product['image']?>">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><i class="fa fa-info"></i></a></li>
-                                        <li><a href="index.php?controller=shop-cart&action=add&id=<?=$product['id_product']?>"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-info"></i></a></li>
+                                        <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">

@@ -21,6 +21,19 @@
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
                     <h5 class="card-header">Danh sách sản phẩm</h5>
+                    <div style="display: flex;justify-content: right">
+                        <div class="mb-3 col-md-3">
+                            <input class="form-control" type="text" id="name" name="name" value="" autofocus/>
+                        </div>
+                        <button type="submit" class="mb-3" style="display: block;color: #697a8d;
+    background-color: #fff;
+    border: 1px solid #d9dee3;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;">
+                            <i class="bx bx-search fs-4 lh-0"></i>
+                        </button>
+                    </div>
+
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>

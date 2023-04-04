@@ -46,11 +46,6 @@
                                     <label for="describes" class="form-label">Mô tả</label>
                                     <input class="form-control" type="text" id="describes" name="describes" value="<?=$product['describes']?>" />
                                 </div>
-
-                                <div class="input-group">
-                                    <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
-                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" />
-                                </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Thể loại</label>
                                     <select class="form-control" type="text" id="price" name="category_id">
@@ -110,6 +105,10 @@
                                         }
                                         ?>
                                     </select>
+                                </div>
+                                <div class="input-group">
+                                    <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
+                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" />
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Sửa sản phẩm</button>

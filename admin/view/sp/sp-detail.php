@@ -49,7 +49,7 @@
                                         <?= $product['price'] ?>
                                     </td>
                                     <td>
-                                        <img style="width: 150px" src="../../img/<?= $product['image'] ?>" alt="" >
+                                        <img src="img/<?= $product['image'] ?>" alt="" width="150px" height="150px" >
                                     </td>
                                     <td>
                                         <?= $product['size'] ?>

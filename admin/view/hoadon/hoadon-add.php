@@ -120,7 +120,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Tác giả</label>
                                     <select class="form-control" type="text" id="price" name="author_id">
-                                        <option value=""> - Choose - </option>
+                                        <option value=""> - Chọn - </option>
                                         <?php
                                         foreach ($arr['author'] as $author) {
                                             ?>
@@ -135,7 +135,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Phương thức thanh toán</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
-                                        <option value=""> - Choose - </option>
+                                        <option value=""> - Chọn - </option>
                                         <?php
                                         foreach ($arr['publis'] as $publis) {
                                             ?>
@@ -150,7 +150,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Phương thức vận chuyển</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
-                                        <option value=""> - Choose - </option>
+                                        <option value=""> - Chọn - </option>
                                         <?php
                                         foreach ($arr['publis'] as $publis) {
                                             ?>
