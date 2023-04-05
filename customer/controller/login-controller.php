@@ -49,24 +49,22 @@ switch ($action) {
         break;
     case 'registerAccess':
         include_once 'model/login-model.php';
-        echo $check;
-        // if($check = 0){
-        //     echo '<script>   
-        //             location.href = "index.php?controller=";
-        //         </script>';
-        // }elseif($check = 1){
-        //     echo $check;
-        //     echo '<script>   
-        //             location.href = "view/register.php";
-        //         </script>';
-        // }elseif($check = 2){
-        //     echo '<script>   
-        //             location.href = "view/register.php";
-        //         </script>';
-        // }elseif($check = 3){
-        //     echo '<script>   
-        //             location.href = "view/register.php";
-        //         </script>';
-        // }
+        if($check == 0){
+            echo '<script>   
+                    location.href = "index.php?controller=login&action=login";
+                </script>';
+        }elseif($check == 1){
+            echo '<script>   
+                    location.href = "view/register.php";
+                </script>';
+        }elseif($check == 2){
+            echo '<script>   
+                    location.href = "view/register.php";
+                </script>';
+        }elseif($check == 3){
+            echo '<script>   
+                    location.href = "view/register.php";
+                </script>';
+        }
         break;
 }

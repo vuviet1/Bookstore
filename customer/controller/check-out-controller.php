@@ -1,6 +1,4 @@
 <?php
-
-
 //Lấy hành động đang thực hiện
 $action = '';
 if (isset($_GET['action'])) {
@@ -15,5 +13,6 @@ switch ($action) {
         include_once 'view/check_out/checkout.php';
         break;
     case 'add-to-db':
+        include_once 'model/check-out-model.php';
         break;
 }
