@@ -37,33 +37,72 @@ function information(){
     $check_out['employee'] = $employee;
     return $check_out;
 }
+// function add_order_to_db(){
+//     $customer_id = $_SESSION['id_customer'];
+//     $date_buy = date('Y-m-d');
+//     $payment_id = $_POST['id_payment'];
+//     $shipping_id = $_POST['id_shipping'];
+//     $admin_id = $_POST['id_employee'];
+//     $status = 0;
+//     include_once 'connect/openConnect.php';
+//     $sqlOrder = "INSERT INTO bill (id_employee, id_customer, id_payment, id_shipping, purchase_date, status) VALUES ('$admin_id', '$customer_id', '$payment_id', '$shipping_id', '$date_buy', $status')";
+//     mysqli_query($connect, $sqlOrder);
+
+//     foreach ($_SESSION['cart'] as $product_id => $amount){
+//         $sqlPriceProduct = "SELECT price FROM product WHERE id_product = '$product_id'";
+//         $priceProduct = mysqli_query($connect, $sqlPriceProduct);
+//         foreach ($priceProduct as $each){
+//             $price = $each['price'];
+//         }
+//         $sql = "INSERT INTO bill_detail (order_id, id_product, amout, price) VALUES ('$orderID', '$product_id', '$amount', '$price' )";
+//         mysqli_query($connect, $sql);
+//     }
+//     include_once 'connect/closeConnect.php';
+//     unset($_SESSION['cart']);
+// }
+    // $arr = array();
+    // $arr['customer'] = $customer_id;
+    // $arr['payment'] = $payment_id;
+    // $arr['shipping'] = $shipping_id;
+    // $arr['employee'] = $admin_id;
+    // $arr['date'] = $date_buy;
+    // $arr['status'] = $status;
+    // return var_dump($arr);
 function add_order_to_db(){
     $customer_id = $_SESSION['id_customer'];
     $date_buy = date('Y-m-d');
+    $payment_id = $_POST['id_payment'];
+    $shipping_id = $_POST['id_shipping'];
     $admin_id = $_POST['id_employee'];
     $status = 0;
+
     include_once 'connect/openConnect.php';
-    $sqlOrder = "INSERT INTO orders(date_buy, customer_id, admin_id, status) VALUES ('$date_buy', '$customer_id', '$admin_id', '$status')";
+    $sqlOrder = "INSERT INTO `bill`(`id_employee`, `id_customer`, `id_payment`, `id_shipping`, `purchase_date`, `status`) VALUES ('$admin_id','$customer_id','$payment_id','$shipping_id','$date_buy','$status')";
     mysqli_query($connect, $sqlOrder);
-    $sqlOrderID = "SELECT MAX(id) as order_id FROM orders WHERE customer_id = '$customer_id'";
+    $orderID = mysqli_insert_id($connect); // Lấy id_bill vừa được thêm vào
+    $sqlOrderID = "SELECT MAX(id_bill) as order_id FROM bill WHERE id_customer = '$customer_id'";
     $orderIDs = mysqli_query($connect, $sqlOrderID);
     foreach ($orderIDs as $value){
         $orderID = $value['order_id'];
     }
     foreach ($_SESSION['cart'] as $product_id => $amount){
-        $sqlPriceProduct = "SELECT price FROM product WHERE id = '$product_id'";
+        $sqlPriceProduct = "SELECT price FROM product WHERE id_product = '$product_id'";
         $priceProduct = mysqli_query($connect, $sqlPriceProduct);
         foreach ($priceProduct as $each){
             $price = $each['price'];
         }
-        $sql = "INSERT INTO order_detail VALUES ('$orderID', '$product_id', '$price', '$amount')";
+        $sql = "INSERT INTO `bill_detail`(`id_bill`, `id_product`, `amout`, `price`) VALUES ('$orderID','$product_id','$amount','$price')";
         mysqli_query($connect, $sql);
     }
     include_once 'connect/closeConnect.php';
     unset($_SESSION['cart']);
 }
+
 switch ($action) {
     case '':
         $KH = information();
+        break;
+    case 'add-to-db':
+        add_order_to_db();
         break;
 }

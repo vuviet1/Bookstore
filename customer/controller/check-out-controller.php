@@ -14,5 +14,8 @@ switch ($action) {
         break;
     case 'add-to-db':
         include_once 'model/check-out-model.php';
+        echo '<script>   
+                    location.href = "index.php?controller=";
+                </script>';
         break;
 }

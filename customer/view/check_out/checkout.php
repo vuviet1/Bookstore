@@ -17,7 +17,7 @@
      <div class="container">
          <div class="checkout__form">
              <h4>CHI TIẾT THANH TOÁN</h4>
-             <form action="index.php?controller=check-out&action=add-to-db">
+             <form action="index.php?controller=check-out&action=add-to-db" method="POST">
                  <div class="row">
 
                      <div class="col-lg-12 col-md-6">
@@ -28,7 +28,7 @@
                                  <?php
                                     foreach ($KH['users'] as $kh) {
                                     ?>
-                                     <form id="kh" method="POST" action="index.php?controller=kh&action=update">
+                                     
                                          <div class="row">
                                              <div class="mb-3 col-md-6">
                                                  <input type="hidden" name="id" value="<?= $kh['id_customer'] ?>">
@@ -52,7 +52,7 @@
                                                      <input type="text" id="address" name="address" class="form-control" value="<?= $kh['address'] ?>" readonly />
                                                  </div>
                                              </div>
-                                     </form>
+                                     
                                  <?php
                                     }
                                     ?>
@@ -141,23 +141,9 @@
                                      </div>
                                  </form>
                              </div>
-                             <div class="mb-3 col-md-6">
-                                 <p for="price" class="form-label">Chọn phương thức vận chuyển:</p>
-                                 <select type="text" id="price" name="id_employee" style="margin-bottom: 10px">
-                                     <option value=""> - Chọn -</option>
-                                     <?php
-                                        foreach ($KH['employee'] as $employee) {
-                                        ?>
-                                         <option value="<?= $employee['id_employee'] ?>">
-                                             <?= $employee['name_employee'] ?>
-                                         </option>
-                                     <?php
-                                        }
-                                        ?>
-                                 </select>
-                             </div>
+                             
                          </div>
-
+                        <input type="hidden" name="id_employee" value="2">
                          <!--                                Chọn phương thức thanh toán -->
                          <button type="submit" class="site-btn">Đặt hàng</button>
                      </div>

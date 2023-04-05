@@ -33,6 +33,8 @@ switch ($controller){
             </script>';
         }
         break;
+    case 'show-bill':
+        break;
     case 'shop-cart':
         include_once "controller/shop-cart-controller.php";
         break;
