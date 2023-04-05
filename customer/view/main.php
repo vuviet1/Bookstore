@@ -69,8 +69,8 @@
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/<?=$product['image']?>">
                             <ul class="featured__item__pic__hover">
-                                <li><a href="index.php?controller=shop-details"><i class="fa fa-info"></i></a></li>
-                                <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><i class="fa fa-info"></i></a></li>
+                                <li><a href="index.php?controller=shop-cart&action=add&id=<?=$product['id_product']?>"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">

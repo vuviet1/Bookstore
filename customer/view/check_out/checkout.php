@@ -62,40 +62,47 @@
                              <div class="checkout__order__products">Sản phẩm </div>
 
                              <!--                                Hiển thị sản phẩm và giá -->
-                             <?php
-                            foreach ($KH['cart'] as $product_id => $value) {
-                                ?>
-                                <!--                                    dùng PHP để hiển thị giỏ-->
-                                <ul>
-                                    <li class="shoping__cart__item">
-                                        <img src="img/<?= $value['image'] ?>" alt="" width="100px" height="100px">
-                                        <h5><?= $value['product_name'] ?></h5>
-                                    </li>
-                                    <li class="shoping__cart__price">
-                                        <?= $value['price'] ?> VNĐ
-                                    </li>
-                                    <li class="shoping__cart__quantity">
-                                        <?= $value['amount']; ?>
-                                    </li>
-                                    
-                            </ul>
-                                
-                                <?php
-                            }
-                            ?>
+                             <div class="col-lg-12">
+                                 <table class="col-lg-12">
+                                     <thead>
+                                     <tr>
+                                         <th class="shoping__product">Tên sản phẩm</th>
+                                         <th>Ảnh</th>
+                                         <th>Giá</th>
+                                         <th>Số lượng</th>
+                                         <th></th>
+                                     </tr>
+                                     </thead>
+                                     <tbody>
+                                     <?php
+                                     foreach ($KH['cart'] as $product_id => $value) {
+                                         ?>
+                                         <!--  dùng PHP để hiển thị giỏ-->
+                                         <tr>
+                                             <td><?= $value['product_name'] ?>
+                                             </td>
+                                             <td class="shoping__cart__item">
+                                                 <img src="img/<?= $value['image'] ?>" alt="" width="150px"
+                                                      height="150px">
+                                             </td>
+                                             <td class="shoping__cart__price">
+                                                 <?= $value['price'] ?> VNĐ
+                                             </td>
+                                             <td class="shoping__cart__quantity">
+                                                 <?= $value['amount']; ?>
+                                             </td>
+                                         </tr>
+                                         <?php
+                                     }
+                                     ?>
+                                     </tbody>
+                                 </table>
+                             </div>
+<!--                                Hiển thị sản phẩm và giá - END  -->
+                             <hr>
 
                              <!--                                hiển thị tổng tiền -->
                              <div class="checkout__order__total">Tổng tiền <span><?=$KH['total']?></span></div>
-
-
-                             <!--                                Chọn phương thức thanh toán -->
-                             <!--                                <div class="checkout__input__checkbox">-->
-                             <!--                                    <label for="payment">-->
-                             <!--                                        Thanh toán tiền mặt-->
-                             <!--                                        <input type="checkbox" id="payment">-->
-                             <!--                                        <span class="checkmark"></span>-->
-                             <!--                                    </label>-->
-                             <!--                                </div>-->
 
                              <div class="card-body">
                                  <form id="kh" method="POST" action="index.php?controller=kh&action=store">
@@ -152,7 +159,6 @@
                          </div>
 
                          <!--                                Chọn phương thức thanh toán -->
-
                          <button type="submit" class="site-btn">Đặt hàng</button>
                      </div>
                  </div>

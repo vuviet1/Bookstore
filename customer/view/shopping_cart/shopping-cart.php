@@ -26,7 +26,7 @@
                             <th class="shoping__product">Sản phẩm</th>
                             <th>Giá</th>
                             <th>Số lượng</th>
-                            <th>HĐ</th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -62,15 +62,11 @@
                                 <?php
                             }
                             ?>
-                            <tr>
-                                    <button><a href="index.php?controller=shop-cart&action=delete_cart">DELETE CART</a></button>
-                                </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
 
         <div class="row">
             <div class="col-lg-12">
@@ -85,8 +81,8 @@
                     </button>
                 </div>
             </div>
-
             </form>
+
             <div class="col-lg-6">
             </div>
             <div class="col-lg-6">

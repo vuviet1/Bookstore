@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo">
+    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/check_out/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/check_out/checkout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/layout/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/layout/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +131,7 @@
       <workItem from="1680570997274" duration="10553000" />
       <workItem from="1680599507487" duration="6652000" />
       <workItem from="1680660359091" duration="940000" />
-      <workItem from="1680677053493" duration="318000" />
+      <workItem from="1680677053493" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680615030021</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="demo1">
+      <created>1680677500270</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680677500270</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +275,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo" />
+    <MESSAGE value="demo1" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
