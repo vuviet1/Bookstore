@@ -55,7 +55,7 @@
                             <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="view/login.php"><i class="fa fa-user">Đăng nhập</i></a>
+                            <a href="view/login.php"><i class="fa fa-user-circle-o"> Đăng nhập</i></a>
                         </div>
                     </div>
                 </div>

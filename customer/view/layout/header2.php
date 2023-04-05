@@ -55,7 +55,17 @@
                             <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="view/login.php"><i class="fa fa-user"></i></a>
+                            <nav class="header__menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-user-circle-o"></i></a>
+                                        <ul class="header__menu__dropdown">
+                                            <li style="display: flex;justify-content: left"><a href="index.php?controller=acc-set&action="><i class="fa fa-user"></i>Tài khoản</a></li>
+                                            <li style="display: flex;justify-content: left"><a href="index.php?controller=check-out&action=history"><i class="fa fa-history"></i>Đơn mua</a></li>
+                                            <li style="display: flex;justify-content: left"><a href="#"><i class="fa fa-sign-out"></i>Đăng xuất</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,9 @@ switch ($controller){
     case 'login':
         include_once 'controller/login-controller.php';
         break;
+    case 'acc-set':
+        include_once 'controller/infor-controller.php';
+        break;
     case 'shop-grid':
         include_once "controller/shop-grid-controller.php";
         break;

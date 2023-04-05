@@ -52,7 +52,7 @@
                                         <?= $bill['total_price'] ?>
                                     </td>
                                     <td>
-                                        <a style="color: white" href="index?controller=hoadon&action=detail&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-success">Xem chi tiết</button></a>
+                                        <a style="color: white" href="index.php?controller=hoadon&action=detail&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-success">Xem chi tiết</button></a>
                                         <a style="color: white" href="index.php?controller=hoadon&action=edit&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
                                         <a style="color: white" href="index.php?controller=hoadon&action=destroy&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                     </td>
@@ -70,7 +70,7 @@
                                     for ($i = 1; $i <= $array['page']; $i++) {
                                         ?>
                                         <li class="page-item">
-                                            <form method="post" action="index.php?controller=pttt&page=<?= $i ?>">
+                                            <form method="post" action="index.php?controller=hoadon&page=<?= $i ?>">
                                                 <input type="hidden" name="search" value="<?= $array['search'] ?>">
                                                 <input type="hidden" name="page" value="<?= $i ?>">
                                                 <button class="page-link"><?= $i ?></button>

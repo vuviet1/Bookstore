@@ -18,4 +18,10 @@ switch ($action) {
                     location.href = "index.php?controller=";
                 </script>';
         break;
+    case 'history':
+        include_once 'view/layout/history.php';
+        break;
+    case 'history-details':
+        include_once 'view/layout/history-details.php';
+        break;
 }

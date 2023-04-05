@@ -4,7 +4,7 @@
 
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Sản phẩm /</span>Hiển thị
+            <span class="text-muted fw-light">Hóa đơn chi tiết /</span>Thêm hóa đơn
         </h4>
 
         <div class="row">
@@ -12,12 +12,13 @@
             <div class="col-12">
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
-                    <h5 class="card-header">Chi tiết sản phẩm</h5>
+                    <h5 class="card-header">Chi tiết hóa đơn</h5>
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Tên khách hàng</th>
                                 <th>Tên sản phẩm</th>
                                 <th>Số trang</th>
                                 <th>Giá</th>
@@ -38,6 +39,9 @@
                                 <tr>
                                     <td>
                                         <?= $product['id_product'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $product['customer_name'] ?>
                                     </td>
                                     <td>
                                         <?= $product['product_name'] ?>

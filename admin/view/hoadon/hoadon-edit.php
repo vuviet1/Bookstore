@@ -34,8 +34,8 @@
                                     <input class="form-control" type="text" id="email" name="email" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">Kích cỡ</label>
-                                    <input class="form-control" type="text" id="email" name="email" value="" />
+                                    <label for="size" class="form-label">Kích cỡ</label>
+                                    <input class="form-control" type="text" id="size" name="size" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Ngày sản xuất</label>

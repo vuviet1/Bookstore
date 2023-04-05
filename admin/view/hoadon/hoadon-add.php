@@ -93,39 +93,24 @@
                                 </div>
 
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="email" class="form-label">Tổng giá</label>
+                                    <label for="total" class="form-label">Tổng giá</label>
                                     <input
                                         class="form-control"
                                         type="text"
-                                        id="email"
-                                        name="email"
+                                        id="total"
+                                        name="total"
                                         value=""
                                     />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
-                                    <label for="price" class="form-label">Thể loại</label>
-                                    <select class="form-control" type="text" id="price" name="category_id">
-                                        <option value=""> - Choose - </option>
-                                        <?php
-                                        foreach ($arr['category'] as $category) {
-                                            ?>
-                                            <option value="<?= $category['id_category'] ?>">
-                                                <?= $category['name_category'] ?>
-                                            </option>
-                                            <?php
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                                <div class="mb-3 col-md-6 ">
-                                    <label for="price" class="form-label">Tác giả</label>
-                                    <select class="form-control" type="text" id="price" name="author_id">
+                                    <label for="price" class="form-label">Tên khách hàng</label>
+                                    <select class="form-control" type="text" id="employee" name="category_id">
                                         <option value=""> - Chọn - </option>
                                         <?php
-                                        foreach ($arr['author'] as $author) {
+                                        foreach ($arr['name_employee'] as $category) {
                                             ?>
-                                            <option value="<?= $author['id_author'] ?>">
-                                                <?= $author['name_author'] ?>
+                                            <option value="<?= $category['id_employee'] ?>">
+                                                <?= $category['name_employee'] ?>
                                             </option>
                                             <?php
                                         }

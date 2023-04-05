@@ -5,60 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo2">
-      <change afterPath="$PROJECT_DIR$/customer/img/kns0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/img/nn0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/img/qlkd0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/img/sgk0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/img/thieunhi0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/img/vanhoc0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/controller/infor-controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/model/infor-model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/view/information/acc-set.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/view/information/acc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/view/layout/history-details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/view/layout/history.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/img/breadcrumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/avatars/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/avatars/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/avatars/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/avatars/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/avatars/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/elements/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/asana.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/behance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/dribbble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/github.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/mailchimp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/slack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/brands/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/cc-primary.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/cc-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/cc-warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/chart-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/wallet-info.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/icons/unicons/wallet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/illustrations/girl-doing-yoga-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/illustrations/man-with-laptop-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/illustrations/page-misc-error-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/layouts/layout-container-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/layouts/layout-fluid-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/layouts/layout-without-menu-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/assets/img/layouts/layout-without-navbar-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/img/breadcrumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/hoadon-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/hoadon-control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/check-out-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/check-out-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +80,11 @@
       <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Bookstore\customer\view\information" />
       <recent name="C:\xampp1\htdocs\Bookstore\customer\view" />
       <recent name="C:\xampp1\htdocs\Bookstore\customer\model" />
       <recent name="C:\xampp1\htdocs\Bookstore\customer\controller" />
       <recent name="C:\xampp1\htdocs\Bookstore\admin\view" />
-      <recent name="C:\xampp1\htdocs\Bookstore\admin\controller" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -179,7 +142,7 @@
       <workItem from="1680570997274" duration="10553000" />
       <workItem from="1680599507487" duration="6652000" />
       <workItem from="1680660359091" duration="940000" />
-      <workItem from="1680677053493" duration="4445000" />
+      <workItem from="1680677053493" duration="11397000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -300,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680679703034</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="demo2">
+      <created>1680681610427</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680681610427</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
