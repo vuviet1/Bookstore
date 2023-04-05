@@ -64,13 +64,13 @@
 <!--                                DANH MỤC SẢN PHẨM -Start-->
                                 <div class="product__item__pic set-bg" data-setbg="img/<?=$product['image']?>">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-info"></i></a></li>
-                                        <li><a href="index.php?controller=shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><i class="fa fa-info"></i></a></li>
+                                        <li><a href="index.php?controller=shop-cart&action=add&id=<?=$product['id_product']?>"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><?=$product['product_name']?></a></h6>
-                                    <h5><?=$product['price']?> VND</h5>
+                                    <h5 style="color: red"><?=$product['price']?> VND</h5>
                                 </div>
                             </div>
                         </div>
@@ -80,22 +80,24 @@
 <!--                                DANH MỤC SẢN PHẨM - END -->
                     </div>
 <!--                    CHIA SỐ TRANG-->
-                    <div style="display: flex; justify-content: center">
-                        <div class="product__pagination">
-                        <?php
-                                    for ($i = 1; $i <= $array['page']; $i++) {
-                                        ?>
-                                        <li class="page-item">
-                                            <form method="post" action="index.php?controller=shop-grid&page=<?= $i ?>">
-                                                <input type="hidden" name="search" value="<?= $array['search'] ?>">
-                                                <input type="hidden" name="page" value="<?= $i ?>">
-                                                <button class="page-link"><?= $i ?></button>
-                                            </form>
-                                        </li>
-                                        <?php
-                                    }
+                    <div style="display: flex ;justify-content: center ; margin-top: 50px">
+                        <nav aria-label="...">
+                            <ul class="pagination pagination-lg">
+                                <?php
+                                for ($i = 1; $i <= $array['page']; $i++) {
                                     ?>
-                        </div>
+                                    <li class="page-item">
+                                        <form method="post" action="index.php?controller=shop-grid&page=<?= $i ?>"">
+                                        <input type="hidden" name="search" value="<?= $array['search'] ?>">
+                                        <input type="hidden" name="page" value="<?= $i ?>">
+                                        <button class="page-link" style="color: #7fad39"><?= $i ?></button>
+                                        </form>
+                                    </li>
+                                    <?php
+                                }
+                                ?>
+                            </ul>
+                        </nav>
                     </div>
 <!--                    CHIA SỐ TRANG-->
                 </div>

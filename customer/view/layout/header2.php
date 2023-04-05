@@ -124,10 +124,6 @@
                 <div class="hero__search">
                     <div class="hero__search__form">
                         <form action="#">
-                            <div class="hero__search__categories">
-                                Tất cả thể loại
-                                <span class="arrow_carrot-down"></span>
-                            </div>
                             <input type="text" placeholder="Bạn muốn tìm kiếm sách gì?">
                             <button type="submit" class="site-btn"><i class="fa fa-search"></i></button>
                         </form>

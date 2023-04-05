@@ -98,7 +98,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Mật khẩu</label>
-                    <a href="forgot-password.html">
+                    <a href="forgot-password.php">
                       <small>Quên mật khẩu?</small>
                     </a>
                   </div>

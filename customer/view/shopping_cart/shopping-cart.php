@@ -71,6 +71,7 @@
             </div>
         </div>
 
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="shoping__cart__btns">
@@ -84,21 +85,22 @@
                     </button>
                 </div>
             </div>
-            
-        </form>
 
+            </form>
             <div class="col-lg-6">
             </div>
             <div class="col-lg-6">
+                <form action="index.php?controller=check-out" method="post">
                     <div class="shoping__checkout">
                         <h5>Tổng giỏ hàng</h5>
                         <ul>
                             <li>Tổng tiền <span><?=$infor['total']?></span></li>
                         </ul>
                         <div style="display: flex;justify-content: center">
-                        <a href="index.php?controller=check-out&action="><button style="border: none" class="primary-btn ">Tiến hành kiểm tra</button></a>
+                        <button  style="border: none" class="primary-btn ">Tiến hành kiểm tra</button>
                         </div>
                     </div>
+                </form>
             </div>
         </div>
     </div>
