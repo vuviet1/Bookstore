@@ -49,12 +49,12 @@
                                     <td class="shoping__cart__quantity">
                                          <?php if ($bill['status'] == 0) {
                                             echo "Chờ xử lý";
-                                        } elseif($his['status'] == 1) {
+                                        } elseif($bill['status'] == 1) {
                                             echo "Đang xử lý";
-                                        }elseif($his['status'] == 2) {
+                                        }elseif($bill['status'] == 2) {
                                             echo "Đang giao";
-                                        }elseif($his['status'] == 3) {
-                                            echo "Đang đã giao";
+                                        }elseif($bill['status'] == 3) {
+                                            echo "Đã giao hàng";
                                         } ?>
                                     </td>
                                     <td class="shoping__cart__item__close">

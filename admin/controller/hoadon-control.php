@@ -37,5 +37,6 @@ switch ($action) {
         include_once 'view/hoadon/hd-sp-add.php';
         break;
     case 'store':
+        include_once 'model/hoadon-model.php';
         break;
 }

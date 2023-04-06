@@ -154,7 +154,7 @@
                                 </div>
                         </form>
                     </div>
-                    <!-- /Account -->
+                    <!-- /Thông tin -->
                 </div>
             </div>
         </div>

@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="demo2">
-      <change afterPath="$PROJECT_DIR$/admin/view/hoadon/hd-sp-add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/hoadon-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/hoadon-control.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/controller/login-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/login-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/model/login-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/model/login-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/information/acc-set.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/information/acc-set.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/information/acc.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/information/acc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadonchitiet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/history.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +134,7 @@
       <workItem from="1680677053493" duration="12048000" />
       <workItem from="1680695078847" duration="7140000" />
       <workItem from="1680743327904" duration="996000" />
+      <workItem from="1680750094428" duration="3776000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
