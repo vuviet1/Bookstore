@@ -59,9 +59,9 @@
                                 <ul>
                                     <li><a class="dropdown-item" href="#"><i class="fa fa-user-circle-o"></i></a>
                                         <ul class="header__menu__dropdown">
-                                            <li style="display: flex;justify-content: left"><a href="index.php?controller=acc-set&action="><i class="fa fa-user"></i>Tài khoản</a></li>
+                                            <li style="display: flex;justify-content: left"><a href="index.php?controller=infor&action="><i class="fa fa-user"></i>Tài khoản</a></li>
                                             <li style="display: flex;justify-content: left"><a href="index.php?controller=check-out&action=history"><i class="fa fa-history"></i>Đơn mua</a></li>
-                                            <li style="display: flex;justify-content: left"><a href="#"><i class="fa fa-sign-out"></i>Đăng xuất</a></li>
+                                            <li style="display: flex;justify-content: left"><a href="index.php?controller=login&action=logout"><i class="fa fa-sign-out"></i>Đăng xuất</a></li>
                                         </ul>
                                     </li>
                                 </ul>

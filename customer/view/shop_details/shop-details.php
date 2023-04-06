@@ -30,7 +30,7 @@
                     <div class="product__details__text">
                         <!--                        dùng php để hiện thị thông tin sản phẩm-->
                         <h3><?=$pro['product_name']?></h3>
-                        <h4 class="text-danger"><?=$pro['price']?> VND</h4>
+                        <h4 class="text-danger"><?=$pro['price_product']?> VND</h4>
                         <h6><?=$pro['describes']?></h6>
                         <!-- <div class="product__details__quantity">
                             <div class="quantity">

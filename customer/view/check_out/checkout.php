@@ -102,7 +102,7 @@
                              <hr>
 
                              <!--                                hiển thị tổng tiền -->
-                             <div class="checkout__order__total">Tổng tiền <span><?=$KH['total']?></span></div>
+                             <div class="checkout__order__total">Tổng tiền <span><input type="text" name="total" value="<?=$KH['total']?>" readonly></span></div>
 
                              <div class="card-body">
                                  <form id="kh" method="POST" action="index.php?controller=kh&action=store">

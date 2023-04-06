@@ -15,13 +15,15 @@ switch ($action) {
     case 'add-to-db':
         include_once 'model/check-out-model.php';
         echo '<script>   
-                    location.href = "index.php?controller=";
+                    location.href = "index.php?controller=check-out&action=history";
                 </script>';
         break;
     case 'history':
+        include_once 'model/check-out-model.php';
         include_once 'view/layout/history.php';
         break;
     case 'history-details':
+        include_once 'model/check-out-model.php';
         include_once 'view/layout/history-details.php';
         break;
 }

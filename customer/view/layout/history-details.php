@@ -22,54 +22,89 @@
                 <div class="shoping__cart__table">
                     <table>
                         <thead>
-                        <tr>
-                            <th class="shoping__product">Số thứ tự</th>
-                            <th>Ngày mua</th>
-                            <th>Trạng thái</th>
-                            <th>Giá</th>
-                            <th></th>
-                        </tr>
+                            <tr>
+                                <th class="shoping__product">Ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Tác giả</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <form action="index.php?controller=shop-cart&action=update" method="post">
                             <?php
-                            foreach ($infor['cart'] as $product_id => $value) {
-                                ?>
+                            foreach ($history as $his) {
+                            ?>
                                 <!--                                    dùng PHP để hiển thị giỏ-->
                                 <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/<?= $value['image'] ?>" alt="" width="100px" height="100px">
-                                        <!-- <img src="img/<?= $value['image'] ?>" alt=""> -->
-                                        <h5><a href="index.php?controller=shop-details"
-                                               style="color: black"><?= $value['product_name'] ?></a></h5>
+                                    <td>
+                                        <img src="img/<?= $his['image'] ?>" alt="" width="100px" height="100px">
                                     </td>
-                                    <td class="shoping__cart__price">
-                                        <?= $value['price'] ?> VNĐ
+                                    <td>
+                                        <h5><a href="index.php?controller=shop-details" style="color: black"><?= $his['product_name'] ?></a></h5>
+                                    </td>
+                                    <td>
+                                        <?= $his['name_author'] ?>
                                     </td>
                                     <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" name="amount[<?= $product_id ?>]"
-                                                       value="<?= $value['amount']; ?>">
-                                            </div>
-                                        </div>
+                                        <?= $his['amount'] ?>
                                     </td>
-                                    <td class="shoping__cart__item__close">
-                                        <a href="index.php?controller=shop-cart&action=delete-product-in-cart&id=<?= $product_id; ?>"><span
-                                                class="icon_close"></span></a>
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <a href="index.php?controller=shop-cart&action=delete-product-in-cart&id=<?= $product_id; ?>"><span
-                                                class="icon_close"></span></a>
+                                    <td class="shoping__cart__price">
+                                        <?= $his['price_product'] ?> VNĐ
                                     </td>
                                 </tr>
 
-                                <?php
+                            <?php
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                    <table class="shoping__cart__table">
+                        <thead>
+                            <tr>
+                                <th>Phương thức thanh toán</th>
+                                <th>Phương thức vận chuyển</th>
+                                <th>Ngày mua</th>
+                                <th>Trạng thái</th>
+                                <th>Tổng tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($history as $his) {
+                            ?>
+                                <tr>
+                                    <td>
+                                        <?= $his['name_payment']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $his['name_shipping']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $his['purchase_date']; ?>
+                                    </td>
+                                    <td>
+                                        <?php if ($his['status'] == 0) {
+                                            echo "Chờ xử lý";
+                                        } elseif($his['status'] == 1) {
+                                            echo "Đang xử lý";
+                                        }elseif($his['status'] == 2) {
+                                            echo "Đang giao";
+                                        }elseif($his['status'] == 3) {
+                                            echo "Đang đã giao";
+                                        } ?>
+                                    </td>
+
+                                    <td>
+                                        <?= $his['total']; ?>
+                                    </td>
+                                </tr>
+                            <?php
                             }
                             ?>
                         </tbody>
                     </table>
                 </div>
+                <a href="index.php?controller=check-out&action=history"><button>Trở lại</button></a>
             </div>
         </div>
     </div>

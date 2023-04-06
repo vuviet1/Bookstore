@@ -17,7 +17,6 @@
     <div class="container">
         <div class="checkout__form">
             <h4>CHI TIẾT TÀI KHOẢN</h4>
-            <form action="../../index.php?controller=">
                 <div class="row">
 
                     <div class="col-lg-12 col-md-6">
@@ -26,9 +25,9 @@
                             <!--Hiển thị khách hàng-->
                             <div class="card-body">
                                 <?php
-                                foreach ($KH['users'] as $kh) {
+                                foreach ($KH as $kh) {
                                     ?>
-                                    <form id="kh" method="POST" action="../../index.php?controller=kh&action=update">
+                                    <form id="kh" >
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
                                                 <input type="hidden" name="id" value="<?= $kh['id_customer'] ?>">
@@ -52,21 +51,19 @@
                                                     <input type="text" id="address" name="address" class="form-control" value="<?= $kh['address'] ?>" readonly />
                                                 </div>
                                             </div>
-                                            <button type="submit" class="site-btn">Cập nhật thông tin</button>
                                     </form>
                                     <?php
                                 }
                                 ?>
                             </div>
+                            <a href="index.php?controller=infor&action=set" class="site-btn">Cập nhật thông tin</a>
                             <!--Hiển thị khách hàng-->
-                            <button type="submit" class="site-btn"><a href="index.php?controller=acc-set&action=set">Cập nhật thông tin</a></button>
-                            <button type="submit" class="site-btn">Quay lại trang chủ</button>
+                            <a href="index.php?controller="><button type="submit" class="site-btn">Quay lại trang chủ</button></a>
 
 
                     </div>
                 </div>
         </div>
-        </form>
     </div>
     </div>
 </section>

@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="index.php?controller=shop-details&action=detail&id=<?=$product['id_product']?>"><?=$product['product_name']?></a></h6>
-                                    <h5 style="color: red"><?=$product['price']?> VND</h5>
+                                    <h5 style="color: red"><?=$product['price_product']?> VND</h5>
                                 </div>
                             </div>
                         </div>

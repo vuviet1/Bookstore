@@ -30,9 +30,9 @@ function view_cart()
             foreach ($products as $product) {
                 $cart[$product_id]['image'] = $product['image'];
                 $cart[$product_id]['product_name'] = $product['product_name'];
-                $cart[$product_id]['price'] = $product['price'];
+                $cart[$product_id]['price'] = $product['price_product'];
                 $cart[$product_id]['amount'] = $amount;
-                $total += $product['price'] * $amount;
+                $total += $product['price_product'] * $amount;
             }
         }
     }

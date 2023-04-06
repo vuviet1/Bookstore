@@ -17,7 +17,6 @@
     <div class="container">
         <div class="checkout__form">
             <h4>CHI TIẾT TÀI KHOẢN</h4>
-            <form action="index.php?controller=acc-set">
                 <div class="row">
 
                     <div class="col-lg-12 col-md-6">
@@ -26,24 +25,32 @@
                             <!--Hiển thị khách hàng-->
                             <div class="card-body">
                                 <?php
-                                foreach ($KH['users'] as $kh) {
+                                foreach ($KH as $kh) {
                                     ?>
-                                    <form id="kh" method="POST" action="../../index.php?controller=kh&action=update">
+                                    <form id="kh" method="POST" action="index.php?controller=infor&action=update">
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
                                                 <input type="hidden" name="id" value="<?= $kh['id_customer'] ?>">
                                                 <label for="name_kh" class="form-label">Họ và tên</label>
-                                                <input class="form-control" type="text" id="name_kh" name="name_kh" value="<?= $kh['name_customer'] ?>"/>
+                                                <input class="form-control" type="text" id="name_kh" name="name" value="<?= $kh['name_customer'] ?>" readonly/>
                                             </div>
                                             <div class="mb-3 col-md-6 ">
                                                 <label for="email_kh" class="form-label">E-mail</label>
-                                                <input class="form-control" type="text" id="email_kh" name="email_kh" value="<?= $kh['email'] ?>"/>
+                                                <input class="form-control" type="text" id="email_kh" name="email" value="<?= $kh['email'] ?>" readonly/>
+                                            </div>
+                                            <div class="mb-3 col-md-6 ">
+                                                <label for="email_kh" class="form-label">Mật khẩu</label>
+                                                <input class="form-control" type="password" id="email_kh" name="password" />
+                                            </div>
+                                            <div class="mb-3 col-md-6 ">
+                                                <label for="email_kh" class="form-label">Nhập lại mất khẩu</label>
+                                                <input class="form-control" type="password" id="email_kh" name="re-password" />
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label" for="phone_kh">số điện thoại</label>
                                                 <div class="input-group input-group-merge">
                                                     <span class="input-group-text">VN (+84)</span>
-                                                    <input type="text" id="phone_kh" name="phone_kh" class="form-control" value="<?= $kh['phone_number'] ?>"/>
+                                                    <input type="text" id="phone_kh" name="phone" class="form-control" value="<?= $kh['phone_number'] ?>"/>
                                                 </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
@@ -52,21 +59,21 @@
                                                     <input type="text" id="address" name="address" class="form-control" value="<?= $kh['address'] ?>"/>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="site-btn">Cập nhật thông tin</button>
+                                            <button class="site-btn">Cập nhật</button>
                                     </form>
                                     <?php
                                 }
                                 ?>
                             </div>
                             <!--Hiển thị khách hàng-->
-                            <button type="submit" class="site-btn">Sửa thông tin</button>
-                            <button type="submit" class="site-btn">Quay lại</button>
+                            
 
 
                         </div>
                     </div>
                 </div>
-            </form>
+                <a href="index.php?controller=infor"><button class="site-btn">Quay lại</button></a>
+            
         </div>
     </div>
 </section>
