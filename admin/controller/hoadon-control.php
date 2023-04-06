@@ -32,6 +32,10 @@ switch ($action) {
     case 'details':
         include_once 'view/hoadon/hoadonchitiet.php';
         break;
+    case 'hd-sp-ct':
+        include_once 'model/sp-model.php';
+        include_once 'view/hoadon/hd-sp-add.php';
+        break;
     case 'store':
         break;
 }

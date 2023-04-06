@@ -24,7 +24,7 @@
                     <div style="display: flex ;justify-content: right; margin-top: 15px; margin-right: 20px">
                         <ul class="nav nav-pills flex-column flex-md-row mb-3">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.php?controller=hoadon&action=hdct"><i
+                                <a class="nav-link active" href="index.php?controller=hoadon&action=hd-sp-ct"><i
                                             class="bx bx-plus"></i>Thêm sản phẩm</a>
                             </li>
                         </ul>

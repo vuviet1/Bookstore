@@ -59,7 +59,14 @@
                                                     <input type="text" id="address" name="address" class="form-control" value="<?= $kh['address'] ?>"/>
                                                 </div>
                                             </div>
-                                            <button class="site-btn">Cập nhật</button>
+                                            <div class="col-lg-6">
+                                                <button class="site-btn">Cập nhật</button>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="index.php?controller=infor">
+                                                    <button class="site-btn">Quay lại</button>
+                                                </a>
+                                            </div>
                                     </form>
                                     <?php
                                 }
@@ -72,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="index.php?controller=infor"><button class="site-btn">Quay lại</button></a>
+
             
         </div>
     </div>

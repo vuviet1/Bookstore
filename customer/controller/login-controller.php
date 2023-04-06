@@ -39,7 +39,7 @@ switch ($action) {
         include_once 'model/login-model.php';
         //            quay về form đăng nhập
         echo '<script>   
-                location.href = "index.php?controller=login&action=login";
+                location.href = "index.php?controller=";
                 </script>';
         break;
     case 'register':

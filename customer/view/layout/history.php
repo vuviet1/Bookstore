@@ -53,7 +53,7 @@
                                         <?=$bill['total']?>
                                     </td>
                                     <td class="shoping__cart__item__close">
-                                        <button>Chi tiết</button>
+                                        <button class="site-btn">Chi tiết</button>
                                     </td>
                                 </tr>
 

@@ -49,7 +49,7 @@
                                         <?= $bill['status'] ?>
                                     </td>
                                     <td>
-                                        <?= $bill['total_price'] ?>
+                                        <?= $bill['total'] ?>
                                     </td>
                                     <td>
                                         <a style="color: white" href="index.php?controller=hoadon&action=detail&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-success">Xem chi tiết</button></a>

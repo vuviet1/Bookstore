@@ -85,13 +85,13 @@
 
               <form id="formAuthentication" class="mb-3" action="../index.php?controller=login&action=loginAccess" method="POST">
                 <div class="mb-3">
-                  <label for="username" class="form-label">Email/Tên người dùng</label>
+                  <label for="username" class="form-label">Tên người dùng</label>
                   <input
                     type="text"
                     class="form-control"
                     id="username"
                     name="username"
-                    placeholder="Nhập email hoặc tên người dùng"
+                    placeholder="Nhập tên người dùng"
                     autofocus
                   />
                 </div>

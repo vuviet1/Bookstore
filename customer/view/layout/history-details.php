@@ -104,7 +104,7 @@
                         </tbody>
                     </table>
                 </div>
-                <a href="index.php?controller=check-out&action=history"><button>Trở lại</button></a>
+                <a href="index.php?controller=check-out&action=history"><button class="site-btn">Trở lại</button></a>
             </div>
         </div>
     </div>

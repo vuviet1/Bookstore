@@ -61,6 +61,6 @@ switch ($action) {
         $test = loginAdmin();
         break;
     case 'logout':
-        session_destroy();
+        session_unset();
         break;
 }

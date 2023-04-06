@@ -56,10 +56,15 @@
                                 }
                                 ?>
                             </div>
-                            <a href="index.php?controller=infor&action=set" class="site-btn">Cập nhật thông tin</a>
+                            <div style="display: flex">
+                            <div class="col-lg-6">
+                            <a href="index.php?controller=infor&action=set"><button class="site-btn">Cập nhật thông tin</button></a>
+                            </div>
                             <!--Hiển thị khách hàng-->
+                            <div class="col-lg-6">
                             <a href="index.php?controller="><button type="submit" class="site-btn">Quay lại trang chủ</button></a>
-
+                            </div>
+                            </div>
 
                     </div>
                 </div>
