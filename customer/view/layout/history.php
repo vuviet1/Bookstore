@@ -47,7 +47,15 @@
                                         <?=$bill['purchase_date']?>
                                     </td>
                                     <td class="shoping__cart__quantity">
-                                        <?=$bill['status']?>
+                                         <?php if ($bill['status'] == 0) {
+                                            echo "Chờ xử lý";
+                                        } elseif($his['status'] == 1) {
+                                            echo "Đang xử lý";
+                                        }elseif($his['status'] == 2) {
+                                            echo "Đang giao";
+                                        }elseif($his['status'] == 3) {
+                                            echo "Đang đã giao";
+                                        } ?>
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <?=$bill['total']?>

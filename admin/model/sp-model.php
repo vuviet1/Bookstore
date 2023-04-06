@@ -86,8 +86,6 @@ function store()
     $date = $_POST['date'];
     $describes = $_POST['describes'];
     $img = $_POST['img'];
-    $file = $_FILES['img']['name'];
-    $tmp_file = $_FILES['img']['tmp_name'];
     $category = $_POST['category_id'];
     $author = $_POST['author_id'];
     $publis = $_POST['publis_id'];
@@ -99,10 +97,9 @@ function store()
         return 1;
     } else {
         // Insert new product
-        $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
+        $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price_product, describes, id_publishing_company, id_category, id_author)
                 VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
         mysqli_query($connect, $sql);
-        move_uploaded_file($tmp_file, '../img/');
         return 0;
     }
     include_once 'connect/closeConnect.php';
