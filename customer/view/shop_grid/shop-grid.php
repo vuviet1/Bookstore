@@ -37,7 +37,7 @@
             <div class="col-lg-9 col-md-8">
                 <div class="row">
                     <!--                    <div class="col-12" style="display: flex">-->
-                    <div class="col-lg-12" style="display: grid;grid-template-columns: 50% 50%">
+                    <div class="col-lg-12" style="display: grid;grid-template-columns: 33% 33% 33%">
                         <?php
                         if (isset($_GET['tl'])) {
                         foreach ($array['infor'] as $product) {
