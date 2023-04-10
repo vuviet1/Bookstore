@@ -16,7 +16,7 @@
 <section class="product spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-5">
+            <div class="col-lg-3 col-md-4">
                 <div class="sidebar">
                     <div class="sidebar__item">
                         <h4>Danh mục sản phẩm</h4>
@@ -33,53 +33,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-7">
 
-                <!--                    <div class="filter__item">-->
-                <!--                        <div class="row">-->
-                <!--                            <div class="col-lg-4 col-md-5">-->
-                <!--                                <div class="filter__sort">-->
-                <!--                                    <span>Sort By</span>-->
-                <!--                                    <select>-->
-                <!--                                        <option value="0">Default</option>-->
-                <!--                                        <option value="0">Default</option>-->
-                <!--                                    </select>-->
-                <!--                                </div>-->
-                <!--                            </div>-->
-                <!--                            <div class="col-lg-4 col-md-4">-->
-                <!--                                <div class="filter__found">-->
-                <!--                                    <h6><span>16</span> Products found</h6>-->
-                <!--                                </div>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <?php
-                if (isset($_GET['tl'])) {
-                    foreach ($array['infor'] as $product) {
-                ?>
-                        <div class="row">
-
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <!--                                DANH MỤC SẢN PHẨM -Start-->
-                                    <div class="product__item__pic set-bg" data-setbg="img/<?= $product['image'] ?>">
-                                        <ul class="product__item__pic__hover">
-                                            <li><a href="index.php?controller=shop-details&action=detail&id=<?= $product['id_product'] ?>"><i class="fa fa-info"></i></a></li>
-                                            <li><a href="index.php?controller=shop-cart&action=add&id=<?= $product['id_product'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6><a href="index.php?controller=shop-details&action=detail&id=<?= $product['id_product'] ?>"><?= $product['product_name'] ?></a></h6>
-                                        <h5 style="color: red"><?= $product['price_product'] ?> VND</h5>
-                                    </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <!--                    <div class="col-12" style="display: flex">-->
+                    <div class="col-lg-12" style="display: grid;grid-template-columns: 50% 50%">
+                        <?php
+                        if (isset($_GET['tl'])) {
+                        foreach ($array['infor'] as $product) {
+                            ?>
+                            <!--                        <div class="row">-->
+                            <!--                            <div class="col-lg-6" style="display: flex">-->
+                            <div class="product__item">
+                                <!--                                DANH MỤC SẢN PHẨM -Start-->
+                                <div class="product__item__pic set-bg" data-setbg="img/<?= $product['image'] ?>">
+                                    <ul class="product__item__pic__hover">
+                                        <li>
+                                            <a href="index.php?controller=shop-details&action=detail&id=<?= $product['id_product'] ?>"><i
+                                                        class="fa fa-info"></i></a></li>
+                                        <li>
+                                            <a href="index.php?controller=shop-cart&action=add&id=<?= $product['id_product'] ?>"><i
+                                                        class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>
+                                        <a href="index.php?controller=shop-details&action=detail&id=<?= $product['id_product'] ?>"><?= $product['product_name'] ?></a>
+                                    </h6>
+                                    <h5 style="color: red"><?= $product['price_product'] ?> VND</h5>
                                 </div>
                             </div>
-                        </div>
-                        <!--                                DANH MỤC SẢN PHẨM - END -->
-
-                    <?php
-                    }
-                    ?>
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                                DANH MỤC SẢN PHẨM - END -->
+                            <?php
+                        }
+                        ?>
+                        <!--            </div>-->
+                    </div>
+                </div>
                     <!--                    CHIA SỐ TRANG-->
                     <div style="display: flex ;justify-content: center ; margin-top: 50px">
                         <nav aria-label="...">

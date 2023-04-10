@@ -148,11 +148,12 @@
                                     </select>
                                 </div>
 
-                                <div class="mt-2">
-                                    <button type="submit" class="btn btn-primary me-2">Thêm hóa đơn</button>
-                                    <a style="color: #8592a3" href="index.php?controller=hoadon"><button type="reset" class="btn btn-outline-secondary">Hủy bỏ</button></a>
-                                </div>
+
                         </form>
+                        <div class="mt-2">
+                            <button type="submit" class="btn btn-primary me-2">Thêm hóa đơn</button>
+                            <a style="color: #8592a3" href="index.php?controller=hoadon"><button class="btn btn-outline-secondary">Hủy bỏ</button></a>
+                        </div>
                     </div>
                     <!-- /Thông tin -->
                 </div>

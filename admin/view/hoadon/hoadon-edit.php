@@ -8,35 +8,33 @@
         </h4>
 
         <div class="row">
-            <!-- Basic Buttons -->
+            <div class="card">
 
-            <div class="col-12">
-                <div class="card-body">
-                    <div class="row">
-                        <?php
-                        foreach ($bill['customer'] as $infor) {
-                        ?>
-                            <div class="mb-3 col-md-6 ">
-                                <label for="email" class="form-label">Tên khách hàng</label>
-                                <input class="form-control" type="text" id="email" value="<?= $infor['name_customer'] ?>" readonly />
-                            </div>
-                            <div class="mb-3 col-md-6 ">
-                                <label for="total" class="form-label">Địa chỉ</label>
-                                <input class="form-control" type="text" id="total" value="<?= $infor['address'] ?>" readonly />
-                            </div>
-                            <div class="mb-3 col-md-6 ">
-                                <label for="total" class="form-label">Số điện thoại</label>
-                                <input class="form-control" type="text" id="total" value="<?= $infor['phone_number'] ?>" readonly />
-                            </div>
-                        <?php
-                        }
-                        ?>
+                <div class="col-12">
+                    <div class="card-body">
+                        <div class="row">
+                            <?php
+                            foreach ($bill['customer'] as $infor) {
+                                ?>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="email" class="form-label">Tên khách hàng</label>
+                                    <input class="form-control" type="text" id="email" value="<?= $infor['name_customer'] ?>" readonly />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="total" class="form-label">Địa chỉ</label>
+                                    <input class="form-control" type="text" id="total" value="<?= $infor['address'] ?>" readonly />
+                                </div>
+                                <div class="mb-3 col-md-6 ">
+                                    <label for="total" class="form-label">Số điện thoại</label>
+                                    <input class="form-control" type="text" id="total" value="<?= $infor['phone_number'] ?>" readonly />
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Basic Bootstrap Table -->
-            <div class="card">
                 <h5 class="card-header">Sản phẩm</h5>
                 <div class="table-responsive text-nowrap">
                     <table class="table table-bordered">
@@ -65,61 +63,57 @@
                             </tbody>
                         </table>
                     </table>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <div class="row">
-                    <?php
-                    foreach ($bill['employee'] as $infor) {
-                    ?>
-                        <div class="mb-3 col-md-6 ">
-                            <label for="email" class="form-label">Nhân viên</label>
-                            <input class="form-control" type="text" id="email" name="email" value="<?= $infor['name_employee'] ?>" readonly />
-                        </div>
-                    <?php
-                    }
-                    ?>
-                    <?php
-                    foreach ($bill['customer'] as $infor) {
-                    ?>
-                        <div class="mb-3 col-md-6 ">
-                            <label for="email" class="form-label">Ngày mua</label>
-                            <input class="form-control" type="date" id="email" name="email" value="<?= $infor['purchase_date'] ?>" readonly />
-                        </div>
-                        <div class="mb-3 col-md-6 ">
-                            <label for="total" class="form-label">Tổng giá</label>
-                            <input class="form-control" type="text" id="total" name="total" value="<?= $infor['total'] ?>" readonly />
-                        </div>
-                        <div class="mb-3 col-md-6 ">
-                            <label for="total" class="form-label">Phương thức thanh toán</label>
-                            <input class="form-control" type="text" id="total" name="total" value="<?= $infor['name_payment'] ?>" readonly />
-                        </div>
-                        <div class="mb-3 col-md-6 ">
-                            <label for="total" class="form-label">Phương thức vận chuyển</label>
-                            <input class="form-control" type="text" id="total" name="total" value="<?= $infor['name_shipping'] ?>" readonly />
-                        </div>
-                        <form id="formAccountSettings" method="POST" action="index.php?controller=hoadon&action=update">
-                            <div class="mb-3 col-md-6">
-                                <input type="hidden" name="id_bill" value="<?= $infor['id_bill'] ?>">
-                                <label for="status" class="form-label">Trạng thái</label>
-                                <select class="form-control" id="status" name="status">
-                                    <option value="0" <?= ($infor['status'] == 0) ? 'selected' : '' ?>>Chờ xử lý</option>
-                                    <option value="1" <?= ($infor['status'] == 1) ? 'selected' : '' ?>>Đang xử lý</option>
-                                    <option value="2" <?= ($infor['status'] == 2) ? 'selected' : '' ?>>Đang giao</option>
-                                    <option value="3" <?= ($infor['status'] == 3) ? 'selected' : '' ?>>Đã giao hàng</option>
-                                    <option value="4" <?= ($infor['status'] == 4) ? 'selected' : '' ?>>Đã hủy</option>
-                                </select>
+                    <div class="row">
+                        <?php
+                        foreach ($bill['employee'] as $infor) {
+                            ?>
+                            <div class="mb-3 col-md-6 ">
+                                <label for="email" class="form-label">Nhân viên</label>
+                                <input class="form-control" type="text" id="email" name="email" value="<?= $infor['name_employee'] ?>" readonly />
                             </div>
-
-                            <div class="mt-2">
-                                <button type="submit" class="btn btn-primary me-2">Cập nhật</button>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        foreach ($bill['customer'] as $infor) {
+                            ?>
+                            <div class="mb-3 col-md-6 ">
+                                <label for="email" class="form-label">Ngày mua</label>
+                                <input class="form-control" type="date" id="email" name="email" value="<?= $infor['purchase_date'] ?>" readonly />
                             </div>
-                        </form>
-                    <?php
-                    }
-                    ?>
+                            <div class="mb-3 col-md-6 ">
+                                <label for="total" class="form-label">Tổng giá</label>
+                                <input class="form-control" type="text" id="total" name="total" value="<?= $infor['total'] ?>" readonly />
+                            </div>
+                            <div class="mb-3 col-md-6 ">
+                                <label for="total" class="form-label">Phương thức thanh toán</label>
+                                <input class="form-control" type="text" id="total" name="total" value="<?= $infor['name_payment'] ?>" readonly />
+                            </div>
+                            <div class="mb-3 col-md-6 ">
+                                <label for="total" class="form-label">Phương thức vận chuyển</label>
+                                <input class="form-control" type="text" id="total" name="total" value="<?= $infor['name_shipping'] ?>" readonly />
+                            </div>
+                            <form id="formAccountSettings" method="POST" action="index.php?controller=hoadon&action=update">
+                                <div class="mb-3 col-md-6">
+                                    <input type="hidden" name="id_bill" value="<?= $infor['id_bill'] ?>">
+                                    <label for="status" class="form-label">Trạng thái</label>
+                                    <select class="form-control" id="status" name="status">
+                                        <option value="0" <?= ($infor['status'] == 0) ? 'selected' : '' ?>>Chờ xử lý</option>
+                                        <option value="1" <?= ($infor['status'] == 1) ? 'selected' : '' ?>>Đang xử lý</option>
+                                        <option value="2" <?= ($infor['status'] == 2) ? 'selected' : '' ?>>Đang giao</option>
+                                        <option value="3" <?= ($infor['status'] == 3) ? 'selected' : '' ?>>Đã giao hàng</option>
+                                        <option value="4" <?= ($infor['status'] == 4) ? 'selected' : '' ?>>Đã hủy</option>
+                                    </select>
+                                </div>
+
+                                <div class="mt-2">
+                                    <button type="submit" class="btn btn-primary me-2">Cập nhật</button>
+                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=hoadon">Hủy bỏ</a></button>
+                                </div>
+                            </form>
+                            <?php
+                        }
+                        ?>
+                    </div>
                 </div>
-                <a style="color: #8592a3" href="index.php?controller=hoadon"><button class="btn btn-outline-secondary">Hủy bỏ</button></a>
-                <!--/ Basic Bootstrap Table -->
             </div>
