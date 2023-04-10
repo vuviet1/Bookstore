@@ -54,6 +54,8 @@
                                             echo "Đang giao";
                                         }elseif($bill['status'] == 3) {
                                             echo "Đã giao hàng";
+                                        }elseif($his['status'] == 4) {
+                                            echo "Đã hủy";
                                         } ?>
                                     </td>
                                     <td>
@@ -62,7 +64,6 @@
                                     <td>
                                         <a style="color: white" href="index.php?controller=hoadon&action=details&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-success">Xem chi tiết</button></a>
                                         <a style="color: white" href="index.php?controller=hoadon&action=edit&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
-                                        <a style="color: white" href="index.php?controller=hoadon&action=destroy&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                     </td>
                                 </tr>
                             <?php

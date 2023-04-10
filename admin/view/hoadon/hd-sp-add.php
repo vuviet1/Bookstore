@@ -38,7 +38,7 @@
                                         <img style="width: 150px" src="img/<?= $product['image'] ?>" alt="" >
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>">Chọn</a></button>
+                                        <a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>"><button type="button" class="btn btn-info">Chọn</button></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -46,7 +46,7 @@
                             ?>
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-secondary"><a style="color: white" href="index.php?controller=hoadon&action=addbill">Trở lại</a></button>
+                        <a style="color: white" href="index.php?controller=hoadon&action=addbill"><button type="button" class="btn btn-secondary">Trở lại</button></a>
                     </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->

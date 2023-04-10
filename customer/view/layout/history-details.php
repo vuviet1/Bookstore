@@ -91,7 +91,9 @@
                                             echo "Đang giao";
                                         }elseif($his['status'] == 3) {
                                             echo "Đang đã giao";
-                                        } ?>
+                                        }elseif($his['status'] == 4) {
+                                            echo "Đã hủy";
+                                        }?>
                                     </td>
 
                                     <td>

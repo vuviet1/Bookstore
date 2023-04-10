@@ -24,12 +24,14 @@ switch ($action) {
         break;
     case 'edit':
         //Hiển thị danh sách các
+        include_once 'model/hoadon-model.php';
         include_once 'view/hoadon/hoadon-edit.php';
         break;
     case 'create':
         include_once 'model/hoadon-model.php';
         break;
     case 'details':
+        include_once 'model/hoadon-model.php';
         include_once 'view/hoadon/hoadonchitiet.php';
         break;
     case 'hd-sp-ct':
@@ -38,5 +40,17 @@ switch ($action) {
         break;
     case 'store':
         include_once 'model/hoadon-model.php';
+        break;
+    case 'update':
+        include_once 'model/hoadon-model.php';
+        if($check == 0){
+            echo '<script>
+                    location.href = "index.php?controller=hoadon";
+                </script>';
+        }elseif($check == 1){
+            echo '<script>
+                    location.href = "index.php?controller=hoadon";
+                </script>';
+        }
         break;
 }

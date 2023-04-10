@@ -74,9 +74,8 @@
                                         <?= $product['describes'] ?>
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>">Sửa</a></button>
-                                        <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?=$product['id_product']?>">Xóa</a></button>
-                                        <button type="button" class="btn btn-secondary"><a style="color: white" href="index.php?controller=sp&action=">Trở lại</a></button>
+                                        <a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                        <a style="color: white" href="index.php?controller=sp&action="><button type="button" class="btn btn-secondary">Trở lại</button></a>
                                     </td>
                                 </tr>
                                 <?php

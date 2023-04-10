@@ -55,6 +55,8 @@
                                             echo "Đang giao";
                                         }elseif($bill['status'] == 3) {
                                             echo "Đã giao hàng";
+                                        }elseif($his['status'] == 4) {
+                                            echo "Đã hủy";
                                         } ?>
                                     </td>
                                     <td class="shoping__cart__item__close">

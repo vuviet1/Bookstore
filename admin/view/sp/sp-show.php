@@ -20,10 +20,11 @@
 
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
-                    <h5 class="card-header">Danh sách sản phẩm</h5>
+                    <h5 class="card-header">Danh sách sản phẩm</h5><form action="index.php?controller=sp&action=" method="post">
                     <div style="display: flex;justify-content: right">
+                    
                         <div class="mb-3 col-md-3">
-                            <input class="form-control" type="text" id="name" name="name" value="" autofocus/>
+                            <input class="form-control" type="text" id="name" name="search" value="" autofocus />
                         </div>
                         <button type="submit" class="mb-3" style="display: block;color: #697a8d;
     background-color: #fff;
@@ -32,50 +33,52 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;">
                             <i class="bx bx-search fs-4 lh-0"></i>
                         </button>
+                    
                     </div>
+                </form>
 
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Ảnh</th>
-                                <th>Hành động</th>
-                            </tr>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Ảnh</th>
+                                    <th>Hành động</th>
+                                </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
-                            <?php
-                                foreach ($array['infor'] as $product){
-                            ?>
-                                <tr>
-                                    <td>
-                                        <?= $product['id_product'] ?>
-                                    </td>
-                                    <td>
-                                        <?= $product['product_name'] ?>
-                                    </td>
-                                    <td>
-                                        <img src="img/<?= $product['image'] ?>" alt="" width="150px" height = "150px">
-                                    </td>
-                                    <td>
-                                    <button type="button" class="btn btn-success"><a style="color: white" href="index.php?controller=sp&action=detail&id=<?=$product['id_product']?>">Chi tiết</a></button>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>">Xóa</a></button>
-                                    </td>
-                                </tr>
-                            <?php
+                                <?php
+                                foreach ($array['infor'] as $product) {
+                                ?>
+                                    <tr>
+                                        <td>
+                                            <?= $product['id_product'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $product['product_name'] ?>
+                                        </td>
+                                        <td>
+                                            <img src="img/<?= $product['image'] ?>" alt="" width="150px" height="150px">
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success"><a style="color: white" href="index.php?controller=sp&action=detail&id=<?= $product['id_product'] ?>">Chi tiết</a></button>
+                                            <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Sửa</a></button>
+                                            <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>">Xóa</a></button>
+                                        </td>
+                                    </tr>
+                                <?php
                                 }
-                            ?>
+                                ?>
                             </tbody>
                         </table>
-                                                <!--                        Chia số trang-->
+                        <!--                        Chia số trang-->
                         <div class="" style="display: flex ;justify-content: center ; margin-top: 50px">
                             <nav aria-label="...">
                                 <ul class="pagination pagination-lg">
                                     <?php
                                     for ($i = 1; $i <= $array['page']; $i++) {
-                                        ?>
+                                    ?>
                                         <li class="page-item">
                                             <form method="post" action="index.php?controller=sp&page=<?= $i ?>">
                                                 <input type="hidden" name="search" value="<?= $array['search'] ?>">
@@ -83,7 +86,7 @@
                                                 <button class="page-link"><?= $i ?></button>
                                             </form>
                                         </li>
-                                        <?php
+                                    <?php
                                     }
                                     ?>
                                 </ul>
@@ -95,4 +98,3 @@
                 </div>
                 <!--/ Basic Bootstrap Table -->
             </div>
-
