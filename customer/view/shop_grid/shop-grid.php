@@ -36,14 +36,11 @@
 
             <div class="col-lg-9 col-md-8">
                 <div class="row">
-                    <!--                    <div class="col-12" style="display: flex">-->
                     <div class="col-lg-12" style="display: grid;grid-template-columns: 33% 33% 33%">
                         <?php
                         if (isset($_GET['tl'])) {
                         foreach ($array['infor'] as $product) {
                             ?>
-                            <!--                        <div class="row">-->
-                            <!--                            <div class="col-lg-6" style="display: flex">-->
                             <div class="product__item">
                                 <!--                                DANH MỤC SẢN PHẨM -Start-->
                                 <div class="product__item__pic set-bg" data-setbg="img/<?= $product['image'] ?>">
@@ -63,13 +60,10 @@
                                     <h5 style="color: red"><?= $product['price_product'] ?> VND</h5>
                                 </div>
                             </div>
-                            <!--                            </div>-->
-                            <!--                        </div>-->
                             <!--                                DANH MỤC SẢN PHẨM - END -->
                             <?php
                         }
                         ?>
-                        <!--            </div>-->
                     </div>
                 </div>
                     <!--                    CHIA SỐ TRANG-->
@@ -95,8 +89,6 @@
                 } else {
                     foreach ($array['infor'] as $product) {
                     ?>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <!--                                DANH MỤC SẢN PHẨM -Start-->
                                     <div class="product__item__pic set-bg" data-setbg="img/<?= $product['image'] ?>">
@@ -110,13 +102,12 @@
                                         <h5 style="color: red"><?= $product['price_product'] ?> VND</h5>
                                     </div>
                                 </div>
-                            </div>
-
                             <!--                                DANH MỤC SẢN PHẨM - END -->
-                        </div>
                     <?php
                     }
                     ?>
+            </div>
+        </div>
                     <!--                    CHIA SỐ TRANG-->
                     <div style="display: flex ;justify-content: center ; margin-top: 50px">
                         <nav aria-label="...">
@@ -137,7 +128,6 @@
                             </ul>
                         </nav>
                     </div>
-
                 <?php
                 }
                 ?>
