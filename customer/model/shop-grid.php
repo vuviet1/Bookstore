@@ -30,12 +30,13 @@ function index()
     return $array;
 }
 function tl(){
-    $tl = '';
-    if (isset($_GET['tl'])) {
     $tl = $_GET['tl'];
+    $page = 1;
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
     }
     include_once 'connect/openConnect.php';
-    $sqlCount = "SELECT COUNT(*) AS count_record FROM product WHERE product_name";
+    $sqlCount = "SELECT COUNT(*) AS count_record FROM product WHERE id_category = '$tl'";
     $counts = mysqli_query($connect, $sqlCount);
     foreach ($counts as $each) {
         $countRecord = $each['count_record'];
