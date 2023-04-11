@@ -111,16 +111,46 @@ function history()
     include_once 'connect/closeConnect.php';
     return $bill;
 }
-function history_details(){
+function history_details()
+{
     $customer_id = $_SESSION['id_customer'];
     $id_bill = $_POST['id_bill'];
     include_once 'connect/openConnect.php';
-    $sql = "SELECT bill_detail.*, bill.*, product.*, payment.*, shipping.*, author.* FROM bill_detail INNER JOIN bill ON bill_detail.id_bill = bill.id_bill INNER JOIN product ON bill_detail.id_product = product.id_product INNER JOIN author ON product.id_author = author.id_author INNER JOIN payment ON bill.id_payment = payment.id_payment INNER JOIN shipping ON bill.id_shipping = shipping.id_shipping WHERE bill.id_customer = '$customer_id' AND bill.id_bill = '$id_bill' LIMIT 0, 25";
+    $sql = "SELECT bill_detail.*, bill.*, product.*, author.* FROM bill_detail INNER JOIN bill ON bill_detail.id_bill = bill.id_bill INNER JOIN product ON bill_detail.id_product = product.id_product INNER JOIN author ON product.id_author = author.id_author WHERE bill.id_customer = '$customer_id' AND bill.id_bill = '$id_bill' LIMIT 0, 25";
     $history = mysqli_query($connect, $sql);
-    // $sql = "SELECT bill_detail.*, bill.*, product.*, payment.*, shipping.*, author.* FROM bill_detail INNER JOIN bill ON bill_detail.id_bill = bill.id_bill INNER JOIN product ON bill_detail.id_product = product.id_product INNER JOIN author ON product.id_author = author.id_author INNER JOIN payment ON bill.id_payment = payment.id_payment INNER JOIN shipping ON bill.id_shipping = shipiing.id_shipping WHERE id_customer = '$customer_id' AND id_bill = '$id_bill'";
-    // $history = mysqli_query($connect, $sql);
+    $sql2 = "SELECT bill.*, payment.*, shipping.* FROM bill INNER JOIN payment ON bill.id_payment = payment.id_payment INNER JOIN shipping ON bill.id_shipping = shipping.id_shipping WHERE bill.id_customer = '$customer_id' AND bill.id_bill = '$id_bill'";
+    $infor = mysqli_query($connect, $sql2);
+    $array = array();
+    $array['product'] = $history;
+    $array['infor'] = $infor;
     include_once 'connect/closeConnect.php';
-    return $history;
+    return $array;
+}
+function delete_bill()
+{
+    $id = $_GET['id'];
+    include_once 'connect/openConnect.php';
+    $sqbill = "SELECT * FROM `bill` WHERE id_bill = '$id'";
+    $check = mysqli_query($connect, $sqbill);
+    foreach ($check as $c) {
+        if ($c['status'] == 0) {
+            $sql = "UPDATE `bill` SET `status`='4' WHERE id_bill = '$id'";
+            mysqli_query($connect, $sql);
+            return 0;
+        } elseif ($c['status'] == 1) {
+            $message = "Đơn hàng đã được xác nhận, bạn không thể hủy!";
+            echo "<script>alert('$message');</script>";
+            return 1;
+        } elseif ($c['status'] == 2){
+            $message = "Đơn hàng đang được giao, bạn không thể hủy!";
+            echo "<script>alert('$message');</script>";
+            return 1;
+        } elseif($c['status'] == 3){
+            $message = "Đơn hàng đã hoàn thành, bạn không thể hủy!";
+            echo "<script>alert('$message');</script>";
+            return 1;
+        }
+    }
 }
 switch ($action) {
     case '':
@@ -134,5 +164,8 @@ switch ($action) {
         break;
     case 'history-details':
         $history = history_details();
+        break;
+    case 'delete-bill':
+        $check = delete_bill();
         break;
 }

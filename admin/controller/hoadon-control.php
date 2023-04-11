@@ -78,7 +78,23 @@ switch ($action) {
         location.href = "index.php?controller=hoadon";
         </script>';
         break;
-
+    case 'change-amount':
+        include_once 'model/hoadon-model.php';
+        include_once 'view/hoadon/show-sp-add.php';
+        break;
+    case 'update-cart':
+        include_once 'model/hoadon-model.php';
+        
+        if ($check == 1){
+            echo '<script>
+            location.href = "index.php?controller=hoadon&action=change-amount";
+            </script>';
+        }elseif($check == 0){
+            echo '<script>
+        location.href = "index.php?controller=hoadon&action=information";
+        </script>';
+        }
+        break;
     case 'add-order-db':
         include_once 'model/hoadon-model.php';
         echo '<script>

@@ -18,9 +18,15 @@ switch ($action) {
         break;
     case 'update':
         include_once 'model/shop-cart.php';
-        echo '<script>
+        if ($check == 1) {
+            echo '<script>
+            location.href = "index.php?controller=shop-cart&action=";
+            </script>';
+        } elseif ($check == 0) {
+            echo '<script>
         location.href = "index.php?controller=shop-cart&action=";
         </script>';
+        }
         break;
     case 'add-to-db':
         include_once 'model/shop-cart.php';

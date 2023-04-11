@@ -26,4 +26,16 @@ switch ($action) {
         include_once 'model/check-out-model.php';
         include_once 'view/layout/history-details.php';
         break;
+    case 'delete-bill':
+        include_once 'model/check-out-model.php';echo $check;
+        if ($check == 1) {
+            echo '<script>   
+                                location.href = "index.php?controller=check-out&action=history";
+                            </script>';
+        } elseif ($check == 0) {
+            echo '<script>   
+                    location.href = "index.php?controller=check-out&action=history";
+                </script>';
+        }
+        break;
 }

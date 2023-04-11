@@ -25,7 +25,7 @@
                         <thead>
                             
                         <tr>
-                            <th class="shoping__product">Số thứ tự</th>
+                            <th>Số thứ tự</th>
                             <th>Ngày mua</th>
                             <th>Trạng thái</th>
                             <th>Giá</th>
@@ -60,11 +60,12 @@
                                         } ?>
                                     </td>
                                     <td class="shoping__cart__item__close">
-                                        <?=$bill['total']?>
+                                        <?=$bill['total']?> .000 VNĐ
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <button class="site-btn">Chi tiết</button>
                                     </td>
+                                    
                                 </tr>
 
                                 <?php

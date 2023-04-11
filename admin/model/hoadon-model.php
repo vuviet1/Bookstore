@@ -12,8 +12,8 @@ function index()
     }
     include_once 'connect/openConnect.php';
     $sqlCount = "SELECT COUNT(*) AS count_record FROM bill WHERE status LIKE '%$search%'";
-//    $sql1 = "SELECT * FROM customer";
-//    $sqlCount = "SELECT count(name_customer) FROM customer WHERE name_customer = '$search'";
+    //    $sql1 = "SELECT * FROM customer";
+    //    $sqlCount = "SELECT count(name_customer) FROM customer WHERE name_customer = '$search'";
 
     $counts = mysqli_query($connect, $sqlCount);
     foreach ($counts as $each) {
@@ -166,16 +166,29 @@ function delete_product_in_order()
     unset($_SESSION['cart'][$product_id]);
 }
 
-function delete_cart(){
+function delete_cart()
+{
     unset($_SESSION['cart']);
 }
 
 function update_cart()
-{
-    //Lấy product_id và amount
+{   //Lấy product_id và amount
     $infor = $_POST['amount'];
     foreach ($infor as $product_id => $value) {
-        $_SESSION['cart'][$product_id] = $value;
+        if ($value <= 0) {
+            $message = "Số lượng không đúng!";
+            echo "<script>alert('$message');</script>";
+            return 1;
+        } else {
+            $_SESSION['cart'][$product_id] = $value;
+            if (isset($value)) {
+                foreach ($infor as $product_id => $value) {
+                    $_SESSION['cart'][$product_id] = $value;
+                }
+            } else {
+                return 0;
+            }
+        }
     }
 }
 
@@ -233,12 +246,17 @@ switch ($action) {
     case 'details':
         $bill = details();
         break;
-
+    case 'update-cart':
+        $check = update_cart();
+        break;
     case 'information':
         $infor = information();
         break;
     case 'hd-sp-ct':
         $product = showProduct();
+        break;
+    case 'change-amount':
+        $infor = information();
         break;
     case 'add-to-cart':
         add_to_cart();

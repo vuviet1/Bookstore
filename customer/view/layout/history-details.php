@@ -32,7 +32,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($history as $his) {
+                            foreach ($history['product'] as $his) {
                             ?>
                                 <!--                                    dùng PHP để hiển thị giỏ-->
                                 <tr>
@@ -70,7 +70,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($history as $his) {
+                            foreach ($history['infor'] as $his) {
                             ?>
                                 <tr>
                                     <td>
@@ -99,6 +99,9 @@
                                     <td>
                                         <?= $his['total']; ?>
                                     </td>
+                                    <td class="shoping__cart__item__close">
+                                        <a style="color: white" href="index.php?controller=check-out&action=delete-bill&id=<?=$his['id_bill']?>" class="site-btn">Hủy đơn</a>
+                                    </td>
                                 </tr>
                             <?php
                             }
@@ -107,6 +110,7 @@
                     </table>
                 </div>
                 <a href="index.php?controller=check-out&action=history"><button class="site-btn">Trở lại</button></a>
+                
             </div>
         </div>
     </div>

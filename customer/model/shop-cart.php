@@ -46,7 +46,20 @@ function update()
     //Lấy product_id và amount
     $infor = $_POST['amount'];
     foreach ($infor as $product_id => $value) {
-        $_SESSION['cart'][$product_id] = $value;
+        if ($value <= 0) {
+            $message = "Số lượng không đúng!";
+            echo "<script>alert('$message');</script>";
+            return 1;
+        } else {
+            $_SESSION['cart'][$product_id] = $value;
+            if (isset($value)) {
+                foreach ($infor as $product_id => $value) {
+                    $_SESSION['cart'][$product_id] = $value;
+                }
+            } else {
+                return 0;
+            }
+        }
     }
 }
 function delete_product_in_order()
@@ -69,7 +82,7 @@ switch ($action) {
         $infor = view_cart();
         break;
     case 'update':
-        update();
+        $check = update();
         break;
     case 'delete-product-in-cart':
         delete_product_in_order();

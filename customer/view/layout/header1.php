@@ -74,7 +74,13 @@
                     <ul>
                         <li><a href="index.php?controller=">Home</a></li>
                         <li><a href="index.php?controller=shop-grid">Shop</a></li>
-                        <li><a href="#">Trang</a>
+                        <!-- <li><a href="#">Trang</a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="index.php?controller=shop-cart">Giỏ hàng</a></li>
+                                <li><a href="index.php?controller=check-out">Kiểm tra</a></li>
+                            </ul>
+                        </li> -->
+                        <li><span>Tác giả</span>
                             <ul class="header__menu__dropdown">
                                 <li><a href="index.php?controller=shop-cart">Giỏ hàng</a></li>
                                 <li><a href="index.php?controller=check-out">Kiểm tra</a></li>

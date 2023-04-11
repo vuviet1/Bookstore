@@ -84,10 +84,20 @@
                     <ul>
                         <li><a href="index.php?controller=">Home</a></li>
                         <li><a href="index.php?controller=shop-grid">Shop</a></li>
-                        <li><a href="#">Trang</a>
+                        <!-- <li><a href="#">Trang</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="index.php?controller=shop-cart">Giỏ hàng</a></li>
                                 <li><a href="index.php?controller=check-out">Kiểm tra</a></li>
+                            </ul>
+                        </li> -->
+                        <li><span>Thể loại</span>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=5">Sách Quản Lý Kinh Doanh</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=6">Sách Giáo Khoa - Tham Khảo</a></li>
+                                <li><a href="index.php?controller=shop-grid&action=findtl&tl=7">Sách Ngoại Ngữ</a></li>
                             </ul>
                         </li>
                     </ul>
