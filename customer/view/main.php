@@ -6,37 +6,37 @@
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/vanhoc0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Sách Văn Học</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/thieunhi0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Sách Thiếu Nhi</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/kns0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Sách Kỹ Năng Sống</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/qlkd0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Quản Lý Kinh Doanh</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=5">Quản Lý Kinh Doanh</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/sgk0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Sách Giáo Khoa - Tham Khảo</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=6">Sách Giáo Khoa - Tham Khảo</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg">
                         <img src="img/nn0.png" alt="">
-                        <h5><a href="index.php?controller=shop-grid">Sách Ngoại Ngữ</a></h5>
+                        <h5><a href="index.php?controller=shop-grid&action=findtl&tl=7">Sách Ngoại Ngữ</a></h5>
                     </div>
                 </div>
             </div>
