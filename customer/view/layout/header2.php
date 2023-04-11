@@ -51,7 +51,7 @@
                         <div class="header__top__right__social">
                             <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
                             <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-                            <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__auth">
@@ -90,8 +90,9 @@
                                 <li><a href="index.php?controller=check-out">Kiểm tra</a></li>
                             </ul>
                         </li> -->
-                        <li><span>Thể loại</span>
+                        <li><a href="#">Thể loại</a>
                             <ul class="header__menu__dropdown">
+                                <li><a href="index.php?controller=shop-grid">Tất cả</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>

@@ -4,36 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="sửa cột">
+    <list default="true" id="cd22e623-cf73-40dc-bea0-3d51b7af5daa" name="Changes" comment="add hoa don len db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controller/hoadon-control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/hoadon-control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/hoadon-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/hoadon-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/tg-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/tg-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/acc-set.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/layout/acc-set.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/layout/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/forgot-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/layout/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hd-sp-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hd-sp-add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/hoadon-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/kh/kh-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/kh/kh-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/layout/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/nv/nv-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/nv/nv-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/nxb/nxb-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/pttt/pttt-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/pttt/pttt-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/ptvc/ptvc-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/ptvc/ptvc-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/layout/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sp/sp-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sp/sp-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/tacgia/tg-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/tacgia/tg-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/theloai/tl-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/controller/shop-cart-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/shop-cart-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/model/check-out-model.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/model/check-out-model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/check_out/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/check_out/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hoadon/show-sp-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hoadon/show-sp-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/controller/shop-grid-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/controller/shop-grid-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/layout/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/view/layout/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shopping_cart/shopping-cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/history-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/history-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/layout/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/layout/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/view/shop_grid/shop-grid.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +143,7 @@
       <workItem from="1680750094428" duration="3776000" />
       <workItem from="1681118858370" duration="12976000" />
       <workItem from="1681143176579" duration="614000" />
-      <workItem from="1681187893839" duration="11223000" />
+      <workItem from="1681187893839" duration="17243000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <created>1679970489212</created>
@@ -316,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681135307987</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add hoa don len db">
+      <created>1681203192723</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681203192723</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +339,8 @@
     <MESSAGE value="demo1" />
     <MESSAGE value="demo2" />
     <MESSAGE value="sửa cột" />
-    <option name="LAST_COMMIT_MESSAGE" value="sửa cột" />
+    <MESSAGE value="add hoa don len db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hoa don len db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

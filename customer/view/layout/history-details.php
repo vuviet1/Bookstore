@@ -23,11 +23,11 @@
                     <table>
                         <thead>
                             <tr>
-                                <th class="shoping__product">Ảnh</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Tác giả</th>
-                                <th>Số lượng</th>
-                                <th>Giá</th>
+                                <th class="col-lg-2">Ảnh</th>
+                                <th class="col-lg-3">Tên sản phẩm</th>
+                                <th class="col-lg-3">Tác giả</th>
+                                <th class="col-lg-2">Số lượng</th>
+                                <th class="col-lg-2">Giá</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,7 +37,7 @@
                                 <!--                                    dùng PHP để hiển thị giỏ-->
                                 <tr>
                                     <td>
-                                        <img src="img/<?= $his['image'] ?>" alt="" width="100px" height="100px">
+                                        <img src="img/<?= $his['image'] ?>" alt="" width="150px" height="150px">
                                     </td>
                                     <td>
                                         <h5><a href="index.php?controller=shop-details" style="color: black"><?= $his['product_name'] ?></a></h5>
@@ -49,7 +49,7 @@
                                         <?= $his['amount'] ?>
                                     </td>
                                     <td class="shoping__cart__price">
-                                        <?= $his['price_product'] ?> VNĐ
+                                            <?= $his['price_product'] ?> VNĐ
                                     </td>
                                 </tr>
 
@@ -96,8 +96,9 @@
                                         }?>
                                     </td>
 
-                                    <td>
-                                        <?= $his['total']; ?>
+                                    <td style="color: red"><b>
+                                        <?= $his['total']; ?>.000 VNĐ
+                                        </b>
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <a style="color: white" href="index.php?controller=check-out&action=delete-bill&id=<?=$his['id_bill']?>" class="site-btn">Hủy đơn</a>

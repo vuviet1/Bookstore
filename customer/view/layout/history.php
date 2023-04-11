@@ -21,15 +21,13 @@
             <div class="col-lg-12">
                 <div class="shoping__cart__table">
                     <table>
-                        
                         <thead>
-                            
                         <tr>
-                            <th>Số thứ tự</th>
-                            <th>Ngày mua</th>
-                            <th>Trạng thái</th>
-                            <th>Giá</th>
-                            <th></th>
+                            <th class="col-lg-2">Số thứ tự</th>
+                            <th class="col-lg-3">Ngày mua</th>
+                            <th class="col-lg-3">Trạng thái</th>
+                            <th class="col-lg-2">Giá</th>
+                            <th class="col-lg-2"></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -37,17 +35,16 @@
                             $i = 1;
                             foreach ($bills as $bill) {
                                 ?>
-                                
                                 <!--                                    dùng PHP để hiển thị giỏ-->
                                 <tr>
-                                    <td class="shoping__cart__item">
+                                    <td style="display: flex; justify-content: center">
                                         <input type="hidden" name="id_bill" value="<?=$bill['id_bill']?>">
                                         <?=$i?>
                                     </td>
-                                    <td class="shoping__cart__price">
+                                    <td >
                                         <?=$bill['purchase_date']?>
                                     </td>
-                                    <td class="shoping__cart__quantity">
+                                    <td class="shoping__cart__price">
                                          <?php if ($bill['status'] == 0) {
                                             echo "Chờ xử lý";
                                         } elseif($bill['status'] == 1) {
@@ -60,8 +57,9 @@
                                             echo "Đã hủy";
                                         } ?>
                                     </td>
-                                    <td class="shoping__cart__item__close">
-                                        <?=$bill['total']?> .000 VNĐ
+                                    <td style="color: red"><b>
+                                        <?=$bill['total']?>.000 VNĐ
+                                        </b>
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <a href="index.php?controller=check-out&action=history-details&id=<?=$bill['id_bill']?>" class="site-btn">Chi tiết</a>

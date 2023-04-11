@@ -21,14 +21,15 @@
                     <div style="display: flex ;justify-content: right; margin-top: 15px; margin-right: 20px">
                         <ul class="nav nav-pills flex-column flex-md-row mb-3">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.php?controller=hoadon&action=hd-sp-ct"><i class="bx bx-plus"></i>Thêm sản phẩm</a>
+                                <a class="nav-link active" href="index.php?controller=hoadon&action=hd-sp-ct"><i
+                                            class="bx bx-plus"></i>Thêm sản phẩm</a>
                             </li>
                         </ul>
                     </div>
-                    <hr class="my-0" />
+                    <hr class="my-0"/>
                     <h5 class="card-header">Hóa đơn</h5>
                     <form action="index.php?controller=hoadon&action=add-order-db" method="POST">
-                        <hr class="my-0" />
+                        <hr class="my-0"/>
                         <div>
                             <!--                 Danh sách sản phẩm -START  -->
                             <div class="card">
@@ -36,38 +37,38 @@
                                 <div class="table-responsive text-nowrap">
                                     <table class="table table-bordered">
                                         <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Tên sản phẩm</th>
-                                                <th>Ảnh</th>
-                                                <th>Số lượng</th>
-                                                <th>Giá</th>
-                                            </tr>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Ảnh</th>
+                                            <th>Số lượng</th>
+                                            <th>Giá</th>
+                                        </tr>
                                         </thead>
                                         <tbody class="table-border-bottom-0">
-                                                <?php
-                                                foreach ($infor['cart'] as $product_id => $value) {
-                                                ?>
-                                                    <tr>
-                                                        <td>
-                                                            <?= $value['id_product'] ?>
-                                                        </td>
-                                                        <td>
-                                                            <?= $value['product_name'] ?>
-                                                        </td>
-                                                        <td>
-                                                            <img style="width: 150px" src="img/<?= $value['image'] ?>" alt="">
-                                                        </td>
-                                                        <td>
-                                                        <?= $value['amount']; ?>
-                                                        </td>
-                                                        <td>
-                                                            <?= $value['price'] ?> VNĐ
-                                                        </td>
-                                                    </tr>
-                                                <?php
-                                                }
-                                                ?>
+                                        <?php
+                                        foreach ($infor['cart'] as $product_id => $value) {
+                                            ?>
+                                            <tr>
+                                                <td>
+                                                    <?= $value['id_product'] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value['product_name'] ?>
+                                                </td>
+                                                <td>
+                                                    <img style="width: 150px" src="img/<?= $value['image'] ?>" alt="">
+                                                </td>
+                                                <td>
+                                                    <?= $value['amount']; ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value['price'] ?> VNĐ
+                                                </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                        ?>
                                         </tbody>
                                     </table>
 
@@ -77,88 +78,89 @@
 
                             <!--                            Thông tin đơn hàng - START-->
                             <div class="card-body">
-                                    <div class="row">
-                                        <div class="mb-3 col-md-6 ">
-                                            <label for="total" class="form-label">Tổng giá</label>
-                                            <input class="form-control" type="text" id="total" name="total" value="<?= $infor['total'] ?>" />
-                                        </div>
-                                        <div class="mb-3 col-md-6 ">
-                                            <label for="customer" class="form-label">Tên khách hàng</label>
-                                            <select class="form-control" type="text" id="id_customer" name="id_customer">
-                                                <option value=""> - Chọn -</option>
-                                                <?php
-                                                foreach ($infor['customer'] as $customer) {
+                                <div class="row">
+                                    <div class="mb-3 col-md-6 ">
+                                        <label for="customer" class="form-label">Tên khách hàng</label>
+                                        <select class="form-control" type="text" id="id_customer" name="id_customer">
+                                            <option value=""> - Chọn -</option>
+                                            <?php
+                                            foreach ($infor['customer'] as $customer) {
                                                 ?>
-                                                    <option value="<?= $customer['id_customer'] ?>">
-                                                        <?= $customer['name_customer'] ?>
-                                                    </option>
+                                                <option value="<?= $customer['id_customer'] ?>">
+                                                    <?= $customer['name_customer'] ?>
+                                                </option>
                                                 <?php
-                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-md-6 ">
+                                        <label for="employee" class="form-label">Tên nhân viên xử lý đơn</label>
+                                        <select class="form-control" type="text" id="id_employee" name="id_employee">
+                                            <option value=""> - Chọn -</option>
+                                            <?php
+                                            foreach ($infor['employee'] as $employee) {
                                                 ?>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6 ">
-                                            <label for="employee" class="form-label">Tên nhân viên xử lý đơn</label>
-                                            <select class="form-control" type="text" id="id_employee" name="id_employee">
-                                                <option value=""> - Chọn -</option>
+                                                <option value="<?= $employee['id_employee'] ?>">
+                                                    <?= $employee['name_employee'] ?>
+                                                </option>
                                                 <?php
-                                                foreach ($infor['employee'] as $employee) {
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-md-6 ">
+                                        <label for="payment" class="form-label">Phương thức thanh toán</label>
+                                        <select class="form-control" type="text" id="id_payment" name="id_payment">
+                                            <option value=""> - Chọn -</option>
+                                            <?php
+                                            foreach ($infor['payment'] as $payment) {
                                                 ?>
-                                                    <option value="<?= $employee['id_employee'] ?>">
-                                                        <?= $employee['name_employee'] ?>
-                                                    </option>
+                                                <option value="<?= $payment['id_payment'] ?>">
+                                                    <?= $payment['name_payment'] ?>
+                                                </option>
                                                 <?php
-                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-md-6 ">
+                                        <label for="shipping" class="form-label">Phương thức vận chuyển</label>
+                                        <select class="form-control" type="text" id="id_shipping" name="id_shipping">
+                                            <option value=""> - Chọn -</option>
+                                            <?php
+                                            foreach ($infor['shipping'] as $shipping) {
                                                 ?>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6 ">
-                                            <label for="payment" class="form-label">Phương thức thanh toán</label>
-                                            <select class="form-control" type="text" id="id_payment" name="id_payment">
-                                                <option value=""> - Chọn -</option>
+                                                <option value="<?= $shipping['id_shipping'] ?>">
+                                                    <?= $shipping['name_shipping'] ?>
+                                                </option>
                                                 <?php
-                                                foreach ($infor['payment'] as $payment) {
-                                                ?>
-                                                    <option value="<?= $payment['id_payment'] ?>">
-                                                        <?= $payment['name_payment'] ?>
-                                                    </option>
-                                                <?php
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6 ">
-                                            <label for="shipping" class="form-label">Phương thức vận chuyển</label>
-                                            <select class="form-control" type="text" id="id_shipping" name="id_shipping">
-                                                <option value=""> - Chọn -</option>
-                                                <?php
-                                                foreach ($infor['shipping'] as $shipping) {
-                                                ?>
-                                                    <option value="<?= $shipping['id_shipping'] ?>">
-                                                        <?= $shipping['name_shipping'] ?>
-                                                    </option>
-                                                <?php
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-                            </div>
-                            <!--                            Thông tin đơn hàng -END -->
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-md-6 ">
+                                        <label for="total" class="form-label">Tổng giá</label>
+                                        <input class="form-control" type="text" id="total" name="total"
+                                               value="<?= $infor['total'] ?>" readonly/>
+                                    </div>
+                                </div>
+                                <!--                            Thông tin đơn hàng -END -->
 
-                            <div class="mt-2">
-                                <!--                                <a href="index.php?controller=hoadon&action=add-order-db">-->
-                                <button type="submit" class="btn btn-primary me-2">Thêm hóa đơn</button>
-                                <!--                                </a>-->
-
+                                <div class="mt-2">
+                                    <button type="submit" class="btn btn-primary me-2">Thêm hóa đơn</button>
+                                </div>
                             </div>
-                        </div>
                     </form>
-                </div><a style="color: #8592a3" href="index.php?controller=hoadon&action=delete-cart">
-                    <button class="btn btn-outline-secondary">Hủy bỏ</button>
-                </a>
-                <a style="color: #8592a3" href="index.php?controller=hoadon&action=change-amount">
-                    <button class="btn btn-outline-secondary">Thay đổi số lượng sản phẩm</button>
-                </a>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin: 0 20px 20px 20px">
+                    <a style="color: #8592a3" href="index.php?controller=hoadon&action=change-amount">
+                        <button class="btn btn-outline-secondary">Thay đổi số lượng sản phẩm</button>
+                    </a>
+                    <a style="color: #8592a3" href="index.php?controller=hoadon&action=delete-cart">
+                        <button class="btn btn-outline-secondary">Hủy bỏ</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

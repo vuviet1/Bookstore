@@ -55,13 +55,13 @@
                 </div>
                 <div class="featured__controls">
                     <ul>
-                        <li class="active" data-filter="*">Tất cả</li>
-                        <li><a href="index.php?controller=&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
-                        <li><a href="index.php?controller=&action=findtl&tl=3">Sách Văn Học</a></li>
-                        <li><a href="index.php?controller=&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>
-                        <li><a href="index.php?controller=&action=findtl&tl=5">Sách Quản Lý Kinh Doanh</a></li>
-                        <li><a href="index.php?controller=&action=findtl&tl=6">Sách Giáo Khoa - Tham Khảo</a></li>
-                        <li><a href="index.php?controller=&action=findtl&tl=7">Sách Ngoại Ngữ</a></li>
+                        <li class="active"><a href="index.php?controller=" style="color: black">Tất cả</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=2" style="color: black">Sách Thiếu Nhi</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=3" style="color: black">Sách Văn Học</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=4" style="color: black">Sách Kỹ Năng Sống</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=5" style="color: black">Sách Quản Lý Kinh Doanh</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=6" style="color: black">Sách Giáo Khoa - Tham Khảo</a></li>
+                        <li><a href="index.php?controller=&action=findtl&tl=7" style="color: black">Sách Ngoại Ngữ</a></li>
                     </ul>
                 </div>
             </div>

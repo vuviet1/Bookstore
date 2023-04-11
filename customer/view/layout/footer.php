@@ -40,10 +40,10 @@
                         <button type="submit" class="site-btn">Đăng ký</button>
                     </form>
                     <div class="footer__widget__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>

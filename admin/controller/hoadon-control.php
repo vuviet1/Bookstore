@@ -55,17 +55,6 @@ switch ($action) {
         location.href = "index.php?controller=hoadon&action=information";
         </script>';
         break;
-//    case 'view-cart':
-//        include_once 'model/hoadon-model.php';
-//        include_once 'view/hoadon/hoadon-add.php';
-//        break;
-//    case 'addbill':
-//        //Hiển thị danh sách các
-//        include_once 'view/hoadon/hoadon-add.php';
-//        break;
-//    case 'create':
-//        include_once 'model/hoadon-model.php';
-//        break;
     case 'delete-product-in-cart':
         include_once 'model/hoadon-model.php';
         echo '<script>
@@ -84,7 +73,6 @@ switch ($action) {
         break;
     case 'update-cart':
         include_once 'model/hoadon-model.php';
-        
         if ($check == 1){
             echo '<script>
             location.href = "index.php?controller=hoadon&action=change-amount";

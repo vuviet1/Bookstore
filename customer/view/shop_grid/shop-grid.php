@@ -22,6 +22,7 @@
                         <h4>Danh mục sản phẩm</h4>
                         <form action="in" method="POST">
                             <ul>
+                                <li><a href="index.php?controller=shop-grid">Tất cả</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=2">Sách Thiếu Nhi</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=3">Sách Văn Học</a></li>
                                 <li><a href="index.php?controller=shop-grid&action=findtl&tl=4">Sách Kỹ Năng Sống</a></li>
