@@ -46,7 +46,7 @@
                                         <?= $product['number_of_pages'] ?>
                                     </td>
                                     <td>
-                                        <?= $product['price'] ?>
+                                        <?= $product['price_product'] ?>
                                     </td>
                                     <td>
                                         <img src="img/<?= $product['image'] ?>" alt="" width="150px" height="150px" >
