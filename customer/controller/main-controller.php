@@ -14,6 +14,10 @@ switch ($action) {
         include_once 'model/main-model.php';
         include_once 'view/main.php';
         break;
+    case 'findtl':
+        include_once 'model/main-model.php';
+        include_once 'view/main.php';
+        break;
     default:
         include_once 'view/main.php';
         break;
