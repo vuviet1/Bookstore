@@ -114,7 +114,7 @@ function history()
 function history_details()
 {
     $customer_id = $_SESSION['id_customer'];
-    $id_bill = $_POST['id_bill'];
+    $id_bill = $_GET['id'];
     include_once 'connect/openConnect.php';
     $sql = "SELECT bill_detail.*, bill.*, product.*, author.* FROM bill_detail INNER JOIN bill ON bill_detail.id_bill = bill.id_bill INNER JOIN product ON bill_detail.id_product = product.id_product INNER JOIN author ON product.id_author = author.id_author WHERE bill.id_customer = '$customer_id' AND bill.id_bill = '$id_bill' LIMIT 0, 25";
     $history = mysqli_query($connect, $sql);

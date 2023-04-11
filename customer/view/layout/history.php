@@ -21,7 +21,7 @@
             <div class="col-lg-12">
                 <div class="shoping__cart__table">
                     <table>
-                        <form action="index.php?controller=check-out&action=history-details" method="post">
+                        
                         <thead>
                             
                         <tr>
@@ -37,6 +37,7 @@
                             $i = 1;
                             foreach ($bills as $bill) {
                                 ?>
+                                
                                 <!--                                    dùng PHP để hiển thị giỏ-->
                                 <tr>
                                     <td class="shoping__cart__item">
@@ -55,7 +56,7 @@
                                             echo "Đang giao";
                                         }elseif($bill['status'] == 3) {
                                             echo "Đã giao hàng";
-                                        }elseif($his['status'] == 4) {
+                                        }elseif($bill['status'] == 4) {
                                             echo "Đã hủy";
                                         } ?>
                                     </td>
@@ -63,7 +64,7 @@
                                         <?=$bill['total']?> .000 VNĐ
                                     </td>
                                     <td class="shoping__cart__item__close">
-                                        <button class="site-btn">Chi tiết</button>
+                                        <a href="index.php?controller=check-out&action=history-details&id=<?=$bill['id_bill']?>" class="site-btn">Chi tiết</a>
                                     </td>
                                     
                                 </tr>
@@ -73,7 +74,7 @@
                             }
                             ?>
                         </tbody>
-                    </form>
+                    
                     </table>
                 </div>
             
