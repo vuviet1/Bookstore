@@ -25,7 +25,7 @@
                             </thead>
                             <tbody class="table-border-bottom-0">
                             <?php
-                            foreach ($array['infor'] as $product){
+                            foreach ($product as $product){
                                 ?>
                                 <tr>
                                     <td>
@@ -38,7 +38,7 @@
                                         <img style="width: 150px" src="img/<?= $product['image'] ?>" alt="" >
                                     </td>
                                     <td>
-                                        <a style="color: white" href="index.php?controller=sp&action=edit&id=<?=$product['id_product']?>"><button type="button" class="btn btn-info">Chọn</button></a>
+                                        <a style="color: white" href="index.php?controller=hoadon&action=add-to-cart&id=<?=$product['id_product']?>"><button type="button" class="btn btn-info">Chọn</button></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -46,8 +46,10 @@
                             ?>
                             </tbody>
                         </table>
-                        <a style="color: white" href="index.php?controller=hoadon&action=addbill"><button type="button" class="btn btn-secondary">Trở lại</button></a>
-                    </div>
+                        <div style="margin: 20px 20px">
+                        <a style="color: white" href="index.php?controller=hoadon&action=information"><button type="button" class="btn btn-secondary">Trở lại</button></a>
+                        </div>
+                        </div>
                 </div>
                 <!--/ Basic Bootstrap Table -->
             </div>

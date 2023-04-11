@@ -38,6 +38,7 @@ function information()
     $check_out['employee'] = $employee;
     return $check_out;
 }
+
 // function add_order_to_db(){
 //     $customer_id = $_SESSION['id_customer'];
 //     $date_buy = date('Y-m-d');
@@ -69,6 +70,7 @@ function information()
 // $arr['date'] = $date_buy;
 // $arr['status'] = $status;
 // return var_dump($arr);
+
 function add_order_to_db()
 {
     $customer_id = $_SESSION['id_customer'];

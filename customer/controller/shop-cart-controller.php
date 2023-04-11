@@ -8,7 +8,6 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case '':
         include_once 'model/shop-cart.php';
-
         include_once 'view/shopping_cart/shopping-cart.php';
         break;
     case 'add':

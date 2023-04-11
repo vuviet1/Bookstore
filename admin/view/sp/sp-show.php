@@ -9,34 +9,31 @@
 
         <div class="row">
             <!-- Basic Buttons -->
-
             <div class="col-12">
                 <ul class="nav nav-pills flex-column flex-md-row mb-3">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php?controller=sp&action=add"><i class="bx bx-plus"></i>Thêm sản phẩm</a>
                     </li>
                 </ul>
-
-
                 <!-- Basic Bootstrap Table -->
                 <div class="card">
-                    <h5 class="card-header">Danh sách sản phẩm</h5><form action="index.php?controller=sp&action=" method="post">
-                    <div style="display: flex;justify-content: right">
-                    
-                        <div class="mb-3 col-md-3">
-                            <input class="form-control" type="text" id="name" name="search" value="" autofocus />
-                        </div>
-                        <button type="submit" class="mb-3" style="display: block;color: #697a8d;
+                    <h5 class="card-header">Danh sách sản phẩm</h5>
+                    <!--Tìm kiếm-->
+                    <form action="index.php?controller=sp&action=" method="post">
+                        <div style="display: flex;justify-content: right">
+                            <div class="mb-3 col-md-3">
+                                <input class="form-control" type="text" id="name" name="search" value="" autofocus/>
+                            </div>
+                            <button type="submit" class="mb-3" style="display: block;color: #697a8d;
     background-color: #fff;
     border: 1px solid #d9dee3;
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;">
-                            <i class="bx bx-search fs-4 lh-0"></i>
-                        </button>
-                    
-                    </div>
-                </form>
-
+                                <i class="bx bx-search fs-4 lh-0"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <!--Tìm kiếm-->
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>

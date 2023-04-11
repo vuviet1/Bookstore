@@ -109,7 +109,7 @@
                         <span>Danh mục sản phẩm</span>
                     </div>
                     <ul>
-                        <li><a href="index.php?controller=shop-grid">Sách Bán Chạy</a></li>
+                        <li><a href="index.php?controller=shop-grid">Tất cả</a></li>
                         <li><a href="index.php?controller=shop-grid">Sách Thiếu Nhi</a></li>
                         <li><a href="index.php?controller=shop-grid">Sách Văn Học</a></li>
                         <li><a href="index.php?controller=shop-grid">Sách Kỹ Năng Sống</a></li>

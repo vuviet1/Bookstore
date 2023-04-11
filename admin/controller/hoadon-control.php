@@ -18,29 +18,6 @@ switch ($action) {
         //Hiển thị danh sách các
         include_once 'view/hoadon/hoadonchitet-add.php';
         break;
-    case 'addbill':
-        //Hiển thị danh sách các
-        include_once 'view/hoadon/hoadon-add.php';
-        break;
-    case 'edit':
-        //Hiển thị danh sách các
-        include_once 'model/hoadon-model.php';
-        include_once 'view/hoadon/hoadon-edit.php';
-        break;
-    case 'create':
-        include_once 'model/hoadon-model.php';
-        break;
-    case 'details':
-        include_once 'model/hoadon-model.php';
-        include_once 'view/hoadon/hoadonchitiet.php';
-        break;
-    case 'hd-sp-ct':
-        include_once 'model/sp-model.php';
-        include_once 'view/hoadon/hd-sp-add.php';
-        break;
-    case 'store':
-        include_once 'model/hoadon-model.php';
-        break;
     case 'update':
         include_once 'model/hoadon-model.php';
         if($check == 0){
@@ -53,4 +30,60 @@ switch ($action) {
                 </script>';
         }
         break;
+    case 'details':
+        include_once 'model/hoadon-model.php';
+        include_once 'view/hoadon/hoadonchitiet.php';
+        break;
+    case 'edit':
+        //Hiển thị danh sách các
+        include_once 'model/hoadon-model.php';
+        include_once 'view/hoadon/hoadon-edit.php';
+        break;
+
+    case 'information':
+        include_once 'model/hoadon-model.php';
+        include_once 'view/hoadon/hoadon-add.php';
+        break;
+
+    case 'hd-sp-ct':
+        include_once 'model/hoadon-model.php';
+        include_once 'view/hoadon/hd-sp-add.php';
+        break;
+    case 'add-to-cart':
+        include_once 'model/hoadon-model.php';
+        echo '<script>
+        location.href = "index.php?controller=hoadon&action=information";
+        </script>';
+        break;
+//    case 'view-cart':
+//        include_once 'model/hoadon-model.php';
+//        include_once 'view/hoadon/hoadon-add.php';
+//        break;
+//    case 'addbill':
+//        //Hiển thị danh sách các
+//        include_once 'view/hoadon/hoadon-add.php';
+//        break;
+//    case 'create':
+//        include_once 'model/hoadon-model.php';
+//        break;
+    case 'delete-product-in-cart':
+        include_once 'model/hoadon-model.php';
+        echo '<script>
+        location.href = "index.php?controller=hoadon&action=information";
+        </script>';
+        break;
+    case 'delete-cart':
+        include_once 'model/hoadon-model.php';
+        echo '<script>
+        location.href = "index.php?controller=hoadon";
+        </script>';
+        break;
+
+    case 'add-order-db':
+        include_once 'model/hoadon-model.php';
+        echo '<script>
+        location.href = "index.php?controller=hoadon";
+        </script>';
+        break;
+
 }

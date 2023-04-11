@@ -1,8 +1,8 @@
 <?php
 session_start();
-include_once "view/header.php";
-include_once "view/navbar.php";
-include_once "view/search.php";
+include_once "view/layout/header.php";
+include_once "view/layout/navbar.php";
+include_once "view/layout/search.php";
 
 //lấy controller đang làm việc
 $controller = '';
@@ -14,7 +14,7 @@ if (isset($_GET['controller'])){
 switch ($controller){
     case '':
         if(isset($_SESSION['username']) && isset($_SESSION['password'])){
-            include_once "view/index.html";
+            include_once "view/index.php";
         }else{
             echo '<script>   
             location.href = "index.php?controller=login&action=login";
@@ -25,7 +25,7 @@ switch ($controller){
         include_once 'controller/login-controller.php';
         break;
     case 'tk':
-        include_once "view/acc-set.php";
+        include_once "view/layout/acc-set.php";
         break;
     case 'tacgia':
         if(isset($_SESSION['username']) && isset($_SESSION['password'])){
@@ -113,4 +113,4 @@ switch ($controller){
         break;
 }
 
-include_once "view/footer.php";
+include_once "view/layout/footer.php";

@@ -38,7 +38,7 @@
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="img/<?= $value['image'] ?>" alt="" width="100px" height="100px">
-                                        <!-- <img src="img/<?= $value['image'] ?>" alt=""> -->
+<!--                                         <img src="img/--><?//= $value['image'] ?><!--" alt=""> -->
                                         <h5><a href="index.php?controller=shop-details"
                                                style="color: black"><?= $value['product_name'] ?></a></h5>
                                     </td>

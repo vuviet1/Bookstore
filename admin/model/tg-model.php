@@ -1,6 +1,7 @@
 <?php
 //function lấy dữ liệu từ db
-function index(){
+function index()
+{
     $search = '';
     if (isset($_POST['search'])) {
         $search = $_POST['search'];

@@ -12,6 +12,9 @@ function index()
     }
     include_once 'connect/openConnect.php';
     $sqlCount = "SELECT COUNT(*) AS count_record FROM bill WHERE status LIKE '%$search%'";
+//    $sql1 = "SELECT * FROM customer";
+//    $sqlCount = "SELECT count(name_customer) FROM customer WHERE name_customer = '$search'";
+
     $counts = mysqli_query($connect, $sqlCount);
     foreach ($counts as $each) {
         $countRecord = $each['count_record'];
@@ -19,7 +22,7 @@ function index()
     $recordOnePage = 5;
     $countPage = ceil($countRecord / $recordOnePage);
     $start = ($page - 1) * $recordOnePage;
-    $end = 3;
+    $end = 5;
     $sql = "SELECT bill.*, employee.name_employee, customer.name_customer, customer.address, customer.phone_number, payment.name_payment, shipping.name_shipping FROM bill INNER JOIN employee ON bill.id_employee = employee.id_employee INNER JOIN customer ON bill.id_customer = customer.id_customer INNER JOIN payment ON bill.id_payment = payment.id_payment INNER JOIN shipping ON bill.id_shipping = shipping.id_shipping WHERE status LIKE '%$search%' LIMIT $start, $end";
     $bill = mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
@@ -29,33 +32,7 @@ function index()
     $array['page'] = $countPage;
     return $array;
 }
-function addBill_detail()
-{
-    include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM product";
-    $product = mysqli_query($connect, $sql);
-    include_once 'connect/closeConnect.php';
-    return $product;
-}
-function addBill()
-{
-    include_once 'connect/openConnect.php';
-    $sql = "SELECT * FROM customer";
-    $customer = mysqli_query($connect, $sql);
-    $sqlemployee = "SELECT * FROM employee";
-    $employee = mysqli_query($connect, $sqlemployee);
-    $sqlpayment = "SELECT * FROM payment";
-    $payment = mysqli_query($connect, $sqlpayment);
-    $sqlshipping = "SELECT * FROM shipping";
-    $shipping = mysqli_query($connect, $sqlshipping);
-    include_once 'connect/closeConnect.php';
-    $arr = array();
-    $arr['customer'] = $customer;
-    $arr['employee'] = $employee;
-    $arr['payment'] = $payment;
-    $arr['shipping'] = $shipping;
-    return $arr;
-}
+
 function details()
 {
     $id_bill = $_GET['id'];
@@ -82,6 +59,7 @@ function details()
     $bill['employee'] = $employee;
     return $bill;
 }
+
 function update()
 {
     $status = $_POST['status'];
@@ -112,10 +90,128 @@ function update()
     }
     include_once 'connect/closeConnect.php';
 }
-//function lưu dữ liệu lên db
-function store()
+
+function information()
 {
+    include_once 'connect/openConnect.php';
+    $sql = "SELECT * FROM customer";
+    $customer = mysqli_query($connect, $sql);
+    $sqlship = "SELECT * FROM shipping";
+    $shipping = mysqli_query($connect, $sqlship);
+    $sqlpay = "SELECT * FROM payment";
+    $payment = mysqli_query($connect, $sqlpay);
+    $sqlemp = "SELECT * FROM employee";
+    $employee = mysqli_query($connect, $sqlemp);
+
+    $cart = array();
+    $infor = array();
+    $total = 0;
+    if (isset($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $product_id => $amount) {
+            //                Lấy tên sp và giá theo product_id
+            $sql = "SELECT * FROM product WHERE id_product = '$product_id'";
+            $products = mysqli_query($connect, $sql);
+            foreach ($products as $product) {
+                $cart[$product_id]['id_product'] = $product['id_product'];
+                $cart[$product_id]['image'] = $product['image'];
+                $cart[$product_id]['product_name'] = $product['product_name'];
+                $cart[$product_id]['price'] = $product['price_product'];
+                $cart[$product_id]['amount'] = $amount;
+                $total += $product['price_product'] * $amount;
+            }
+        }
+    }
+
+    include_once 'connect/closeConnect.php';
+    $infor = array();
+    $infor['customer'] = $customer;
+    $infor['shipping'] = $shipping;
+    $infor['payment'] = $payment;
+    $infor['employee'] = $employee;
+    $infor['cart'] = $cart;
+    $infor['total'] = $total;
+    return $infor;
 }
+
+function showProduct()
+{
+    include_once 'connect/openConnect.php';
+    $sql = "SELECT * FROM product";
+    $product = mysqli_query($connect, $sql);
+    include_once 'connect/closeConnect.php';
+    return $product;
+}
+
+function add_to_cart()
+{
+    //        Lấy được id của sản phẩm vừa được thêm vào
+    $product_id = $_GET['id'];
+    //        Lưu lên session id sản phầm và số lượng mặc định là 1
+    //        Kiểm tra xem giỏ hàng đã tồn tại hay chưa
+    if (isset($_SESSION['cart'])) {
+        if (isset($_SESSION['cart'][$product_id])) {
+            $_SESSION['cart'][$product_id]++;
+        } else {
+            $_SESSION['cart'][$product_id] = 1;
+        }
+    } else {
+        $_SESSION['cart'] = array();
+        $_SESSION['cart'][$product_id] = 1;
+    }
+}
+
+function delete_product_in_order()
+{
+    $product_id = $_GET['id'];
+    unset($_SESSION['cart'][$product_id]);
+}
+
+function delete_cart(){
+    unset($_SESSION['cart']);
+}
+
+function update_cart()
+{
+    //Lấy product_id và amount
+    $infor = $_POST['amount'];
+    foreach ($infor as $product_id => $value) {
+        $_SESSION['cart'][$product_id] = $value;
+    }
+}
+
+
+function add_order_to_db()
+{
+    $id_customer = $_POST['id_customer'];
+    $date_buy = date('Y-m-d');
+    $id_payment = $_POST['id_payment'];
+    $id_shipping = $_POST['id_shipping'];
+    $id_employee = $_POST['id_employee'];
+    $total = $_POST['total'];
+    $status = 0;
+
+    include_once 'connect/openConnect.php';
+    $sqlOrder = "INSERT INTO `bill`(`id_employee`, `id_customer`, `id_payment`, `id_shipping`, `purchase_date`, `status`, `total`) VALUES ('$id_employee','$id_customer','$id_payment','$id_shipping','$date_buy','$status','$total')";
+    mysqli_query($connect, $sqlOrder);
+    $orderID = mysqli_insert_id($connect); // Lấy id_bill vừa được thêm vào
+    $sqlOrderID = "SELECT MAX(id_bill) as order_id FROM bill WHERE id_customer = '$id_customer'";
+    $orderIDs = mysqli_query($connect, $sqlOrderID);
+    foreach ($orderIDs as $value) {
+        $orderID = $value['order_id'];
+    }
+    foreach ($_SESSION['cart'] as $id_product => $amount) {
+        $sqlPriceProduct = "SELECT price_product FROM product WHERE id_product = '$id_product'";
+        $priceProduct = mysqli_query($connect, $sqlPriceProduct);
+        foreach ($priceProduct as $each) {
+            $price = $each['price_product'];
+        }
+        $sql = "INSERT INTO `bill_detail`(`id_bill`, `id_product`, `amount`, `price`) VALUES ('$orderID','$id_product','$amount','$price')";
+        mysqli_query($connect, $sql);
+    }
+    include_once 'connect/closeConnect.php';
+    unset($_SESSION['cart']);
+}
+
 
 //Lấy hành động đang thực hiện
 $action = '';
@@ -128,19 +224,32 @@ switch ($action) {
         //lấy dữ liệu từ db
         $array = index();
         break;
-    case 'addbill':
-        $arr = addBill();
-        break;
     case 'edit':
         $bill = details();
         break;
     case 'update':
         $check = update();
         break;
-    case 'store':
-        //lưu dữ liệu lên db
-        break;
     case 'details':
         $bill = details();
+        break;
+
+    case 'information':
+        $infor = information();
+        break;
+    case 'hd-sp-ct':
+        $product = showProduct();
+        break;
+    case 'add-to-cart':
+        add_to_cart();
+        break;
+    case 'delete-product-in-cart':
+        delete_product_in_order();
+        break;
+    case 'delete-cart':
+        delete_cart();
+        break;
+    case 'add-order-db':
+        add_order_to_db();
         break;
 }

@@ -71,7 +71,7 @@
             <i class="menu-icon tf-icons bx bx-credit-card"></i>
             <div data-i18n="Account Settings">Phương thức thanh toán</div>
         </a>
-    </li>a
+    </li>
     <li class="menu-item">
         <a href="index.php?controller=ptvc" class="menu-link">
             <i class="menu-icon tf-icons bx bxs-truck"></i>
