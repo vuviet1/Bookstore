@@ -82,7 +82,7 @@
                             <div class="featured__item__text">
 
                                 <h6><a href="index.php?controller=shop-details"><?= $product['product_name'] ?></a></h6>
-                                <h5 style="color: red"><?= $product['price_product'] ?>VNĐ</h5>
+                                <h5 style="color: red"><?= $product['price_product'] ?>.000 VNĐ</h5>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         <div class="featured__item__text">
 
                             <h6><a href="index.php?controller=shop-details"><?= $product['product_name'] ?></a></h6>
-                            <h5 style="color: red"><?= $product['price_product'] ?>VNĐ</h5>
+                            <h5 style="color: red"><?= $product['price_product'] ?>.000 VNĐ</h5>
                         </div>
                     </div>
                 </div>
