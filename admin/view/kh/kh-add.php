@@ -1,4 +1,3 @@
-
 <!-- Content wrapper -->
 <div class="content-wrapper">
     <!-- Content -->
@@ -16,77 +15,39 @@
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="name_kh" class="form-label">Họ và tên</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="name_kh"
-                                        name="name_kh"
-                                        value=""
-                                        autofocus
-                                    />
+                                    <input class="form-control" type="text" id="name_kh" name="name_kh" value="" autofocus />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email_kh" class="form-label">E-mail</label>
-                                    <input
-                                        class="form-control"
-                                        type="email"
-                                        id="email_kh"
-                                        name="email_kh"
-                                        value=""
-                                        placeholder="a@gmail.com"
-                                    />
+                                    <input class="form-control" type="email" id="email_kh" name="email_kh" value="" placeholder="a@gmail.com" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="user_kh" class="form-label">Username</label>
-                                    <input
-                                            class="form-control"
-                                            type="text"
-                                            id="user_kh"
-                                            name="user_kh"
-                                            value=""
-                                            placeholder="Nguyen Van A"
-                                    />
+                                    <input class="form-control" type="text" id="user_kh" name="user_kh" value="" placeholder="Nguyen Van A" />
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="pass_kh" class="form-label">Password</label>
-                                    <input
-                                            class="form-control"
-                                            type="password"
-                                            id="pass_kh"
-                                            name="pass_kh"
-                                            value=""
-                                    />
+                                    <input class="form-control" type="password" id="pass_kh" name="pass_kh" value="" />
                                 </div>
                                 <div class="mb-3 col-md-6">
                                     <label class="form-label" for="phone_kh">Số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
-                                        <input
-                                            type="text"
-                                            id="phone_kh"
-                                            name="phone_kh"
-                                            class="form-control"
-                                            placeholder="000 000 0000"
-                                        />
+                                        <input type="text" id="phone_kh" name="phone_kh" class="form-control" placeholder="000 000 0000" />
                                     </div>
                                 </div>
                                 <div class="mb-3 col-md-6">
                                     <label class="form-label" for="address">Địa chỉ</label>
                                     <div class="input-group input-group-merge">
-                                        <input
-                                            type="text"
-                                            id="address"
-                                            name="address"
-                                            class="form-control"
-                                        />
+                                        <input type="text" id="address" name="address" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Thêm khách hàng</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=kh">Hủy bỏ</a></button>
                                 </div>
                         </form>
                     </div>
+                    <a style="color: #8592a3" href="index.php?controller=kh"><button class="btn btn-outline-secondary">Hủy bỏ</button></a>
                 </div>
             </div>
         </div>
@@ -105,4 +66,3 @@
 <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
-

@@ -31,13 +31,13 @@
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Sửa</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=tacgia">Hủy bỏ</a></button>
                                 </div>
                         </form>
                             <?php
                         }
                         ?>
                     </div>
+                    <a style="color: #8592a3" href="index.php?controller=tacgia"><button type="reset" class="btn btn-outline-secondary">Hủy bỏ</button></a>
                 </div>
             </div>
         </div>

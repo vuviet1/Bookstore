@@ -1,4 +1,3 @@
-
 <!-- Content wrapper -->
 <div class="content-wrapper">
     <!-- Content -->
@@ -13,31 +12,24 @@
                     <hr class="my-0" />
                     <div class="card-body">
                         <?php
-                        foreach($NXB as $nxb){
+                        foreach ($NXB as $nxb) {
                         ?>
-                        <form id="nxb" method="POST" action="index.php?controller=nxb&action=update">
-                            <div class="row">
-                                <div class="mb-3 col-md-6">
-                                    <input type="hidden" name="id" value="<?= $nxb['id_publishing_company'] ?>">
-                                    <label for="nxb" class="form-label">Tên nhà xuất bản</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="nxb"
-                                        name="nxb"
-                                        value="<?= $nxb['publishing_company_name'] ?>"
-                                        autofocus
-                                    />
-                                </div>
-                                <div class="mt-2">
-                                    <button type="submit" class="btn btn-primary me-2">Sửa nhà xuất bản</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=nxb">Hủy bỏ</a></button>
-                                </div>
-                        </form>
-                            <?php
+                            <form id="nxb" method="POST" action="index.php?controller=nxb&action=update">
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <input type="hidden" name="id" value="<?= $nxb['id_publishing_company'] ?>">
+                                        <label for="nxb" class="form-label">Tên nhà xuất bản</label>
+                                        <input class="form-control" type="text" id="nxb" name="nxb" value="<?= $nxb['publishing_company_name'] ?>" autofocus />
+                                    </div>
+                                    <div class="mt-2">
+                                        <button type="submit" class="btn btn-primary me-2">Sửa nhà xuất bản</button>
+                                    </div>
+                            </form>
+                        <?php
                         }
                         ?>
                     </div>
+                    <a style="color: #8592a3" href="index.php?controller=nxb"><button type="reset" class="btn btn-outline-secondary">Hủy bỏ</button></a>
                 </div>
             </div>
         </div>
@@ -56,4 +48,3 @@
 <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
-

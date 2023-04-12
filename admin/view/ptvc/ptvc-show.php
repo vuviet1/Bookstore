@@ -60,8 +60,8 @@
                                     <?= $ptvc['name_shipping'] ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=ptvc&action=edit&id=<?= $ptvc['id_shipping'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=ptvc&action=destroy&id=<?= $ptvc['id_shipping'] ?>">Xóa</a></button>
+                                    <a style="color: white" href="index.php?controller=ptvc&action=edit&id=<?= $ptvc['id_shipping'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                    <a style="color: white" href="index.php?controller=ptvc&action=destroy&id=<?= $ptvc['id_shipping'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                 </td>
                             </tr>
                                 <?php

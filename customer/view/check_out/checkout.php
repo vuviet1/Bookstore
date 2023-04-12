@@ -88,7 +88,7 @@
                                                           height="150px">
                                                  </td>
                                                  <td class="shoping__cart__price">
-                                                     <?= $value['price'] ?> VNĐ
+                                                     <?= $value['price'] ?>.000 VNĐ
                                                  </td>
                                                  <td class="shoping__cart__quantity">
                                                      <?= $value['amount']; ?>
@@ -104,9 +104,9 @@
                                  <hr>
 
                                  <!--                                hiển thị tổng tiền -->
-                                 <div class="checkout__order__total">Tổng tiền <span><input type="text" name="total"
+                                 <div class="checkout__order__total">Tổng tiền <span><input type="hidden" name="total"
                                                                                             value="<?= $KH['total'] ?>"
-                                                                                            readonly></span></div>
+                                                                                            readonly><?= $KH['total'] ?>.000 VNĐ</span></div>
 
                                  <div class="card-body">
                                      <form id="kh" method="POST" action="index.php?controller=kh&action=store">

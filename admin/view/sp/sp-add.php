@@ -47,7 +47,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Thể loại</label>
                                         <select class="form-control" type="text" id="price" name="category_id">
-                                            <option value=""> - Choose - </option>
+                                            <option value=""> - Chọn - </option>
                                             <?php
                                             foreach ($arr['category'] as $category) {
                                                 ?>
@@ -62,7 +62,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Tác giả</label>
                                     <select class="form-control" type="text" id="price" name="author_id">
-                                        <option value=""> - Choose - </option>
+                                        <option value=""> - Chọn - </option>
                                         <?php
                                         foreach ($arr['author'] as $author) {
                                         ?>
@@ -77,7 +77,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Nhà xuất bản</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
-                                        <option value=""> - Choose - </option>
+                                        <option value=""> - Chọn - </option>
                                         <?php
                                         foreach ($arr['publis'] as $publis) {
                                         ?>
@@ -96,10 +96,10 @@
                                 <div><br></div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Thêm sản phẩm</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=sp">Hủy bỏ</a></button>
                                 </div>
                         </form>
                     </div>
+                    <a style="color: #8592a3" href="index.php?controller=sp"><button type="reset" class="btn btn-outline-secondary">Hủy bỏ</button></a>
                     <!-- /Account -->
                 </div>
             </div>

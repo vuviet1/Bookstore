@@ -59,8 +59,8 @@
                                             <?= $pttt['name_payment'] ?>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=pttt&action=edit&id=<?= $pttt['id_payment'] ?>">Sửa</a></button>
-                                            <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=pttt&action=destroy&id=<?= $pttt['id_payment'] ?>">Xóa</a></button>
+                                            <a style="color: white" href="index.php?controller=pttt&action=edit&id=<?= $pttt['id_payment'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                            <a style="color: white" href="index.php?controller=pttt&action=destroy&id=<?= $pttt['id_payment'] ?>"><button type="button" class="btn btn-danger">Xóa</a></button>
                                         </td>
                                     </tr>
                                 <?php

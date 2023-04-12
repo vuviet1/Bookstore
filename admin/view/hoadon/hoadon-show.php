@@ -82,7 +82,17 @@
                                     </td>
                                     <td>
                                         <a style="color: white" href="index.php?controller=hoadon&action=details&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-success">Xem chi tiết</button></a>
+                                        <?php
+                                        if($bill['status'] == 4){
+
+                                        }elseif($bill['status'] == 3){
+
+                                        }else{
+                                        ?>
                                         <a style="color: white" href="index.php?controller=hoadon&action=edit&id=<?= $bill['id_bill'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                        <?php
+                                        }
+                                        ?>
                                     </td>
                                 </tr>
                             <?php

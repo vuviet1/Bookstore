@@ -60,8 +60,8 @@
                                     <?= $nxb['publishing_company_name'] ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=nxb&action=edit&id=<?= $nxb['id_publishing_company'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=nxb&action=destroy&id=<?= $nxb['id_publishing_company'] ?>">Xóa</a></button>
+                                    <a style="color: white" href="index.php?controller=nxb&action=edit&id=<?= $nxb['id_publishing_company'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                    <a style="color: white" href="index.php?controller=nxb&action=destroy&id=<?= $nxb['id_publishing_company'] ?>"><button type="button" class="btn btn-danger">Xóa</a></button>
                                 </td>
                             </tr>
                                 <?php

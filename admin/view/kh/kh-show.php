@@ -25,7 +25,7 @@
                     <form action="index.php?controller=kh&action=" method="post">
                         <div style="display: flex;justify-content: right">
                             <div class="mb-3 col-md-3">
-                                <input class="form-control" type="text" id="name" name="search" value="" autofocus/>
+                                <input class="form-control" type="text" id="name" name="search" value="" autofocus />
                             </div>
                             <button type="submit" class="mb-3" style="display: block;color: #697a8d;
     background-color: #fff;
@@ -41,43 +41,43 @@
                     <div class="table-responsive text-nowrap">
                         <table class="table table-bordered">
                             <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Tên khách hàng</th>
-                                <th>Số điện thoại</th>
-                                <th>Email</th>
-                                <th>Địa chỉ</th>
-                                <th>Hành động</th>
-                            </tr>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Email</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Hành động</th>
+                                </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
-                            <?php
-                            foreach ($array['infor'] as $kh){
-                            ?>
-                            <tr>
-                                <td>
-                                    <?= $kh['id_customer'] ?>
-                                </td>
-                                <td>
-                                    <?= $kh['name_customer'] ?>
-                                </td>
-                                <td>
-                                    <?= $kh['phone_number'] ?>
-                                </td>
-                                <td>
-                                    <?= $kh['email'] ?>
-                                </td>
-                                <td>
-                                    <?= $kh['address'] ?>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=kh&action=edit&id=<?= $kh['id_customer'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=kh&action=destroy&id=<?= $kh['id_customer'] ?>">Xóa</a></button>
-                                </td>
-                            </tr>
                                 <?php
-                            }
-                            ?>
+                                foreach ($array['infor'] as $kh) {
+                                ?>
+                                    <tr>
+                                        <td>
+                                            <?= $kh['id_customer'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $kh['name_customer'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $kh['phone_number'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $kh['email'] ?>
+                                        </td>
+                                        <td>
+                                            <?= $kh['address'] ?>
+                                        </td>
+                                        <td>
+                                            <a style="color: white" href="index.php?controller=kh&action=edit&id=<?= $kh['id_customer'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                            <a style="color: white" href="index.php?controller=kh&action=destroy&id=<?= $kh['id_customer'] ?>"><button type=" button" class="btn btn-danger">Xóa</button></a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                                ?>
                             </tbody>
                         </table>
 
@@ -87,7 +87,7 @@
                                 <ul class="pagination pagination-lg">
                                     <?php
                                     for ($i = 1; $i <= $array['page']; $i++) {
-                                        ?>
+                                    ?>
                                         <li class="page-item">
                                             <form method="post" action="index.php?controller=kh&page=<?= $i ?>">
                                                 <input type="hidden" name="search" value="<?= $array['search'] ?>">
@@ -95,7 +95,7 @@
                                                 <button class="page-link"><?= $i ?></button>
                                             </form>
                                         </li>
-                                        <?php
+                                    <?php
                                     }
                                     ?>
                                 </ul>

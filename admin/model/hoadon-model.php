@@ -2,6 +2,7 @@
 //function lấy dữ liệu từ db
 function index()
 {
+    $check = 0;
     $search = '';
     if (isset($_POST['search'])) {
         $search = $_POST['search'];
@@ -16,6 +17,7 @@ function index()
     //    $sqlCount = "SELECT count(name_customer) FROM customer WHERE name_customer = '$search'";
 
     $counts = mysqli_query($connect, $sqlCount);
+
     foreach ($counts as $each) {
         $countRecord = $each['count_record'];
     }
@@ -30,6 +32,7 @@ function index()
     $array['search'] = $search;
     $array['infor'] = $bill;
     $array['page'] = $countPage;
+    $array['check'] = $check;
     return $array;
 }
 

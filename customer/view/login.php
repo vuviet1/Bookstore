@@ -123,7 +123,7 @@
 
               <p class="text-center">
                 <span>Bạn chưa có tài khoản?</span>
-                <a href="index.php?controller=login&action=register">
+                <a href="../index.php?controller=login&action=register">
                   <span>Tạo tài khoản mới</span>
                 </a>
               </p>

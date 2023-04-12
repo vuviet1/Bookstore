@@ -59,9 +59,9 @@
                                             <img src="img/<?= $product['image'] ?>" alt="" width="150px" height="150px">
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-success"><a style="color: white" href="index.php?controller=sp&action=detail&id=<?= $product['id_product'] ?>">Chi tiết</a></button>
-                                            <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>">Sửa</a></button>
-                                            <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>">Xóa</a></button>
+                                            <a style="color: white" href="index.php?controller=sp&action=detail&id=<?= $product['id_product'] ?>"><button type="button" class="btn btn-success">Chi tiết</button></a>
+                                            <a style="color: white" href="index.php?controller=sp&action=edit&id=<?= $product['id_product'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                            <a style="color: white" href="index.php?controller=sp&action=destroy&id=<?= $product['id_product'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                         </td>
                                     </tr>
                                 <?php

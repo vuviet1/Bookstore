@@ -12,7 +12,7 @@ switch ($action) {
     case '':
         //Hiển thị danh sách các
         include_once 'model/hoadon-model.php';
-        include_once 'view/hoadon/hoadon-show.php';
+            include_once 'view/hoadon/hoadon-show.php';
         break;
     case 'hdct':
         //Hiển thị danh sách các

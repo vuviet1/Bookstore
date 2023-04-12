@@ -15,7 +15,7 @@
                         <div class="row">
                             <?php
                             foreach ($bill['customer'] as $infor) {
-                                ?>
+                            ?>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email" class="form-label">Tên khách hàng</label>
                                     <input class="form-control" type="text" id="email" value="<?= $infor['name_customer'] ?>" readonly />
@@ -28,7 +28,7 @@
                                     <label for="total" class="form-label">Số điện thoại</label>
                                     <input class="form-control" type="text" id="total" value="<?= $infor['phone_number'] ?>" readonly />
                                 </div>
-                                <?php
+                            <?php
                             }
                             ?>
                         </div>
@@ -66,17 +66,17 @@
                     <div class="row">
                         <?php
                         foreach ($bill['employee'] as $infor) {
-                            ?>
+                        ?>
                             <div class="mb-3 col-md-6 ">
                                 <label for="email" class="form-label">Nhân viên</label>
                                 <input class="form-control" type="text" id="email" name="email" value="<?= $infor['name_employee'] ?>" readonly />
                             </div>
-                            <?php
+                        <?php
                         }
                         ?>
                         <?php
                         foreach ($bill['customer'] as $infor) {
-                            ?>
+                        ?>
                             <div class="mb-3 col-md-6 ">
                                 <label for="email" class="form-label">Ngày mua</label>
                                 <input class="form-control" type="date" id="email" name="email" value="<?= $infor['purchase_date'] ?>" readonly />
@@ -107,13 +107,15 @@
                                 </div>
 
                                 <div class="mt-2">
-                                    <button type="submit" class="btn btn-primary me-2">Cập nhật</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=hoadon">Hủy bỏ</a></button>
-                                </div>
+                                    <button type="submit" name="update" class="btn btn-primary me-2">Cập nhật</button>
+
                             </form>
-                            <?php
-                        }
-                        ?>
+                            <a style="color: #8592a3" href="index.php?controller=hoadon"><button class="btn btn-outline-secondary">Hủy bỏ</button></a>
                     </div>
+                <?php
+                        }
+                ?>
+
                 </div>
             </div>
+        </div>

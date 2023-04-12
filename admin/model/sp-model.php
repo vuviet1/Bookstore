@@ -83,18 +83,26 @@ function store()
     $page = $_POST['page'];
     $price = $_POST['price'];
     $size = $_POST['size'];
-    $date = $_POST['date'];
+    // $date = $_POST['date'];
+    $date = strtotime($_POST['date']);
     $describes = $_POST['describes'];
     $img = $_FILES["img"]["name"];
     $img_tmp = $_FILES["img"]["tmp_name"];
     $category = $_POST['category_id'];
     $author = $_POST['author_id'];
     $publis = $_POST['publis_id'];
+    if ($date > time()) {
+        $message = "Thời gian không phù hợp, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1; // Publication date is in the future, return 1
+    }
     include_once 'connect/openConnect.php';
     $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
     $query_check = mysqli_query($connect, $sql_check);
     if (mysqli_num_rows($query_check) > 0) {
         // Product already exists
+        $message = "Tên sản phẩm đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
         return 1;
     } else {
         // Insert new product
@@ -104,6 +112,8 @@ function store()
         $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price_product, describes, id_publishing_company, id_category, id_author)
                 VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
         mysqli_query($connect, $sql);
+        $message = "Thêm sản phẩm thành công!";
+        echo "<script>alert('$message');</script>";
         return 0;
     }
     include_once 'connect/closeConnect.php';
@@ -151,11 +161,15 @@ function updateProduct()
     $query_check = mysqli_query($connect, $sql_check);
     if (mysqli_num_rows($query_check) > 1) {
         // Product already exists
+        $message = "Tên sản phẩm đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
         return 1;
     } else {
         // Insert new product
         $sql = "UPDATE product SET product_name = '$name', image = '$img', publication_date = '$date', number_of_pages = '$page', size = '$size', price = '$price', describes = '$describes', id_publishing_company = '$publis_id', id_category = '$category_id', id_author = '$author_id' WHERE id_product = '$id'";
         mysqli_query($connect, $sql);
+        $message = "Sửa sản phẩm thành công!";
+        echo "<script>alert('$message');</script>";
         return 0;
     }
 
@@ -167,6 +181,8 @@ function destroyProduct(){
     $sql = "DELETE FROM product WHERE id_product = '$id'";
     mysqli_query($connect, $sql);
     include_once 'connect/closeConnect.php';
+    $message = "Xóa sản phẩm thành công!";
+        echo "<script>alert('$message');</script>";
 }
 function detailProduct(){
     $id = $_GET['id'];

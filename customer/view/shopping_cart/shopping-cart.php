@@ -43,7 +43,7 @@
                                                style="color: black"><?= $value['product_name'] ?></a></h5>
                                     </td>
                                     <td class="shoping__cart__price">
-                                        <?= $value['price'] ?> VNĐ
+                                        <?= $value['price'] ?>.000 VNĐ
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
@@ -90,7 +90,7 @@
                     <div class="shoping__checkout">
                         <h5>Tổng giỏ hàng</h5>
                         <ul>
-                            <li>Tổng tiền <span><?=$infor['total']?></span></li>
+                            <li>Tổng tiền <span><?=$infor['total']?>.000VNĐ</span></li>
                         </ul>
                         <div style="display: flex;justify-content: center">
                         <button  style="border: none" class="primary-btn ">Tiến hành kiểm tra</button>

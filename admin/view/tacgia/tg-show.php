@@ -59,8 +59,8 @@
                                     <?= $tg['name_author'] ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=tacgia&action=edit&id=<?= $tg['id_author'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=tacgia&action=destroy&id=<?= $tg['id_author'] ?>">Xóa</a></button>
+                                    <a style="color: white" href="index.php?controller=tacgia&action=edit&id=<?= $tg['id_author'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                    <a style="color: white" href="index.php?controller=tacgia&action=destroy&id=<?= $tg['id_author'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                 </td>
                             </tr>
                                 <?php

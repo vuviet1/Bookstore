@@ -27,10 +27,10 @@
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Thêm nhà xuất bản</button>
-                                    <button type="reset" class="btn btn-outline-secondary"><a style="color: #8592a3" href="index.php?controller=nxb">Hủy bỏ</a></button>
                                 </div>
                         </form>
                     </div>
+                    <a style="color: #8592a3" href="index.php?controller=nxb"><button type="reset" class="btn btn-outline-secondary">Hủy bỏ</a></button>
                     <!-- /Account -->
                 </div>
             </div>

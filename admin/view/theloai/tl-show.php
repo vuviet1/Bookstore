@@ -59,8 +59,8 @@
                                     <?= $tl['name_category'] ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-info"><a style="color: white" href="index.php?controller=theloai&action=edit&id=<?= $tl['id_category'] ?>">Sửa</a></button>
-                                    <button type="button" class="btn btn-danger"><a style="color: white" href="index.php?controller=theloai&action=destroy&id=<?= $tl['id_category'] ?>">Xóa</a></button>
+                                    <a style="color: white" href="index.php?controller=theloai&action=edit&id=<?= $tl['id_category'] ?>"><button type="button" class="btn btn-info">Sửa</button></a>
+                                    <a style="color: white" href="index.php?controller=theloai&action=destroy&id=<?= $tl['id_category'] ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                 </td>
                             </tr>
                                 <?php
