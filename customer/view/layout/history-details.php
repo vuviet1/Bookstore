@@ -49,7 +49,7 @@
                                         <?= $his['amount'] ?>
                                     </td>
                                     <td class="shoping__cart__price">
-                                            <?= $his['price_product'] ?> VNĐ
+                                            <?= $his['price_product'] ?>.000 VNĐ
                                     </td>
                                 </tr>
 
