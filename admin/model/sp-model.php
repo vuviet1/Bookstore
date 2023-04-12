@@ -47,36 +47,7 @@ function addProduct()
 }
 
 //function lưu dữ liệu lên db
-// function store()
-// {
-//     $name = $_POST['name'];
-//     $page = $_POST['page'];
-//     $price = $_POST['price'];
-//     $size = $_POST['size'];
-//     $date = $_POST['date'];
-//     $describes = $_POST['describes'];
-//     $img = $_POST['img'];
-//     $file = $_FILES['img']['name'];
-//     $tmp_file = $_FILES['img']['tmp_name'];
-//     $category = $_POST['category_id'];
-//     $author = $_POST['author_id'];
-//     $publis = $_POST['publis_id'];
-//     include_once 'connect/openConnect.php';
-//     $sql_check = 'SELECT id_product FROM product';
-//     $query_check = mysqli_query($connect, $sql_check);
-//     foreach ($query_check as $product) {
-//         if ($name == $product['product_name']) {
-//             return 1;
-//         } else {
-//             $sql = " INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price, describes, id_publishing_company, id_category, id_author)
-//         VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
-//             mysqli_query($connect, $sql);
-//             move_uploaded_file($tmp_file, '../img/');
-//             return 0;
-//         }
-//     }
-//     include_once 'connect/closeConnect.php';
-// }
+
 function store()
 {
     $name = $_POST['name'];
@@ -84,14 +55,14 @@ function store()
     $price = $_POST['price'];
     $size = $_POST['size'];
     // $date = $_POST['date'];
-    $date = strtotime($_POST['date']);
+    $dates = strtotime($_POST['date']);
+    $date = $_POST['date'];
     $describes = $_POST['describes'];
-    $img = $_FILES["img"]["name"];
-    $img_tmp = $_FILES["img"]["tmp_name"];
+    $img = $_POST['img'];
     $category = $_POST['category_id'];
     $author = $_POST['author_id'];
     $publis = $_POST['publis_id'];
-    if ($date > time()) {
+    if ($dates > time()) {
         $message = "Thời gian không phù hợp, Vui lòng sửa lại!";
         echo "<script>alert('$message');</script>";
         return 1; // Publication date is in the future, return 1
@@ -106,9 +77,6 @@ function store()
         return 1;
     } else {
         // Insert new product
-        $upload_dir = "img/";
-        $img_path = $upload_dir . basename($img);
-        move_uploaded_file($img_tmp, $img_path);
         $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price_product, describes, id_publishing_company, id_category, id_author)
                 VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
         mysqli_query($connect, $sql);
