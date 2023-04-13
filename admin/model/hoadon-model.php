@@ -197,7 +197,7 @@ function update_cart()
 
 
 function add_order_to_db()
-{
+{   if(isset($_SESSION['cart'])){
     $id_customer = $_POST['id_customer'];
     $date_buy = date('Y-m-d');
     $id_payment = $_POST['id_payment'];
@@ -226,6 +226,10 @@ function add_order_to_db()
     }
     include_once 'connect/closeConnect.php';
     unset($_SESSION['cart']);
+}elseif(!isset($_SESSION['cart'])){
+    $message = "Chưa có sản phẩm!";
+            echo "<script>alert('$message');</script>";
+}
 }
 
 

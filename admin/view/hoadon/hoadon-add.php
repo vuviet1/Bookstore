@@ -50,19 +50,19 @@
                                         foreach ($infor['cart'] as $product_id => $value) {
                                             ?>
                                             <tr>
-                                                <td>
+                                                <td required>
                                                     <?= $value['id_product'] ?>
                                                 </td>
-                                                <td>
+                                                <td required>
                                                     <?= $value['product_name'] ?>
                                                 </td>
-                                                <td>
+                                                <td required>
                                                     <img style="width: 150px" src="img/<?= $value['image'] ?>" alt="">
                                                 </td>
-                                                <td>
+                                                <td required>
                                                     <?= $value['amount']; ?>
                                                 </td>
-                                                <td>
+                                                <td required>
                                                     <?= $value['price'] ?> VNĐ
                                                 </td>
                                             </tr>
@@ -82,7 +82,7 @@
                                     <div class="mb-3 col-md-6 ">
                                         <label for="customer" class="form-label">Tên khách hàng</label>
                                         <select class="form-control" type="text" id="id_customer" name="id_customer">
-                                            <option value=""> - Chọn -</option>
+                                            <option value="" required> - Chọn -</option>
                                             <?php
                                             foreach ($infor['customer'] as $customer) {
                                                 ?>
@@ -97,7 +97,7 @@
                                     <div class="mb-3 col-md-6 ">
                                         <label for="employee" class="form-label">Tên nhân viên xử lý đơn</label>
                                         <select class="form-control" type="text" id="id_employee" name="id_employee">
-                                            <option value=""> - Chọn -</option>
+                                            <option value="" required> - Chọn -</option>
                                             <?php
                                             foreach ($infor['employee'] as $employee) {
                                                 ?>
@@ -112,7 +112,7 @@
                                     <div class="mb-3 col-md-6 ">
                                         <label for="payment" class="form-label">Phương thức thanh toán</label>
                                         <select class="form-control" type="text" id="id_payment" name="id_payment">
-                                            <option value=""> - Chọn -</option>
+                                            <option value="" required> - Chọn -</option>
                                             <?php
                                             foreach ($infor['payment'] as $payment) {
                                                 ?>
@@ -127,7 +127,7 @@
                                     <div class="mb-3 col-md-6 ">
                                         <label for="shipping" class="form-label">Phương thức vận chuyển</label>
                                         <select class="form-control" type="text" id="id_shipping" name="id_shipping">
-                                            <option value=""> - Chọn -</option>
+                                            <option value="" required> - Chọn -</option>
                                             <?php
                                             foreach ($infor['shipping'] as $shipping) {
                                                 ?>

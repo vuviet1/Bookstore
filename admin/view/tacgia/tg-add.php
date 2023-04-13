@@ -1,4 +1,3 @@
-
 <!-- Content wrapper -->
 <div class="content-wrapper">
     <!-- Content -->
@@ -16,14 +15,7 @@
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="tg" class="form-label">Tên tác giả</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        id="tg"
-                                        name="tg"
-                                        value=""
-                                        autofocus
-                                    />
+                                    <input class="form-control" type="text" id="tg" name="tg" value="" autofocus required />
                                 </div>
                                 <div class="mt-2">
                                     <button type="submit" class="btn btn-primary me-2">Thêm tác giả</button>
@@ -49,4 +41,3 @@
 <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 <!-- / Layout wrapper -->
-

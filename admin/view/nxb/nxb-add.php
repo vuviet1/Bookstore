@@ -22,7 +22,7 @@
                                         id="nxb"
                                         name="nxb"
                                         value=""
-                                        autofocus
+                                        autofocus required
                                     />
                                 </div>
                                 <div class="mt-2">

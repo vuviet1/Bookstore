@@ -22,32 +22,32 @@
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="name" class="form-label">Tên sản phẩm</label>
-                                    <input class="form-control" type="text" id="name" name="name" value="" autofocus />
+                                    <input class="form-control" type="text" id="name" name="name"  autofocus required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="page" class="form-label">Số trang</label>
-                                    <input class="form-control" type="text" id="page" name="page" value="" />
+                                    <input class="form-control" type="text" id="page" name="page"  required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Giá</label>
-                                    <input class="form-control" type="text" id="price" name="price" value="" />
+                                    <input class="form-control" type="text" id="price" name="price"  required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="size" class="form-label">Kích cỡ</label>
-                                    <input class="form-control" type="text" id="size" name="size" value="" />
+                                    <input class="form-control" type="text" id="size" name="size"  required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="date" class="form-label">Ngày xuất bản</label>
-                                    <input class="form-control" type="date" id="date" name="date" value="" />
+                                    <input class="form-control" type="date" id="date" name="date"  required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="describes" class="form-label">Mô tả</label>
-                                    <input class="form-control" type="text" id="describes" name="describes" value="" />
+                                    <input class="form-control" type="text" id="describes" name="describes" value="" required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Thể loại</label>
                                         <select class="form-control" type="text" id="price" name="category_id">
-                                            <option value=""> - Chọn - </option>
+                                            <option value="" required> - Chọn - </option>
                                             <?php
                                             foreach ($arr['category'] as $category) {
                                                 ?>
@@ -62,7 +62,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Tác giả</label>
                                     <select class="form-control" type="text" id="price" name="author_id">
-                                        <option value=""> - Chọn - </option>
+                                        <option value="" required> - Chọn - </option>
                                         <?php
                                         foreach ($arr['author'] as $author) {
                                         ?>
@@ -77,7 +77,7 @@
                                 <div class="mb-3 col-md-6 ">
                                     <label for="price" class="form-label">Nhà xuất bản</label>
                                     <select class="form-control" type="text" id="price" name="publis_id">
-                                        <option value=""> - Chọn - </option>
+                                        <option value="" required> - Chọn - </option>
                                         <?php
                                         foreach ($arr['publis'] as $publis) {
                                         ?>
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="input-group">
                                     <label class="input-group-text" for="inputGroupFile01">Ảnh sản phẩm</label>
-                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" />
+                                    <input type="file" class="form-control" name="img" id="inputGroupFile01" required/>
                                 </div>
                                 <div><br></div>
                                 <div class="mt-2">

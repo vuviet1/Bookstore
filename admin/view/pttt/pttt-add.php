@@ -22,7 +22,7 @@
                                         id="pttt"
                                         name="pttt"
                                         value=""
-                                        autofocus
+                                        autofocus required
                                     />
                                 </div>
                                 <div class="mt-2">

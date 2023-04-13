@@ -23,6 +23,7 @@
                                         name="ptvc"
                                         value=""
                                         autofocus
+                                        required
                                     />
                                 </div>
                                 <div class="mt-2">

@@ -15,25 +15,25 @@
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="name_nv" class="form-label">Họ và tên</label>
-                                    <input class="form-control" type="text" id="name_nv" name="name_nv" value="" autofocus />
+                                    <input class="form-control" type="text" id="name_nv" name="name_nv" value="" autofocus required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="email_nv" class="form-label">E-mail</label>
-                                    <input class="form-control" type="email" id="email_nv" name="email_nv" value="" placeholder="a@gmail.com" />
+                                    <input class="form-control" type="email" id="email_nv" name="email_nv" value="" placeholder="a@gmail.com" required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="user_nv" class="form-label">Username</label>
-                                    <input class="form-control" type="text" id="user_nv" name="user_nv" value="" placeholder="Nguyen Van A" />
+                                    <input class="form-control" type="text" id="user_nv" name="user_nv" value="" placeholder="Nguyen Van A" required/>
                                 </div>
                                 <div class="mb-3 col-md-6 ">
                                     <label for="pass_nv" class="form-label">Password</label>
-                                    <input class="form-control" type="password" id="pass_nv" name="pass_nv" value="" />
+                                    <input class="form-control" type="password" id="pass_nv" name="pass_nv" value="" required/>
                                 </div>
                                 <div class="mb-3 col-md-6">
                                     <label class="form-label" for="phone_nv">Số điện thoại</label>
                                     <div class="input-group input-group-merge">
                                         <span class="input-group-text">VN (+84)</span>
-                                        <input type="text" id="phone_nv" name="phone_nv" class="form-control" placeholder="000 000 0000" />
+                                        <input type="text" id="phone_nv" name="phone_nv" class="form-control" placeholder="000 000 0000" required/>
                                     </div>
                                 </div>
                                 <div class="mt-2">
