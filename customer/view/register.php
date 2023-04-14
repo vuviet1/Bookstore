@@ -87,11 +87,11 @@
                 <input type="text" class="form-control" id="email" name="email" placeholder="Nhập email" />
               </div>
               <div class="mb-3">
-                <label for="phone" class="form-label">Phone number</label>
+                <label for="phone" class="form-label">Số điện thoại</label>
                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" />
               </div>
               <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
+                <label for="address" class="form-label">Địa chỉ</label>
                 <input type="text" class="form-control" id="address" name="address" placeholder="Nhập địa chỉ" />
               </div>
               <!-- <div class="mb-3">

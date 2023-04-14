@@ -143,8 +143,8 @@
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            <form action="#">
-                                <input type="text" placeholder="Bạn muốn tìm kiếm sách gì?">
+                            <form action="index.php?controller=shop-grid" method="post">
+                                <input type="text" name="search" placeholder="Bạn muốn tìm kiếm sách gì?">
                                 <button type="submit" class="site-btn"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
