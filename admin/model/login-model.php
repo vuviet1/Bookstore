@@ -3,7 +3,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         include_once 'connect/openConnect.php';
-        $sql = "SELECT * FROM employee WHERE username = '$username' AND password = '$password'";
+        $sql = "SELECT * FROM employee";
         $users = mysqli_query($connect, $sql);
         include_once 'connect/closeConnect.php';
         foreach($users as $user){
@@ -11,7 +11,12 @@
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['password'] = $_POST['password'];
             return 1;
-        }else{
+        }elseif($_POST['username'] == $user['email'] && $_POST['password'] == $user['password']){
+            $_SESSION['username'] = $_POST['username'];
+            $_SESSION['password'] = $_POST['password'];
+            return 1;
+        }
+        else{
             return 0;
         }
     }
