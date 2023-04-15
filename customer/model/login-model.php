@@ -13,6 +13,10 @@ function loginAdmin()
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['password'] = $_POST['password'];
             return 1;
+        }elseif($_POST['username'] == $user['email'] && $_POST['password'] == $user['password']){
+            $_SESSION['username'] = $_POST['username'];
+            $_SESSION['password'] = $_POST['password'];
+            return 1;
         } else {
             return 0;
         }
