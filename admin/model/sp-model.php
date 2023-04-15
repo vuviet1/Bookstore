@@ -50,43 +50,42 @@ function addProduct()
 
 function store()
 {
-   
-        $name = $_POST['name'];
-        $page = $_POST['page'];
-        $price = $_POST['price'];
-        $size = $_POST['size'];
-        // $date = $_POST['date'];
-        $dates = strtotime($_POST['date']);
-        $date = $_POST['date'];
-        $describes = $_POST['describes'];
-        $img = $_POST['img'];
-        $category = $_POST['category_id'];
-        $author = $_POST['author_id'];
-        $publis = $_POST['publis_id'];
-        if ($dates > time()) {
-            $message = "Thời gian không phù hợp, Vui lòng sửa lại!";
-            echo "<script>alert('$message');</script>";
-            return 1; // Publication date is in the future, return 1
-        }
-        include_once 'connect/openConnect.php';
-        $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
-        $query_check = mysqli_query($connect, $sql_check);
-        if (mysqli_num_rows($query_check) > 0) {
-            // Product already exists
-            $message = "Tên sản phẩm đã tồn tại, Vui lòng sửa lại!";
-            echo "<script>alert('$message');</script>";
-            return 1;
-        } else {
-            // Insert new product
-            $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price_product, describes, id_publishing_company, id_category, id_author)
+
+    $name = $_POST['name'];
+    $page = $_POST['page'];
+    $price = $_POST['price'];
+    $size = $_POST['size'];
+    // $date = $_POST['date'];
+    $dates = strtotime($_POST['date']);
+    $date = $_POST['date'];
+    $describes = $_POST['describes'];
+    $img = $_POST['img'];
+    $category = $_POST['category_id'];
+    $author = $_POST['author_id'];
+    $publis = $_POST['publis_id'];
+    if ($dates > time()) {
+        $message = "Thời gian không phù hợp, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1; // Publication date is in the future, return 1
+    }
+    include_once 'connect/openConnect.php';
+    $sql_check = "SELECT id_product FROM product WHERE product_name = '$name'";
+    $query_check = mysqli_query($connect, $sql_check);
+    if (mysqli_num_rows($query_check) > 0) {
+        // Product already exists
+        $message = "Tên sản phẩm đã tồn tại, Vui lòng sửa lại!";
+        echo "<script>alert('$message');</script>";
+        return 1;
+    } else {
+        // Insert new product
+        $sql = "INSERT INTO product (product_name, image, publication_date, number_of_pages, size, price_product, describes, id_publishing_company, id_category, id_author)
                 VALUES ('$name', '$img', '$date', '$page', '$size', '$price', '$describes', '$publis', '$category', '$author')";
-            mysqli_query($connect, $sql);
-            $message = "Thêm sản phẩm thành công!";
-            echo "<script>alert('$message');</script>";
-            return 0;
-        }
-        include_once 'connect/closeConnect.php';
-    
+        mysqli_query($connect, $sql);
+        $message = "Thêm sản phẩm thành công!";
+        echo "<script>alert('$message');</script>";
+        return 0;
+    }
+    include_once 'connect/closeConnect.php';
 }
 
 
@@ -149,11 +148,18 @@ function destroyProduct()
 {
     $id = $_GET['id'];
     include_once 'connect/openConnect.php';
-    $sql = "DELETE FROM product WHERE id_product = '$id'";
-    mysqli_query($connect, $sql);
-    include_once 'connect/closeConnect.php';
-    $message = "Xóa sản phẩm thành công!";
-    echo "<script>alert('$message');</script>";
+    $sql2 = "SELECT id_product FROM bill_detail WHERE id_product = '$id'";
+    $check = mysqli_query($connect, $sql2);
+    if (mysqli_num_rows($check) > 1) {
+        $message = "Sản phẩm đang tồn tại trong mục đơn hàng!";
+        echo "<script>alert('$message');</script>";
+    } else {
+        $sql = "DELETE FROM product WHERE id_product = '$id'";
+        mysqli_query($connect, $sql);
+        include_once 'connect/closeConnect.php';
+        $message = "Xóa sản phẩm thành công!";
+        echo "<script>alert('$message');</script>";
+    }
 }
 function detailProduct()
 {
