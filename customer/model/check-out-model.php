@@ -80,7 +80,7 @@ function add_order_to_db()
     $admin_id = $_POST['id_employee'];
     $total = $_POST['total'];
     $status = 0;
-
+    $address = $_POST['address'];
     include_once 'connect/openConnect.php';
     $sqlOrder = "INSERT INTO `bill`(`id_employee`, `id_customer`, `id_payment`, `id_shipping`, `purchase_date`, `status`, `total`) VALUES ('$admin_id','$customer_id','$payment_id','$shipping_id','$date_buy','$status','$total')";
     mysqli_query($connect, $sqlOrder);
@@ -98,6 +98,8 @@ function add_order_to_db()
         }
         $sql = "INSERT INTO `bill_detail`(`id_bill`, `id_product`, `amount`, `price`) VALUES ('$orderID','$product_id','$amount','$price')";
         mysqli_query($connect, $sql);
+        $sql2 = "UPDATE customer SET address = '$address' WHERE id_customer = '$customer_id'";
+        mysqli_query($connect, $sql2);
     }
     include_once 'connect/closeConnect.php';
     unset($_SESSION['cart']);

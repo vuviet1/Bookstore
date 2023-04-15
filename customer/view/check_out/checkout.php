@@ -51,7 +51,7 @@
                                          <label class="form-label" for="address">Địa chỉ</label>
                                          <div class="input-group input-group-merge">
                                              <input type="text" id="address" name="address" class="form-control"
-                                                    value="<?= $kh['address'] ?>" readonly/>
+                                                    value="<?= $kh['address'] ?>" />
                                          </div>
                                      </div>
 
